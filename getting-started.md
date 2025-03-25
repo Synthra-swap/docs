@@ -1,4 +1,4 @@
-# Getting Started with Synthra
+# Getting Started
 
 This guide will walk you through the basics of using Synthra, from connecting your wallet to making your first swap and providing liquidity.
 
@@ -32,11 +32,11 @@ Swapping tokens on Synthra is straightforward:
 3. Select the token you want to receive in the bottom input field
 4. Enter the amount you want to swap
 5. Review the transaction details, including:
-   - Exchange rate
-   - Price impact
-   - Minimum received amount
-   - Liquidity provider fee
-   - Treasury fee (0.1%)
+   * Exchange rate
+   * Price impact
+   * Minimum received amount
+   * Liquidity provider fee
+   * Treasury fee (0.1%)
 6. Click "Swap" and confirm the transaction in your wallet
 
 The interface will display a confirmation once your swap is complete, showing the exact amount of tokens received.
@@ -58,10 +58,10 @@ Providing liquidity on Synthra allows you to earn fees from trades. Here's how t
 2. Click "New Position"
 3. Select the token pair you want to provide liquidity for
 4. Choose a fee tier based on expected pair volatility:
-   - 0.01%: For stable pairs (e.g., stablecoin to stablecoin)
-   - 0.05%: For pairs with low volatility
-   - 0.3%: For most standard pairs
-   - 1%: For exotic pairs with high volatility
+   * 0.01%: For stable pairs (e.g., stablecoin to stablecoin)
+   * 0.05%: For pairs with low volatility
+   * 0.3%: For most standard pairs
+   * 1%: For exotic pairs with high volatility
 5. Set your price range by defining the minimum and maximum prices
 6. Enter the amounts of each token you want to deposit
 7. Review your position details and click "Add"
@@ -76,17 +76,17 @@ To view and manage your liquidity positions:
 1. Navigate to the "Pool" tab
 2. You'll see a list of your active positions
 3. Click on any position to view details or perform actions:
-   - Increase liquidity: Add more tokens to your position
-   - Decrease liquidity: Remove some tokens from your position
-   - Collect fees: Claim earned trading fees
-   - Adjust range: Modify your price range (requires creating a new position)
+   * Increase liquidity: Add more tokens to your position
+   * Decrease liquidity: Remove some tokens from your position
+   * Collect fees: Claim earned trading fees
+   * Adjust range: Modify your price range (requires creating a new position)
 
 ## Next Steps
 
 Now that you're familiar with the basics of Synthra, you might want to explore:
 
-- [Core Concepts](core-concepts/README.md) to understand the protocol in depth
-- [Treasury Fee Mechanism](features/treasury-fee.md) to learn about Synthra's unique fee structure
-- [Buyback Mechanism](features/buyback-mechanism.md) to understand how treasury funds are utilized
+* [Core Concepts](core-concepts/core-concepts/) to understand the protocol in depth
+* [Treasury Fee Mechanism](synthra-features/features/treasury-fee.md) to learn about Synthra's unique fee structure
+* [Buyback Mechanism](synthra-features/features/buyback-mechanism.md) to understand how treasury funds are utilized
 
 If you have any questions, check out our [FAQ](faq.md) or join our community channels for support.

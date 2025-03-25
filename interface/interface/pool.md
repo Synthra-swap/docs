@@ -22,7 +22,7 @@ The Pool overview page displays:
 2. **Create Position**: Button to add new liquidity
 3. **Pool Search**: Tool to find specific pools
 
-![Pool Overview Interface](../assets/images/pool-overview.png)
+![Pool Overview Interface](../../assets/images/pool-overview.png)
 
 ### 3. Exploring Specific Pools
 
@@ -37,25 +37,29 @@ To view details about a specific pool:
 The pool details page provides comprehensive information:
 
 #### Price Information
-- Current price of the token pair
-- Price range visualization
-- Historical price chart with time frame options
+
+* Current price of the token pair
+* Price range visualization
+* Historical price chart with time frame options
 
 #### Liquidity Information
-- Total value locked (TVL) in the pool
-- Liquidity distribution across price ranges
-- Your positions relative to the current price (if applicable)
+
+* Total value locked (TVL) in the pool
+* Liquidity distribution across price ranges
+* Your positions relative to the current price (if applicable)
 
 #### Fee Information
-- Pool fee tier (0.01%, 0.05%, 0.3%, or 1%)
-- Treasury fee (0.1%)
-- 24-hour fee generation
-- 7-day fee generation
+
+* Pool fee tier (0.01%, 0.05%, 0.3%, or 1%)
+* Treasury fee (0.1%)
+* 24-hour fee generation
+* 7-day fee generation
 
 #### Volume Information
-- 24-hour trading volume
-- 7-day trading volume
-- Volume trend chart
+
+* 24-hour trading volume
+* 7-day trading volume
+* Volume trend chart
 
 ### 5. Analyzing Liquidity Distribution
 
@@ -67,9 +71,10 @@ The liquidity distribution chart shows:
 4. **Your Positions**: Highlighted if you have active liquidity in the pool
 
 This visualization helps you understand:
-- Where liquidity is concentrated
-- How well the pool can handle large trades
-- Strategic price ranges for providing liquidity
+
+* Where liquidity is concentrated
+* How well the pool can handle large trades
+* Strategic price ranges for providing liquidity
 
 ### 6. Viewing Your Positions
 
@@ -184,6 +189,6 @@ If the price range visualization is unclear:
 
 After exploring pools, you might want to:
 
-- [Add Liquidity](add-liquidity.md) to start earning fees
-- [Remove Liquidity](remove-liquidity.md) from existing positions
-- Learn more about [Concentrated Liquidity](../core-concepts/concentrated-liquidity.md) to optimize your positions
+* [Add Liquidity](add-liquidity.md) to start earning fees
+* [Remove Liquidity](remove-liquidity.md) from existing positions
+* Learn more about [Concentrated Liquidity](../../core-concepts/core-concepts/concentrated-liquidity.md) to optimize your positions

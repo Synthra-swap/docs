@@ -1,13 +1,13 @@
-# Protocol Overview
+# Protocol
 
 This section provides a technical overview of the Synthra protocol, including its architecture, smart contracts, security measures, and audit information. Understanding these technical aspects is valuable for developers, integrators, and users who want to gain deeper insights into how Synthra works under the hood.
 
 ## What You'll Learn
 
-- **Architecture**: The overall design of the Synthra protocol and how its components interact
-- **Smart Contracts**: The core contracts that power Synthra and their functions
-- **Security**: The security measures implemented to protect user funds and ensure protocol stability
-- **Audits**: Information about security audits conducted on the Synthra protocol
+* **Architecture**: The overall design of the Synthra protocol and how its components interact
+* **Smart Contracts**: The core contracts that power Synthra and their functions
+* **Security**: The security measures implemented to protect user funds and ensure protocol stability
+* **Audits**: Information about security audits conducted on the Synthra protocol
 
 ## Protocol Design Philosophy
 
@@ -35,4 +35,4 @@ The unique treasury fee mechanism ensures long-term sustainability by creating a
 
 ## Technical Resources
 
-For developers looking to build on or integrate with Synthra, we recommend exploring the [Developer Resources](../developers/README.md) section after reviewing the protocol documentation.
+For developers looking to build on or integrate with Synthra, we recommend exploring the [Developer Resources](../../developer-resources/developers/) section after reviewing the protocol documentation.

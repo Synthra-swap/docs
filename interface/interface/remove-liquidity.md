@@ -20,25 +20,25 @@ Removing liquidity from Synthra allows you to withdraw your tokens from a pool w
 1. Find the position you want to remove liquidity from
 2. Click on the position to view its details
 3. The position details page will show:
-   - Price range of your position
-   - Current composition (amounts of each token)
-   - Fees earned
-   - Whether the position is in-range (active) or out-of-range (inactive)
+   * Price range of your position
+   * Current composition (amounts of each token)
+   * Fees earned
+   * Whether the position is in-range (active) or out-of-range (inactive)
 
-![Position Details](../assets/images/remove-liquidity-position.png)
+![Position Details](../../assets/images/remove-liquidity-position.png)
 
 ### 3. Choosing Removal Amount
 
 1. Click the "Remove Liquidity" button
 2. Use the slider to select how much liquidity to remove:
-   - 25%
-   - 50%
-   - 75%
-   - 100% (Max)
-   - Or enter a custom percentage
+   * 25%
+   * 50%
+   * 75%
+   * 100% (Max)
+   * Or enter a custom percentage
 3. The interface will display the estimated amounts of each token you'll receive
 
-![Remove Liquidity Interface](../assets/images/remove-liquidity-slider.png)
+![Remove Liquidity Interface](../../assets/images/remove-liquidity-slider.png)
 
 ### 4. Collecting Fees
 
@@ -106,9 +106,10 @@ When removing liquidity, the tokens you receive depend on:
 3. **Removal Percentage**: How much of your liquidity you're removing
 
 If the current price is:
-- Within your range: You'll receive a mix of both tokens
-- Below your range: You'll receive only the base token (typically the second token in the pair)
-- Above your range: You'll receive only the quote token (typically the first token in the pair)
+
+* Within your range: You'll receive a mix of both tokens
+* Below your range: You'll receive only the base token (typically the second token in the pair)
+* Above your range: You'll receive only the quote token (typically the first token in the pair)
 
 ## Fee Collection Considerations
 
@@ -168,7 +169,7 @@ If your position still appears after removing 100% of liquidity:
 
 After removing liquidity, you might want to:
 
-- [Add liquidity](add-liquidity.md) in a different price range
-- [Swap tokens](swap.md) to rebalance your portfolio
-- Learn more about [concentrated liquidity](../core-concepts/concentrated-liquidity.md) to optimize your future positions
-- Explore the [treasury fee mechanism](../features/treasury-fee.md) to understand how the 0.1% fee contributes to protocol sustainability
+* [Add liquidity](add-liquidity.md) in a different price range
+* [Swap tokens](swap.md) to rebalance your portfolio
+* Learn more about [concentrated liquidity](../../core-concepts/core-concepts/concentrated-liquidity.md) to optimize your future positions
+* Explore the [treasury fee mechanism](../../synthra-features/features/treasury-fee.md) to understand how the 0.1% fee contributes to protocol sustainability

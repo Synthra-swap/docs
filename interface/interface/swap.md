@@ -20,7 +20,7 @@ Swapping tokens is the most basic operation in Synthra. The swap interface allow
 2. Click on the bottom dropdown to select the token you want to receive (output token)
 3. If you don't see your desired token, you can paste the token contract address in the search bar
 
-![Token Selection Interface](../assets/images/swap-token-selection.png)
+![Token Selection Interface](../../assets/images/swap-token-selection.png)
 
 ### 3. Entering Amount
 
@@ -32,26 +32,26 @@ Swapping tokens is the most basic operation in Synthra. The swap interface allow
 
 Before confirming your swap, review the transaction details displayed below the input fields:
 
-- **Exchange Rate**: The current exchange rate between the two tokens
-- **Price Impact**: How your trade will affect the market price (higher values indicate larger market impact)
-- **Minimum Received**: The minimum amount you'll receive after accounting for slippage
-- **Fee Breakdown**:
-  - Pool Fee: The fee paid to liquidity providers (varies by pool: 0.01%, 0.05%, 0.3%, or 1%)
-  - Treasury Fee: The 0.1% fee that goes to the protocol treasury for buybacks
-- **Route**: If your swap is routed through multiple pools, the path will be displayed
+* **Exchange Rate**: The current exchange rate between the two tokens
+* **Price Impact**: How your trade will affect the market price (higher values indicate larger market impact)
+* **Minimum Received**: The minimum amount you'll receive after accounting for slippage
+* **Fee Breakdown**:
+  * Pool Fee: The fee paid to liquidity providers (varies by pool: 0.01%, 0.05%, 0.3%, or 1%)
+  * Treasury Fee: The 0.1% fee that goes to the protocol treasury for buybacks
+* **Route**: If your swap is routed through multiple pools, the path will be displayed
 
 ### 5. Adjusting Settings (Optional)
 
 Click the gear icon in the top right of the swap interface to adjust:
 
 1. **Slippage Tolerance**: The maximum acceptable difference between the expected and executed price
-   - Default: 0.5%
-   - Lower values provide better price protection but may cause transactions to fail
-   - Higher values ensure transactions complete but may result in worse prices
+   * Default: 0.5%
+   * Lower values provide better price protection but may cause transactions to fail
+   * Higher values ensure transactions complete but may result in worse prices
 2. **Transaction Deadline**: How long your transaction remains valid before expiring
-   - Default: 30 minutes
-   - Shorter deadlines provide better price protection
-   - Longer deadlines reduce the chance of transaction failure
+   * Default: 30 minutes
+   * Shorter deadlines provide better price protection
+   * Longer deadlines reduce the chance of transaction failure
 
 ### 6. Confirming the Swap
 
@@ -97,9 +97,10 @@ If the price moves unfavorably beyond your slippage tolerance during transaction
 Price impact occurs because Synthra uses an automated market maker model where prices are determined by the ratio of tokens in each pool. Larger trades relative to pool size will have higher price impact.
 
 To minimize price impact:
-- Consider breaking large trades into smaller transactions
-- Use pools with higher liquidity
-- Monitor price impact indicators in the interface
+
+* Consider breaking large trades into smaller transactions
+* Use pools with higher liquidity
+* Monitor price impact indicators in the interface
 
 ### Fee Structure
 
@@ -152,6 +153,6 @@ If you don't see your tokens after a successful swap:
 
 After mastering swaps, you might want to explore:
 
-- [Providing Liquidity](add-liquidity.md) to earn fees
-- [Pool Analytics](pool.md) to analyze liquidity and trading activity
-- [Treasury Fee Mechanism](../features/treasury-fee.md) to learn more about how the 0.1% treasury fee is used
+* [Providing Liquidity](add-liquidity.md) to earn fees
+* [Pool Analytics](pool.md) to analyze liquidity and trading activity
+* [Treasury Fee Mechanism](../../synthra-features/features/treasury-fee.md) to learn more about how the 0.1% treasury fee is used

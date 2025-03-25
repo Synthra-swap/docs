@@ -1,4 +1,8 @@
-# Synthra Protocol Documentation
+---
+icon: hand-wave
+---
+
+# Introduction
 
 Welcome to the official documentation for Synthra Protocol, a decentralized exchange protocol designed for efficient trading with concentrated liquidity.
 
@@ -10,12 +14,12 @@ The protocol features a unique treasury fee mechanism, where an additional 0.1% 
 
 ## Key Features
 
-- **Concentrated Liquidity**: Provide liquidity within specific price ranges for maximum capital efficiency
-- **Multiple Fee Tiers**: Choose from various fee tiers based on expected pair volatility
-- **Treasury Fee Mechanism**: 0.1% of all swap volumes are directed to the protocol treasury
-- **Buyback Program**: Treasury funds are used for strategic token buybacks
-- **Non-Custodial Trading**: Maintain full control of your assets while trading
-- **Permissionless Pools**: Anyone can create new trading pairs
+* **Concentrated Liquidity**: Provide liquidity within specific price ranges for maximum capital efficiency
+* **Multiple Fee Tiers**: Choose from various fee tiers based on expected pair volatility
+* **Treasury Fee Mechanism**: 0.1% of all swap volumes are directed to the protocol treasury
+* **Buyback Program**: Treasury funds are used for strategic token buybacks
+* **Non-Custodial Trading**: Maintain full control of your assets while trading
+* **Permissionless Pools**: Anyone can create new trading pairs
 
 ## Getting Started
 
@@ -23,14 +27,14 @@ New to Synthra? Check out our [Getting Started](getting-started.md) guide to lea
 
 ## For Developers
 
-If you're a developer looking to integrate with Synthra or build on top of our protocol, visit our [Developer Resources](developers/README.md) section for comprehensive guides, SDK documentation, and code examples.
+If you're a developer looking to integrate with Synthra or build on top of our protocol, visit our [Developer Resources](developer-resources/developers/) section for comprehensive guides, SDK documentation, and code examples.
 
 ## Community & Support
 
 Join our community channels to get help, stay updated on the latest developments, and connect with other Synthra users:
 
-- Discord: [discord.synthra.io](https://discord.synthra.io)
-- Twitter: [@SynthraProtocol](https://twitter.com/SynthraProtocol)
-- Telegram: [t.me/SynthraProtocol](https://t.me/SynthraProtocol)
+* Discord: [discord.synthra.io](https://discord.synthra.io)
+* Twitter: [@SynthraProtocol](https://twitter.com/SynthraProtocol)
+* Telegram: [t.me/SynthraProtocol](https://t.me/SynthraProtocol)
 
 For technical support, please visit our [FAQ](faq.md) or submit an issue on our [GitHub repository](https://github.com/synthra-protocol).

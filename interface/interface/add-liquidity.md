@@ -21,16 +21,16 @@ Adding liquidity to Synthra allows you to earn fees from trades that occur throu
 2. Choose the second token from the dropdown menu
 3. If you don't see your desired token, you can paste the token contract address in the search bar
 
-![Token Pair Selection](../assets/images/add-liquidity-token-selection.png)
+![Token Pair Selection](../../assets/images/add-liquidity-token-selection.png)
 
 ### 3. Selecting Fee Tier
 
 Choose the appropriate fee tier for your liquidity position:
 
-- **0.01%**: For stable pairs with minimal price movement (e.g., USDC-USDT)
-- **0.05%**: For low-volatility pairs (e.g., ETH-stETH)
-- **0.3%**: For standard pairs with moderate volatility (e.g., ETH-USDC)
-- **1%**: For exotic pairs with high volatility (e.g., new tokens)
+* **0.01%**: For stable pairs with minimal price movement (e.g., USDC-USDT)
+* **0.05%**: For low-volatility pairs (e.g., ETH-stETH)
+* **0.3%**: For standard pairs with moderate volatility (e.g., ETH-USDC)
+* **1%**: For exotic pairs with high volatility (e.g., new tokens)
 
 Higher fee tiers generally generate more fees per trade but may see less trading volume.
 
@@ -41,13 +41,13 @@ Higher fee tiers generally generate more fees per trade but may see less trading
 3. Set your maximum price by dragging the right slider or entering a value
 4. The price range determines when your liquidity is active and earning fees
 
-![Price Range Selection](../assets/images/add-liquidity-price-range.png)
+![Price Range Selection](../../assets/images/add-liquidity-price-range.png)
 
 #### Price Range Strategies
 
-- **Wide Range**: Setting a wide price range (e.g., ±50% from current price) provides more consistent fee earnings but with lower capital efficiency
-- **Narrow Range**: Setting a narrow price range (e.g., ±5% from current price) offers higher capital efficiency but risks becoming inactive if price moves outside the range
-- **Directional**: Setting an asymmetric range based on your price expectations (e.g., current price to +20%) if you expect the price to move in a specific direction
+* **Wide Range**: Setting a wide price range (e.g., ±50% from current price) provides more consistent fee earnings but with lower capital efficiency
+* **Narrow Range**: Setting a narrow price range (e.g., ±5% from current price) offers higher capital efficiency but risks becoming inactive if price moves outside the range
+* **Directional**: Setting an asymmetric range based on your price expectations (e.g., current price to +20%) if you expect the price to move in a specific direction
 
 ### 5. Depositing Tokens
 
@@ -60,16 +60,16 @@ Higher fee tiers generally generate more fees per trade but may see less trading
 
 Before confirming, review the position details:
 
-- **Liquidity Preview**: Visual representation of your position relative to the current price
-- **Estimated Fee Earnings**: Projected fee earnings based on recent trading volume
-- **Price Range**: Confirmation of your selected price range
-- **Deposit Amounts**: The exact amounts of each token you'll deposit
+* **Liquidity Preview**: Visual representation of your position relative to the current price
+* **Estimated Fee Earnings**: Projected fee earnings based on recent trading volume
+* **Price Range**: Confirmation of your selected price range
+* **Deposit Amounts**: The exact amounts of each token you'll deposit
 
 ### 7. Approving Token Spending
 
 If this is your first time providing liquidity with these tokens:
 
-1. Click "Approve [Token]" for each token
+1. Click "Approve \[Token]" for each token
 2. Confirm the approval transaction in your wallet
 3. Wait for the approval transactions to be confirmed
 
@@ -184,6 +184,6 @@ If your transaction fails:
 
 After adding liquidity, you might want to:
 
-- [Manage your positions](pool.md) to monitor performance
-- [Remove liquidity](remove-liquidity.md) when needed
-- Learn more about [concentrated liquidity](../core-concepts/concentrated-liquidity.md) to optimize your strategy
+* [Manage your positions](pool.md) to monitor performance
+* [Remove liquidity](remove-liquidity.md) when needed
+* Learn more about [concentrated liquidity](../../core-concepts/core-concepts/concentrated-liquidity.md) to optimize your strategy

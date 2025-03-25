@@ -6,9 +6,9 @@ Concentrated liquidity is the cornerstone innovation of Synthra protocol, fundam
 
 Traditional automated market makers (AMMs) distribute liquidity uniformly across an infinite price range from 0 to ∞. This approach has several limitations:
 
-- Capital inefficiency: Most of the liquidity sits idle in price ranges that are never used
-- Limited customization: Liquidity providers cannot adjust their exposure based on their market outlook
-- One-size-fits-all approach: All liquidity providers receive the same fee structure regardless of their risk appetite
+* Capital inefficiency: Most of the liquidity sits idle in price ranges that are never used
+* Limited customization: Liquidity providers cannot adjust their exposure based on their market outlook
+* One-size-fits-all approach: All liquidity providers receive the same fee structure regardless of their risk appetite
 
 ## The Synthra Solution: Concentrated Liquidity
 
@@ -18,25 +18,25 @@ Synthra introduces concentrated liquidity, allowing liquidity providers to alloc
 
 By concentrating liquidity in active price ranges, Synthra can achieve the same or better depth at the current price with significantly less capital. This means:
 
-- Higher returns for liquidity providers from the same amount of capital
-- Better prices for traders due to deeper liquidity at relevant price points
-- Up to 4000x capital efficiency compared to traditional AMMs in certain scenarios
+* Higher returns for liquidity providers from the same amount of capital
+* Better prices for traders due to deeper liquidity at relevant price points
+* Up to 4000x capital efficiency compared to traditional AMMs in certain scenarios
 
 ### Customizable Price Ranges
 
 Liquidity providers can create positions with custom price ranges, allowing them to:
 
-- Express their market view by placing liquidity where they expect prices to move
-- Manage risk by limiting exposure to extreme price movements
-- Create strategies tailored to different market conditions
+* Express their market view by placing liquidity where they expect prices to move
+* Manage risk by limiting exposure to extreme price movements
+* Create strategies tailored to different market conditions
 
 ### Non-Fungible Positions
 
 Unlike traditional AMMs where liquidity positions are fungible tokens, Synthra positions are represented as unique NFTs (Non-Fungible Tokens). This allows for:
 
-- Individual management of each position
-- Different strategies within the same pool
-- Precise tracking of fees earned by each position
+* Individual management of each position
+* Different strategies within the same pool
+* Precise tracking of fees earned by each position
 
 ## How Concentrated Liquidity Works
 
@@ -81,52 +81,55 @@ Liquidity providers can:
 
 ### For Liquidity Providers
 
-- Higher capital efficiency and potential returns
-- Customizable risk exposure
-- Ability to implement various strategies based on market outlook
+* Higher capital efficiency and potential returns
+* Customizable risk exposure
+* Ability to implement various strategies based on market outlook
 
 ### For Traders
 
-- Better prices due to concentrated liquidity at relevant price points
-- Reduced slippage for most trades
-- More efficient price discovery
+* Better prices due to concentrated liquidity at relevant price points
+* Reduced slippage for most trades
+* More efficient price discovery
 
 ### For the Ecosystem
 
-- More sustainable liquidity that can adapt to market conditions
-- Improved market efficiency
-- Greater flexibility for all participants
+* More sustainable liquidity that can adapt to market conditions
+* Improved market efficiency
+* Greater flexibility for all participants
 
 ## Strategies for Concentrated Liquidity
 
 ### Wide Range Strategy
 
 Providing liquidity across a wide price range mimics traditional AMM behavior but with the ability to set boundaries. This strategy:
-- Maximizes fee collection opportunities
-- Minimizes active management requirements
-- Works well for pairs with low volatility
+
+* Maximizes fee collection opportunities
+* Minimizes active management requirements
+* Works well for pairs with low volatility
 
 ### Narrow Range Strategy
 
 Concentrating liquidity in a tight price range around the current market price:
-- Maximizes capital efficiency
-- Potentially generates higher returns
-- Requires more active management to adjust ranges as prices move
+
+* Maximizes capital efficiency
+* Potentially generates higher returns
+* Requires more active management to adjust ranges as prices move
 
 ### Directional Strategy
 
 Setting asymmetric ranges based on expected price movement:
-- Allows expression of market views
-- Can reduce impermanent loss if price moves in the expected direction
-- Higher risk if price moves against expectations
+
+* Allows expression of market views
+* Can reduce impermanent loss if price moves in the expected direction
+* Higher risk if price moves against expectations
 
 ## Impermanent Loss Considerations
 
 Concentrated liquidity positions are still subject to impermanent loss, but with some important differences:
 
-- Impermanent loss can be more pronounced within the selected range
-- Positions become 100% composed of one asset when price moves outside the range
-- Strategic range setting can potentially mitigate impermanent loss
+* Impermanent loss can be more pronounced within the selected range
+* Positions become 100% composed of one asset when price moves outside the range
+* Strategic range setting can potentially mitigate impermanent loss
 
 ## Getting Started with Concentrated Liquidity
 
@@ -138,4 +141,4 @@ To start providing concentrated liquidity on Synthra:
 4. Set your price range
 5. Deposit your tokens
 
-For a step-by-step guide, see the [Add Liquidity](../interface/add-liquidity.md) section.
+For a step-by-step guide, see the [Add Liquidity](../../interface/interface/add-liquidity.md) section.
