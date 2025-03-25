@@ -23,7 +23,7 @@ Synthra is currently available on \[list of supported networks]. We're continuou
 
 ### Is Synthra safe to use?
 
-Synthra's smart contracts have undergone rigorous security audits by leading firms in the blockchain security space. You can review our audit reports in the [Security](protocol/protocol/security.md) section. However, as with any DeFi protocol, users should exercise caution and only invest what they can afford to lose.
+Synthra's smart contracts have undergone rigorous security audits by leading firms in the blockchain security space. You can review our audit reports in the [Security](protocol/security.md) section. However, as with any DeFi protocol, users should exercise caution and only invest what they can afford to lose.
 
 ## Trading on Synthra
 
@@ -65,7 +65,7 @@ To provide liquidity, navigate to the Pool tab, click "New Position," select a t
 
 ### What is concentrated liquidity?
 
-Concentrated liquidity allows you to provide liquidity within a specific price range, rather than across the entire price spectrum. This means your capital is used more efficiently, potentially generating higher returns. Learn more in our [Concentrated Liquidity](core-concepts/core-concepts/concentrated-liquidity.md) guide.
+Concentrated liquidity allows you to provide liquidity within a specific price range, rather than across the entire price spectrum. This means your capital is used more efficiently, potentially generating higher returns. Learn more in our [Concentrated Liquidity](core-concepts/concentrated-liquidity.md) guide.
 
 ### How do I earn fees as a liquidity provider?
 
@@ -91,7 +91,7 @@ Treasury funds are primarily used for token buybacks, which help support the val
 
 ### How does the buyback mechanism work?
 
-The buyback mechanism uses accumulated treasury funds to purchase Synthra tokens from the open market at regular intervals or based on specific triggers. These purchased tokens may be burned (permanently removed from circulation) or used for other ecosystem incentives. For more details, see our [Buyback Mechanism](synthra-features/features/buyback-mechanism.md) page.
+The buyback mechanism uses accumulated treasury funds to purchase Synthra tokens from the open market at regular intervals or based on specific triggers. These purchased tokens may be burned (permanently removed from circulation) or used for other ecosystem incentives. For more details, see our [Buyback Mechanism](features/buyback-mechanism.md) page.
 
 ## Technical Questions
 
@@ -101,7 +101,7 @@ Yes, Synthra's core smart contracts are open source and available on GitHub. Thi
 
 ### How can developers integrate with Synthra?
 
-Developers can integrate with Synthra using our SDK and API. Check out our [Developer Resources](developer-resources/developers/) section for comprehensive guides and documentation.
+Developers can integrate with Synthra using our SDK and API. Check out our [Developer Resources](developers/) section for comprehensive guides and documentation.
 
 ### Where can I report bugs or suggest features?
 

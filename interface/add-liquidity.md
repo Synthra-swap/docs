@@ -21,7 +21,7 @@ Adding liquidity to Synthra allows you to earn fees from trades that occur throu
 2. Choose the second token from the dropdown menu
 3. If you don't see your desired token, you can paste the token contract address in the search bar
 
-![Token Pair Selection](../../assets/images/add-liquidity-token-selection.png)
+![Token Pair Selection](../assets/images/add-liquidity-token-selection.png)
 
 ### 3. Selecting Fee Tier
 
@@ -41,7 +41,7 @@ Higher fee tiers generally generate more fees per trade but may see less trading
 3. Set your maximum price by dragging the right slider or entering a value
 4. The price range determines when your liquidity is active and earning fees
 
-![Price Range Selection](../../assets/images/add-liquidity-price-range.png)
+![Price Range Selection](../assets/images/add-liquidity-price-range.png)
 
 #### Price Range Strategies
 
@@ -186,4 +186,4 @@ After adding liquidity, you might want to:
 
 * [Manage your positions](pool.md) to monitor performance
 * [Remove liquidity](remove-liquidity.md) when needed
-* Learn more about [concentrated liquidity](../../core-concepts/core-concepts/concentrated-liquidity.md) to optimize your strategy
+* Learn more about [concentrated liquidity](../core-concepts/concentrated-liquidity.md) to optimize your strategy

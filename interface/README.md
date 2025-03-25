@@ -33,4 +33,4 @@ The application works seamlessly across devices, from desktop to mobile, providi
 
 If you're new to Synthra, we recommend starting with the [Swap](swap.md) guide, which covers the most basic operation: exchanging one token for another. From there, you can explore more advanced features like providing liquidity.
 
-For a conceptual understanding of how Synthra works under the hood, check out the [Core Concepts](../../core-concepts/core-concepts/) section.
+For a conceptual understanding of how Synthra works under the hood, check out the [Core Concepts](../core-concepts/) section.

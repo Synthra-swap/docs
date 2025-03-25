@@ -16,8 +16,9 @@ When a user performs a swap on Synthra, the total fee they pay consists of:
 2. The 0.1% treasury fee
 
 For example, if a user swaps tokens in a 0.3% pool, they'll pay a total fee of 0.4%, with:
-- 0.3% going to liquidity providers
-- 0.1% going to the treasury
+
+* 0.3% going to liquidity providers
+* 0.1% going to the treasury
 
 ### Technical Implementation
 
@@ -82,27 +83,31 @@ Treasury funds can also support:
 ### Comparison with Inflation-Based Models
 
 Many protocols rely on token inflation to fund development, which:
-- Dilutes existing token holders
-- Creates selling pressure as newly minted tokens enter the market
-- May not be sustainable in bear markets
+
+* Dilutes existing token holders
+* Creates selling pressure as newly minted tokens enter the market
+* May not be sustainable in bear markets
 
 In contrast, Synthra's treasury fee:
-- Does not dilute token holders
-- Creates buying pressure through buybacks
-- Scales with actual protocol usage
-- Remains effective regardless of market conditions
+
+* Does not dilute token holders
+* Creates buying pressure through buybacks
+* Scales with actual protocol usage
+* Remains effective regardless of market conditions
 
 ### Comparison with One-Time Funding
 
 Protocols funded by one-time token sales or venture capital often face:
-- Limited runway during extended market downturns
-- Misaligned incentives between early investors and users
-- Pressure to monetize in ways that may not benefit users
+
+* Limited runway during extended market downturns
+* Misaligned incentives between early investors and users
+* Pressure to monetize in ways that may not benefit users
 
 Synthra's treasury fee provides:
-- Ongoing, sustainable funding
-- Direct alignment between protocol success and treasury growth
-- Long-term planning capability regardless of market conditions
+
+* Ongoing, sustainable funding
+* Direct alignment between protocol success and treasury growth
+* Long-term planning capability regardless of market conditions
 
 ## Governance Control
 

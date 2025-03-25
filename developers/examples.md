@@ -1,4 +1,4 @@
-# Code Examples
+# Examples
 
 This page provides practical code examples for common Synthra integration scenarios, helping developers quickly implement key functionality.
 
@@ -6,9 +6,9 @@ This page provides practical code examples for common Synthra integration scenar
 
 These examples cover a range of use cases from basic swaps to complex liquidity management. Each example includes:
 
-- Complete, working code snippets
-- Explanations of key concepts
-- Best practices and optimization tips
+* Complete, working code snippets
+* Explanations of key concepts
+* Best practices and optimization tips
 
 ## Basic Swap Example
 

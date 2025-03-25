@@ -35,4 +35,4 @@ The unique treasury fee mechanism ensures long-term sustainability by creating a
 
 ## Technical Resources
 
-For developers looking to build on or integrate with Synthra, we recommend exploring the [Developer Resources](../../developer-resources/developers/) section after reviewing the protocol documentation.
+For developers looking to build on or integrate with Synthra, we recommend exploring the [Developer Resources](../developers/) section after reviewing the protocol documentation.

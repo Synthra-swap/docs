@@ -45,30 +45,26 @@ The initial distribution of SYNTH tokens was designed to ensure broad participat
 
 The total supply of SYNTH is 1 billion tokens, distributed as follows:
 
-- **Community Treasury**: 45% (450,000,000 SYNTH)
-  - Controlled by governance
-  - Used for ecosystem incentives, development, and growth
-  - Vested over 4 years
-
-- **Team and Advisors**: 20% (200,000,000 SYNTH)
-  - Allocated to founding team and key advisors
-  - 1-year cliff, 4-year vesting
-  - Aligns long-term incentives
-
-- **Investors**: 15% (150,000,000 SYNTH)
-  - Allocated to early backers and investors
-  - Various vesting schedules based on investment round
-  - Strategic partners for long-term growth
-
-- **Liquidity Mining**: 15% (150,000,000 SYNTH)
-  - Incentivizes liquidity provision
-  - Distributed over 4 years with decreasing emission
-  - Focused on strategic trading pairs
-
-- **Initial Liquidity**: 5% (50,000,000 SYNTH)
-  - Used to bootstrap DEX liquidity
-  - Ensures trading availability at launch
-  - Paired with other assets in key pools
+* **Community Treasury**: 45% (450,000,000 SYNTH)
+  * Controlled by governance
+  * Used for ecosystem incentives, development, and growth
+  * Vested over 4 years
+* **Team and Advisors**: 20% (200,000,000 SYNTH)
+  * Allocated to founding team and key advisors
+  * 1-year cliff, 4-year vesting
+  * Aligns long-term incentives
+* **Investors**: 15% (150,000,000 SYNTH)
+  * Allocated to early backers and investors
+  * Various vesting schedules based on investment round
+  * Strategic partners for long-term growth
+* **Liquidity Mining**: 15% (150,000,000 SYNTH)
+  * Incentivizes liquidity provision
+  * Distributed over 4 years with decreasing emission
+  * Focused on strategic trading pairs
+* **Initial Liquidity**: 5% (50,000,000 SYNTH)
+  * Used to bootstrap DEX liquidity
+  * Ensures trading availability at launch
+  * Paired with other assets in key pools
 
 ### Emission Schedule
 

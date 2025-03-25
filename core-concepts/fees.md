@@ -15,16 +15,16 @@ Synthra implements a dual fee structure:
 
 Synthra offers four fee tiers for liquidity pools:
 
-- **0.01%**: Designed for stable pairs (e.g., stablecoin to stablecoin)
-- **0.05%**: For pairs with low volatility
-- **0.3%**: For most standard pairs
-- **1%**: For exotic pairs with high volatility
+* **0.01%**: Designed for stable pairs (e.g., stablecoin to stablecoin)
+* **0.05%**: For pairs with low volatility
+* **0.3%**: For most standard pairs
+* **1%**: For exotic pairs with high volatility
 
 Each fee tier for the same token pair creates a separate pool with its own liquidity and price curve. This allows:
 
-- Liquidity providers to choose the risk-reward profile that best suits their strategy
-- Traders to select the pool that offers the best price considering fees
-- Market forces to determine the optimal fee for each token pair
+* Liquidity providers to choose the risk-reward profile that best suits their strategy
+* Traders to select the pool that offers the best price considering fees
+* Market forces to determine the optimal fee for each token pair
 
 ### Fee Collection
 
@@ -53,9 +53,9 @@ Fees are collected in both tokens of the pool, proportional to the swaps that ha
 
 In addition to the pool fees, Synthra implements a fixed 0.1% treasury fee on all swaps. This fee:
 
-- Is added to the base fee tier (e.g., a 0.3% pool effectively charges 0.4% total)
-- Is directed to the protocol treasury
-- Funds the buyback mechanism and protocol development
+* Is added to the base fee tier (e.g., a 0.3% pool effectively charges 0.4% total)
+* Is directed to the protocol treasury
+* Funds the buyback mechanism and protocol development
 
 The treasury fee is a unique feature of Synthra that creates a sustainable funding model for the protocol. For more details, see the [Treasury Fee](treasury-fee.md) page.
 
@@ -68,10 +68,11 @@ Total Fee = Pool Fee + Treasury Fee
 ```
 
 For example:
-- Swap in a 0.01% pool: 0.01% + 0.1% = 0.11% total fee
-- Swap in a 0.05% pool: 0.05% + 0.1% = 0.15% total fee
-- Swap in a 0.3% pool: 0.3% + 0.1% = 0.4% total fee
-- Swap in a 1% pool: 1% + 0.1% = 1.1% total fee
+
+* Swap in a 0.01% pool: 0.01% + 0.1% = 0.11% total fee
+* Swap in a 0.05% pool: 0.05% + 0.1% = 0.15% total fee
+* Swap in a 0.3% pool: 0.3% + 0.1% = 0.4% total fee
+* Swap in a 1% pool: 1% + 0.1% = 1.1% total fee
 
 ## Fee Economics
 
@@ -96,9 +97,9 @@ When trading on Synthra, consider:
 
 Compared to traditional exchanges:
 
-- **Centralized Exchanges**: Typically charge 0.1% to 0.5% per trade
-- **Traditional AMMs**: Usually charge a fixed fee (e.g., 0.3%) for all pairs
-- **Synthra**: Offers variable fees based on pair characteristics plus the treasury fee
+* **Centralized Exchanges**: Typically charge 0.1% to 0.5% per trade
+* **Traditional AMMs**: Usually charge a fixed fee (e.g., 0.3%) for all pairs
+* **Synthra**: Offers variable fees based on pair characteristics plus the treasury fee
 
 The variable fee structure of Synthra allows the market to find the optimal balance between liquidity provider incentives and trader costs for each specific token pair.
 
@@ -106,9 +107,9 @@ The variable fee structure of Synthra allows the market to find the optimal bala
 
 The Synthra interface provides visualizations to help understand fees:
 
-- Fee breakdown during swap preview
-- Historical fee earnings for liquidity positions
-- Projected fee earnings based on volume and position size
+* Fee breakdown during swap preview
+* Historical fee earnings for liquidity positions
+* Projected fee earnings based on volume and position size
 
 ## Advanced Fee Concepts
 

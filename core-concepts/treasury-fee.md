@@ -89,7 +89,7 @@ Tokens acquired through buybacks may be:
 * Held in the treasury for future use
 * Distributed to stakers as additional rewards
 
-For more details on the buyback process, see the [Buyback Mechanism](../../synthra-features/features/buyback-mechanism.md) page.
+For more details on the buyback process, see the [Buyback Mechanism](../features/buyback-mechanism.md) page.
 
 ## Treasury Fee vs. Other Models
 

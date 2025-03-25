@@ -216,8 +216,8 @@ For more details on security measures, see the [Security](security.md) and [Audi
 Developers looking to integrate with Synthra should:
 
 1. Use the periphery contracts (Router, NonfungiblePositionManager) rather than interacting directly with core contracts
-2. Refer to the [SDK](../../developer-resources/developers/sdk.md) documentation for simplified integration
-3. Review the [Examples](../../developer-resources/developers/examples.md) for common integration patterns
+2. Refer to the [SDK](../developers/sdk.md) documentation for simplified integration
+3. Review the [Examples](../developers/examples.md) for common integration patterns
 
 ## Contract Upgradability
 

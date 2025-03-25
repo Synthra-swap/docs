@@ -20,7 +20,7 @@ Swapping tokens is the most basic operation in Synthra. The swap interface allow
 2. Click on the bottom dropdown to select the token you want to receive (output token)
 3. If you don't see your desired token, you can paste the token contract address in the search bar
 
-![Token Selection Interface](../../assets/images/swap-token-selection.png)
+![Token Selection Interface](../assets/images/swap-token-selection.png)
 
 ### 3. Entering Amount
 
@@ -155,4 +155,4 @@ After mastering swaps, you might want to explore:
 
 * [Providing Liquidity](add-liquidity.md) to earn fees
 * [Pool Analytics](pool.md) to analyze liquidity and trading activity
-* [Treasury Fee Mechanism](../../synthra-features/features/treasury-fee.md) to learn more about how the 0.1% treasury fee is used
+* [Treasury Fee Mechanism](../features/treasury-fee.md) to learn more about how the 0.1% treasury fee is used

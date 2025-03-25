@@ -22,7 +22,7 @@ The Pool overview page displays:
 2. **Create Position**: Button to add new liquidity
 3. **Pool Search**: Tool to find specific pools
 
-![Pool Overview Interface](../../assets/images/pool-overview.png)
+![Pool Overview Interface](../assets/images/pool-overview.png)
 
 ### 3. Exploring Specific Pools
 
@@ -191,4 +191,4 @@ After exploring pools, you might want to:
 
 * [Add Liquidity](add-liquidity.md) to start earning fees
 * [Remove Liquidity](remove-liquidity.md) from existing positions
-* Learn more about [Concentrated Liquidity](../../core-concepts/core-concepts/concentrated-liquidity.md) to optimize your positions
+* Learn more about [Concentrated Liquidity](../core-concepts/concentrated-liquidity.md) to optimize your positions

@@ -6,10 +6,10 @@ Liquidity pools are the foundation of Synthra's decentralized exchange functiona
 
 A liquidity pool in Synthra is a collection of tokens locked in a smart contract that facilitates trading between the two tokens. Each pool:
 
-- Contains exactly two tokens
-- Operates according to a specific fee tier
-- Aggregates liquidity from multiple providers
-- Enables price discovery through trading activity
+* Contains exactly two tokens
+* Operates according to a specific fee tier
+* Aggregates liquidity from multiple providers
+* Enables price discovery through trading activity
 
 ## Pool Creation
 
@@ -25,10 +25,10 @@ Once created, other liquidity providers can add liquidity to the pool, and trade
 
 Synthra offers multiple fee tiers to accommodate different token pairs and trading characteristics:
 
-- **0.01%**: Designed for stable pairs (e.g., stablecoin to stablecoin)
-- **0.05%**: For pairs with low volatility
-- **0.3%**: For most standard pairs
-- **1%**: For exotic pairs with high volatility
+* **0.01%**: Designed for stable pairs (e.g., stablecoin to stablecoin)
+* **0.05%**: For pairs with low volatility
+* **0.3%**: For most standard pairs
+* **1%**: For exotic pairs with high volatility
 
 Each fee tier for the same token pair creates a separate pool with its own liquidity and price. This allows liquidity providers to choose the risk-reward profile that best suits their strategy.
 
@@ -38,8 +38,8 @@ Each fee tier for the same token pair creates a separate pool with its own liqui
 
 The price range in a Synthra pool is divided into "ticks," which represent discrete price points. The spacing between ticks varies by fee tier:
 
-- Lower fee tiers have tighter tick spacing (more granular price points)
-- Higher fee tiers have wider tick spacing (fewer price points)
+* Lower fee tiers have tighter tick spacing (more granular price points)
+* Higher fee tiers have wider tick spacing (fewer price points)
 
 This design balances gas efficiency with price precision based on the expected volatility of the pairs in each fee tier.
 
@@ -53,19 +53,19 @@ The formula for calculating the amount of tokens received in a swap is based on 
 
 Each Synthra pool includes a built-in price oracle that tracks the time-weighted average price (TWAP) of the assets. This oracle:
 
-- Provides reliable price data for external applications
-- Is resistant to manipulation through time-weighting
-- Can be queried for various time periods (e.g., 30-minute TWAP, 24-hour TWAP)
+* Provides reliable price data for external applications
+* Is resistant to manipulation through time-weighting
+* Can be queried for various time periods (e.g., 30-minute TWAP, 24-hour TWAP)
 
 ## Pool Metrics
 
 When evaluating a pool, several key metrics are important:
 
-- **Total Value Locked (TVL)**: The total value of assets in the pool
-- **Volume**: The trading volume over a specific period
-- **Fees Generated**: The total fees earned by liquidity providers
-- **Liquidity Depth**: The amount of liquidity available at or near the current price
-- **Price Range Coverage**: How well the liquidity is distributed across different price ranges
+* **Total Value Locked (TVL)**: The total value of assets in the pool
+* **Volume**: The trading volume over a specific period
+* **Fees Generated**: The total fees earned by liquidity providers
+* **Liquidity Depth**: The amount of liquidity available at or near the current price
+* **Price Range Coverage**: How well the liquidity is distributed across different price ranges
 
 ## Interacting with Pools
 
@@ -89,17 +89,17 @@ Traders interact with pools by:
 
 Providing liquidity to Synthra pools involves several risks:
 
-- **Impermanent Loss**: The potential loss compared to holding when prices change
-- **Smart Contract Risk**: The risk of bugs or vulnerabilities in the protocol
-- **Market Risk**: General exposure to the assets in the pool
+* **Impermanent Loss**: The potential loss compared to holding when prices change
+* **Smart Contract Risk**: The risk of bugs or vulnerabilities in the protocol
+* **Market Risk**: General exposure to the assets in the pool
 
 ## Treasury Fee
 
 In addition to the standard fee tiers that go to liquidity providers, Synthra implements a 0.1% treasury fee on all swaps. This fee:
 
-- Is added to the base fee tier (e.g., a 0.3% pool effectively charges 0.4%)
-- Is directed to the protocol treasury
-- Funds the buyback mechanism and protocol development
+* Is added to the base fee tier (e.g., a 0.3% pool effectively charges 0.4%)
+* Is directed to the protocol treasury
+* Funds the buyback mechanism and protocol development
 
 For more details on the treasury fee, see the [Treasury Fee](treasury-fee.md) page.
 
@@ -107,10 +107,10 @@ For more details on the treasury fee, see the [Treasury Fee](treasury-fee.md) pa
 
 The Synthra interface provides visualizations of pools, showing:
 
-- The current price
-- Liquidity distribution across price ranges
-- Your positions relative to the current price
-- Historical price and volume data
+* The current price
+* Liquidity distribution across price ranges
+* Your positions relative to the current price
+* Historical price and volume data
 
 These visualizations help liquidity providers make informed decisions about where to place their liquidity.
 

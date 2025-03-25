@@ -25,7 +25,7 @@ Removing liquidity from Synthra allows you to withdraw your tokens from a pool w
    * Fees earned
    * Whether the position is in-range (active) or out-of-range (inactive)
 
-![Position Details](../../assets/images/remove-liquidity-position.png)
+![Position Details](../assets/images/remove-liquidity-position.png)
 
 ### 3. Choosing Removal Amount
 
@@ -38,7 +38,7 @@ Removing liquidity from Synthra allows you to withdraw your tokens from a pool w
    * Or enter a custom percentage
 3. The interface will display the estimated amounts of each token you'll receive
 
-![Remove Liquidity Interface](../../assets/images/remove-liquidity-slider.png)
+![Remove Liquidity Interface](../assets/images/remove-liquidity-slider.png)
 
 ### 4. Collecting Fees
 
@@ -171,5 +171,5 @@ After removing liquidity, you might want to:
 
 * [Add liquidity](add-liquidity.md) in a different price range
 * [Swap tokens](swap.md) to rebalance your portfolio
-* Learn more about [concentrated liquidity](../../core-concepts/core-concepts/concentrated-liquidity.md) to optimize your future positions
-* Explore the [treasury fee mechanism](../../synthra-features/features/treasury-fee.md) to understand how the 0.1% fee contributes to protocol sustainability
+* Learn more about [concentrated liquidity](../core-concepts/concentrated-liquidity.md) to optimize your future positions
+* Explore the [treasury fee mechanism](../features/treasury-fee.md) to understand how the 0.1% fee contributes to protocol sustainability

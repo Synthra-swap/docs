@@ -18,44 +18,44 @@ Synthra's approach to security is based on several key principles:
 
 Synthra's smart contracts implement industry best practices:
 
-- Comprehensive test coverage (>95%)
-- Static analysis with tools like Slither and Mythril
-- Gas optimization without compromising security
-- Detailed code documentation
-- Consistent style and naming conventions
+* Comprehensive test coverage (>95%)
+* Static analysis with tools like Slither and Mythril
+* Gas optimization without compromising security
+* Detailed code documentation
+* Consistent style and naming conventions
 
 ### Access Controls
 
 The protocol implements strict access controls:
 
-- Role-based permissions for administrative functions
-- Time-locked governance actions
-- Multi-signature requirements for critical operations
-- Gradual parameter change limits
+* Role-based permissions for administrative functions
+* Time-locked governance actions
+* Multi-signature requirements for critical operations
+* Gradual parameter change limits
 
 ### Reentrancy Protection
 
 To prevent reentrancy attacks:
 
-- All state changes occur before external calls
-- Reentrancy guards on functions that could be vulnerable
-- Checks-Effects-Interactions pattern throughout the codebase
+* All state changes occur before external calls
+* Reentrancy guards on functions that could be vulnerable
+* Checks-Effects-Interactions pattern throughout the codebase
 
 ### Integer Handling
 
 To prevent overflow/underflow vulnerabilities:
 
-- SafeMath libraries for arithmetic operations
-- Explicit bounds checking
-- Careful ordering of operations to minimize rounding errors
+* SafeMath libraries for arithmetic operations
+* Explicit bounds checking
+* Careful ordering of operations to minimize rounding errors
 
 ### Emergency Controls
 
 In case of critical vulnerabilities:
 
-- Emergency pause functionality for key contracts
-- Circuit breakers for unusual activity
-- Governance-controlled recovery mechanisms
+* Emergency pause functionality for key contracts
+* Circuit breakers for unusual activity
+* Governance-controlled recovery mechanisms
 
 ## Protocol Security Features
 
@@ -63,25 +63,25 @@ In case of critical vulnerabilities:
 
 The time-weighted average price (TWAP) oracle:
 
-- Resistant to manipulation through time-weighting
-- Requires significant capital to manipulate
-- Multiple observation points for reliability
+* Resistant to manipulation through time-weighting
+* Requires significant capital to manipulate
+* Multiple observation points for reliability
 
 ### Slippage Protection
 
 To protect users from unexpected price movements:
 
-- Configurable slippage tolerance
-- Minimum output amount enforcement
-- Transaction deadline parameters
+* Configurable slippage tolerance
+* Minimum output amount enforcement
+* Transaction deadline parameters
 
 ### Fee Mechanism Security
 
 The treasury fee collection system:
 
-- Separate from pool fee collection for isolation of concerns
-- Multi-signature control of treasury funds
-- Transparent fee calculation and collection
+* Separate from pool fee collection for isolation of concerns
+* Multi-signature control of treasury funds
+* Transparent fee calculation and collection
 
 ## Operational Security
 
@@ -98,19 +98,19 @@ Contract deployment follows a rigorous process:
 
 Continuous monitoring systems:
 
-- Real-time anomaly detection
-- Volume and liquidity monitoring
-- Price deviation alerts
-- Gas price monitoring
+* Real-time anomaly detection
+* Volume and liquidity monitoring
+* Price deviation alerts
+* Gas price monitoring
 
 ### Incident Response
 
 In case of security incidents:
 
-- Dedicated security response team
-- Pre-established communication channels
-- Escalation procedures
-- Post-incident analysis and remediation
+* Dedicated security response team
+* Pre-established communication channels
+* Escalation procedures
+* Post-incident analysis and remediation
 
 ## External Security Measures
 
@@ -118,10 +118,10 @@ In case of security incidents:
 
 Synthra undergoes regular security audits:
 
-- Multiple independent audit firms
-- Specialized audits for critical components
-- Public disclosure of audit reports
-- Comprehensive addressing of all findings
+* Multiple independent audit firms
+* Specialized audits for critical components
+* Public disclosure of audit reports
+* Comprehensive addressing of all findings
 
 For details on specific audits, see the [Audits](audits.md) page.
 
@@ -129,19 +129,19 @@ For details on specific audits, see the [Audits](audits.md) page.
 
 Synthra maintains an active bug bounty program:
 
-- Competitive rewards based on severity
-- Safe harbor for responsible disclosure
-- Public acknowledgment of contributors
-- Transparent resolution process
+* Competitive rewards based on severity
+* Safe harbor for responsible disclosure
+* Public acknowledgment of contributors
+* Transparent resolution process
 
 ### Third-Party Integrations
 
 When integrating with other protocols:
 
-- Thorough security assessment of integration partners
-- Limited scope of permissions
-- Gradual increase in exposure
-- Regular review of integrated protocols
+* Thorough security assessment of integration partners
+* Limited scope of permissions
+* Gradual increase in exposure
+* Regular review of integrated protocols
 
 ## User Security Best Practices
 
@@ -156,25 +156,25 @@ We recommend users follow these security practices:
 
 ## Security Resources
 
-- [Bug Bounty Program](https://bounty.synthra.io)
-- [Security Disclosure Policy](https://docs.synthra.io/security-policy)
-- [Audit Reports](audits.md)
-- [Emergency Contact](mailto:security@synthra.io)
+* [Bug Bounty Program](https://bounty.synthra.io)
+* [Security Disclosure Policy](https://docs.synthra.io/security-policy)
+* [Audit Reports](audits.md)
+* [Emergency Contact](mailto:security@synthra.io)
 
 ## Future Security Enhancements
 
 Synthra is continuously improving security measures:
 
-- Formal verification of additional components
-- Enhanced on-chain monitoring
-- Advanced anomaly detection
-- Cross-chain security measures
+* Formal verification of additional components
+* Enhanced on-chain monitoring
+* Advanced anomaly detection
+* Cross-chain security measures
 
 ## Security Governance
 
 Security-related governance proposals undergo additional scrutiny:
 
-- Extended discussion periods
-- Technical committee review
-- Higher quorum requirements
-- Mandatory timelock periods
+* Extended discussion periods
+* Technical committee review
+* Higher quorum requirements
+* Mandatory timelock periods

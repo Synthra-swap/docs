@@ -27,7 +27,7 @@ New to Synthra? Check out our [Getting Started](getting-started.md) guide to lea
 
 ## For Developers
 
-If you're a developer looking to integrate with Synthra or build on top of our protocol, visit our [Developer Resources](developer-resources/developers/) section for comprehensive guides, SDK documentation, and code examples.
+If you're a developer looking to integrate with Synthra or build on top of our protocol, visit our [Developer Resources](developers/) section for comprehensive guides, SDK documentation, and code examples.
 
 ## Community & Support
 

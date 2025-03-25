@@ -1,31 +1,34 @@
-# Synthra Features
+# Synthra features
 
 This section highlights the unique features and innovations that set Synthra apart from other decentralized exchanges. These distinctive elements enhance the protocol's sustainability, user experience, and long-term value proposition.
 
 ## What You'll Learn
 
-- **Treasury Fee Mechanism**: How Synthra's 0.1% treasury fee works and benefits the ecosystem
-- **Buyback Mechanism**: How treasury funds are used for strategic token buybacks
-- **Tokenomics**: The economic model behind Synthra's native token
+* **Treasury Fee Mechanism**: How Synthra's 0.1% treasury fee works and benefits the ecosystem
+* **Buyback Mechanism**: How treasury funds are used for strategic token buybacks
+* **Tokenomics**: The economic model behind Synthra's native token
 
 ## Synthra's Value Proposition
 
 Synthra combines cutting-edge decentralized exchange technology with sustainable tokenomics to create a protocol that benefits all stakeholders:
 
 ### For Traders
-- Efficient price execution through concentrated liquidity
-- Multiple fee tiers optimized for different trading pairs
-- Transparent fee structure with clear allocation
+
+* Efficient price execution through concentrated liquidity
+* Multiple fee tiers optimized for different trading pairs
+* Transparent fee structure with clear allocation
 
 ### For Liquidity Providers
-- Enhanced capital efficiency through concentrated positions
-- Flexible fee earning strategies
-- Customizable risk exposure
+
+* Enhanced capital efficiency through concentrated positions
+* Flexible fee earning strategies
+* Customizable risk exposure
 
 ### For Token Holders
-- Value accrual through the buyback mechanism
-- Governance rights over protocol parameters
-- Sustainable economic model for long-term growth
+
+* Value accrual through the buyback mechanism
+* Governance rights over protocol parameters
+* Sustainable economic model for long-term growth
 
 ## Key Innovations
 

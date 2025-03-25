@@ -9,9 +9,9 @@ When you perform a swap on Synthra, you're trading with a liquidity pool rather 
 1. You specify the input token and amount you want to swap
 2. You specify the output token you want to receive
 3. Synthra calculates the expected output amount based on:
-   - The current price in the pool
-   - The amount of liquidity available at that price
-   - The applicable fees
+   * The current price in the pool
+   * The amount of liquidity available at that price
+   * The applicable fees
 4. You confirm the transaction
 5. The smart contract executes the swap, sending your input tokens to the pool and returning the output tokens to your wallet
 
@@ -25,8 +25,8 @@ The concentrated liquidity model of Synthra helps reduce price impact for most t
 
 Slippage is the difference between the expected price of a trade and the actual executed price. It occurs due to:
 
-- Other transactions being processed before yours
-- Price movements in the time between submitting and confirming your transaction
+* Other transactions being processed before yours
+* Price movements in the time between submitting and confirming your transaction
 
 Synthra allows you to set a slippage tolerance to protect against unfavorable price movements. If the price moves beyond your tolerance, the transaction will revert instead of executing at the worse price.
 
@@ -55,9 +55,9 @@ To protect users from excessive slippage, Synthra calculates a "minimum received
 
 Synthra implements several gas optimizations to make swapping as cost-effective as possible:
 
-- Efficient storage layout
-- Optimized tick crossing logic
-- Batch processing of multiple swaps when possible
+* Efficient storage layout
+* Optimized tick crossing logic
+* Batch processing of multiple swaps when possible
 
 ## Swap Execution
 
@@ -82,9 +82,9 @@ Every swap updates the time-weighted average price (TWAP) oracle, which provides
 
 Synthra includes several protections to ensure fair and secure trading:
 
-- **Maximum Input/Output Limits**: Prevents extremely large trades that could manipulate prices
-- **Deadline Parameter**: Allows users to specify a time limit for their transaction to be valid
-- **Reentrancy Protection**: Prevents malicious contracts from exploiting the swap function
+* **Maximum Input/Output Limits**: Prevents extremely large trades that could manipulate prices
+* **Deadline Parameter**: Allows users to specify a time limit for their transaction to be valid
+* **Reentrancy Protection**: Prevents malicious contracts from exploiting the swap function
 
 ## Advanced Swap Features
 
@@ -92,8 +92,8 @@ Synthra includes several protections to ensure fair and secure trading:
 
 Synthra supports two types of swaps:
 
-- **Exact Input**: You specify exactly how many tokens to send, and receive a variable amount based on the price
-- **Exact Output**: You specify exactly how many tokens to receive, and send a variable amount based on the price
+* **Exact Input**: You specify exactly how many tokens to send, and receive a variable amount based on the price
+* **Exact Output**: You specify exactly how many tokens to receive, and send a variable amount based on the price
 
 ### Flash Swaps
 
@@ -103,10 +103,10 @@ Advanced users can utilize flash swaps, which allow you to receive tokens before
 
 The Synthra interface provides analytics for your swaps, including:
 
-- Historical price data
-- Your trading history
-- Fee breakdown
-- Gas costs
+* Historical price data
+* Your trading history
+* Fee breakdown
+* Gas costs
 
 These analytics help you make informed decisions about when and how to trade.
 

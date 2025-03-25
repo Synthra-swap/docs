@@ -1,4 +1,4 @@
-# Integration Guide
+# Integration
 
 This guide explains how to integrate Synthra into your application, whether you're building a DApp, protocol, or other service that needs decentralized exchange functionality.
 
@@ -10,51 +10,51 @@ There are several ways to integrate with Synthra, depending on your needs:
 
 Directly interact with Synthra smart contracts for on-chain operations:
 
-- **Core Contracts**: For advanced integrations requiring custom logic
-- **Periphery Contracts**: For standard operations with safety checks
-- **Custom Contracts**: For specialized integrations with your protocol
+* **Core Contracts**: For advanced integrations requiring custom logic
+* **Periphery Contracts**: For standard operations with safety checks
+* **Custom Contracts**: For specialized integrations with your protocol
 
 ### 2. SDK Integration
 
 Use the Synthra SDK for simplified interaction:
 
-- **JavaScript/TypeScript SDK**: For web applications and Node.js services
-- **Python SDK**: For data analysis and backend services
-- **Java SDK**: For Android applications and JVM-based services
+* **JavaScript/TypeScript SDK**: For web applications and Node.js services
+* **Python SDK**: For data analysis and backend services
+* **Java SDK**: For Android applications and JVM-based services
 
 ### 3. Subgraph Integration
 
 Query the Synthra subgraph for historical data and analytics:
 
-- **GraphQL API**: For flexible data querying
-- **REST Endpoints**: For simplified data access
-- **WebSocket Subscriptions**: For real-time updates
+* **GraphQL API**: For flexible data querying
+* **REST Endpoints**: For simplified data access
+* **WebSocket Subscriptions**: For real-time updates
 
 ### 4. Frontend Integration
 
 Embed Synthra functionality in your user interface:
 
-- **Widget Integration**: Embed swap or pool widgets in your application
-- **API Integration**: Use our API to build custom interfaces
-- **iframe Integration**: Embed the full Synthra interface in your application
+* **Widget Integration**: Embed swap or pool widgets in your application
+* **API Integration**: Use our API to build custom interfaces
+* **iframe Integration**: Embed the full Synthra interface in your application
 
 ## Smart Contract Integration
 
 ### Prerequisites
 
-- Familiarity with Solidity and Ethereum development
-- Understanding of Synthra's core concepts
-- Development environment with Hardhat, Foundry, or Truffle
+* Familiarity with Solidity and Ethereum development
+* Understanding of Synthra's core concepts
+* Development environment with Hardhat, Foundry, or Truffle
 
 ### Key Contracts for Integration
 
-| Contract | Purpose | Common Use Cases |
-|----------|---------|------------------|
-| SynthraRouter | Routing trades, adding/removing liquidity | Swaps, liquidity management |
-| SynthraQuoter | Getting price quotes without execution | Price discovery, UI display |
-| SynthraNonfungiblePositionManager | Managing liquidity positions | Creating/modifying positions |
-| SynthraFactory | Finding pools, creating new pools | Protocol integrations |
-| SynthraPool | Direct pool interaction | Advanced custom logic |
+| Contract                          | Purpose                                   | Common Use Cases             |
+| --------------------------------- | ----------------------------------------- | ---------------------------- |
+| SynthraRouter                     | Routing trades, adding/removing liquidity | Swaps, liquidity management  |
+| SynthraQuoter                     | Getting price quotes without execution    | Price discovery, UI display  |
+| SynthraNonfungiblePositionManager | Managing liquidity positions              | Creating/modifying positions |
+| SynthraFactory                    | Finding pools, creating new pools         | Protocol integrations        |
+| SynthraPool                       | Direct pool interaction                   | Advanced custom logic        |
 
 ### Example: Swap Integration
 
@@ -239,17 +239,17 @@ async function createSwapRoute() {
 
 The SDK provides additional functionality for:
 
-- **Position Management**: Creating, modifying, and closing liquidity positions
-- **Price Calculation**: Computing prices, quotes, and price impact
-- **Pool Data**: Accessing pool statistics and liquidity distribution
-- **TWAP Oracles**: Retrieving time-weighted average prices
+* **Position Management**: Creating, modifying, and closing liquidity positions
+* **Price Calculation**: Computing prices, quotes, and price impact
+* **Pool Data**: Accessing pool statistics and liquidity distribution
+* **TWAP Oracles**: Retrieving time-weighted average prices
 
 ## Subgraph Integration
 
 ### Subgraph Endpoints
 
-- **Mainnet**: `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-mainnet`
-- **Testnet**: `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-goerli`
+* **Mainnet**: `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-mainnet`
+* **Testnet**: `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-goerli`
 
 ### Example Queries
 
@@ -318,11 +318,11 @@ Embed the Synthra swap widget in your application:
 
 Customize the widget with URL parameters:
 
-- `embed=true`: Enables embed mode
-- `theme=dark|light`: Sets the color theme
-- `inputCurrency=ETH`: Pre-selects the input currency
-- `outputCurrency=0x...`: Pre-selects the output currency
-- `exactAmount=1.0`: Pre-fills the input amount
+* `embed=true`: Enables embed mode
+* `theme=dark|light`: Sets the color theme
+* `inputCurrency=ETH`: Pre-selects the input currency
+* `outputCurrency=0x...`: Pre-selects the output currency
+* `exactAmount=1.0`: Pre-fills the input amount
 
 ### API Integration
 
@@ -380,9 +380,9 @@ When integrating with Synthra, be aware that all swaps incur a 0.1% treasury fee
 
 ## Support and Resources
 
-- **Documentation**: [docs.synthra.io](https://docs.synthra.io)
-- **GitHub**: [github.com/synthra-protocol](https://github.com/synthra-protocol)
-- **Discord**: [discord.synthra.io](https://discord.synthra.io) (Developer channel)
-- **Email**: [developers@synthra.io](mailto:developers@synthra.io)
+* **Documentation**: [docs.synthra.io](https://docs.synthra.io)
+* **GitHub**: [github.com/synthra-protocol](https://github.com/synthra-protocol)
+* **Discord**: [discord.synthra.io](https://discord.synthra.io) (Developer channel)
+* **Email**: [developers@synthra.io](mailto:developers@synthra.io)
 
 For bug reports and feature requests, please use our [GitHub Issues](https://github.com/synthra-protocol/issues) page.

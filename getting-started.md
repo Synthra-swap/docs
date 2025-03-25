@@ -85,8 +85,8 @@ To view and manage your liquidity positions:
 
 Now that you're familiar with the basics of Synthra, you might want to explore:
 
-* [Core Concepts](core-concepts/core-concepts/) to understand the protocol in depth
-* [Treasury Fee Mechanism](synthra-features/features/treasury-fee.md) to learn about Synthra's unique fee structure
-* [Buyback Mechanism](synthra-features/features/buyback-mechanism.md) to understand how treasury funds are utilized
+* [Core Concepts](core-concepts/) to understand the protocol in depth
+* [Treasury Fee Mechanism](features/treasury-fee.md) to learn about Synthra's unique fee structure
+* [Buyback Mechanism](features/buyback-mechanism.md) to understand how treasury funds are utilized
 
 If you have any questions, check out our [FAQ](faq.md) or join our community channels for support.

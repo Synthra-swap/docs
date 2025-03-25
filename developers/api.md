@@ -1,4 +1,4 @@
-# API Documentation
+# API
 
 This page provides comprehensive documentation for the Synthra API, which allows developers to access Synthra data and analytics programmatically.
 
@@ -17,13 +17,13 @@ The GraphQL API is powered by The Graph protocol and provides the most comprehen
 
 ### Endpoints
 
-| Network | Endpoint URL |
-|---------|-------------|
-| Ethereum Mainnet | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-mainnet` |
-| Arbitrum | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-arbitrum` |
-| Optimism | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-optimism` |
-| Polygon | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-polygon` |
-| Goerli (Testnet) | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-goerli` |
+| Network          | Endpoint URL                                                                |
+| ---------------- | --------------------------------------------------------------------------- |
+| Ethereum Mainnet | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-mainnet`  |
+| Arbitrum         | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-arbitrum` |
+| Optimism         | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-optimism` |
+| Polygon          | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-polygon`  |
+| Goerli (Testnet) | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-goerli`   |
 
 ### Authentication
 
@@ -31,8 +31,8 @@ The GraphQL API is currently open and does not require authentication.
 
 ### Rate Limits
 
-- **Public Access**: 25 requests per 5 seconds
-- **Authenticated Access**: 50 requests per 5 seconds (coming soon)
+* **Public Access**: 25 requests per 5 seconds
+* **Authenticated Access**: 50 requests per 5 seconds (coming soon)
 
 ### Example Queries
 
@@ -201,25 +201,25 @@ The complete GraphQL schema is available through introspection. You can explore 
 
 Key entities in the schema include:
 
-- **Factory**: Protocol factory information
-- **Bundle**: ETH price used for USD calculations
-- **Token**: Token information
-- **Pool**: Liquidity pool data
-- **Tick**: Tick-level data for pools
-- **Position**: Liquidity position information
-- **Transaction**: Transaction data
-- **Mint**: Liquidity addition events
-- **Burn**: Liquidity removal events
-- **Swap**: Swap events
-- **Collect**: Fee collection events
-- **Flash**: Flash loan events
-- **SynthraProtocol**: Protocol-wide metrics
-- **PoolDayData**: Daily pool metrics
-- **PoolHourData**: Hourly pool metrics
-- **TickHourData**: Hourly tick metrics
-- **TokenDayData**: Daily token metrics
-- **TokenHourData**: Hourly token metrics
-- **SynthraDayData**: Daily protocol metrics
+* **Factory**: Protocol factory information
+* **Bundle**: ETH price used for USD calculations
+* **Token**: Token information
+* **Pool**: Liquidity pool data
+* **Tick**: Tick-level data for pools
+* **Position**: Liquidity position information
+* **Transaction**: Transaction data
+* **Mint**: Liquidity addition events
+* **Burn**: Liquidity removal events
+* **Swap**: Swap events
+* **Collect**: Fee collection events
+* **Flash**: Flash loan events
+* **SynthraProtocol**: Protocol-wide metrics
+* **PoolDayData**: Daily pool metrics
+* **PoolHourData**: Hourly pool metrics
+* **TickHourData**: Hourly tick metrics
+* **TokenDayData**: Daily token metrics
+* **TokenHourData**: Hourly token metrics
+* **SynthraDayData**: Daily protocol metrics
 
 ### JavaScript/TypeScript Client
 
@@ -317,13 +317,15 @@ GET /pools
 ```
 
 Query Parameters:
-- `limit`: Maximum number of results (default: 10, max: 100)
-- `offset`: Pagination offset (default: 0)
-- `orderBy`: Field to order by (default: "volumeUSD")
-- `orderDirection`: "asc" or "desc" (default: "desc")
-- `minVolume`: Minimum volume in USD
+
+* `limit`: Maximum number of results (default: 10, max: 100)
+* `offset`: Pagination offset (default: 0)
+* `orderBy`: Field to order by (default: "volumeUSD")
+* `orderDirection`: "asc" or "desc" (default: "desc")
+* `minVolume`: Minimum volume in USD
 
 Example Response:
+
 ```json
 {
   "pools": [
@@ -361,6 +363,7 @@ GET /pools/:poolAddress
 ```
 
 Example Response:
+
 ```json
 {
   "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
@@ -397,10 +400,12 @@ GET /pools/:poolAddress/ticks
 ```
 
 Query Parameters:
-- `limit`: Maximum number of results (default: 1000, max: 5000)
-- `offset`: Pagination offset (default: 0)
+
+* `limit`: Maximum number of results (default: 1000, max: 5000)
+* `offset`: Pagination offset (default: 0)
 
 Example Response:
+
 ```json
 {
   "ticks": [
@@ -428,11 +433,13 @@ GET /positions
 ```
 
 Query Parameters:
-- `owner`: Ethereum address of the position owner (required)
-- `limit`: Maximum number of results (default: 10, max: 100)
-- `offset`: Pagination offset (default: 0)
+
+* `owner`: Ethereum address of the position owner (required)
+* `limit`: Maximum number of results (default: 10, max: 100)
+* `offset`: Pagination offset (default: 0)
 
 Example Response:
+
 ```json
 {
   "positions": [
@@ -474,6 +481,7 @@ GET /tokens/:tokenAddress
 ```
 
 Example Response:
+
 ```json
 {
   "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
@@ -508,6 +516,7 @@ GET /protocol/stats
 ```
 
 Example Response:
+
 ```json
 {
   "tvlUSD": "1234567890.12",
@@ -528,12 +537,14 @@ GET /pools/:poolAddress/history
 ```
 
 Query Parameters:
-- `resolution`: "day" or "hour" (default: "day")
-- `limit`: Maximum number of results (default: 30, max: 1000)
-- `startTime`: Unix timestamp for start of range
-- `endTime`: Unix timestamp for end of range
+
+* `resolution`: "day" or "hour" (default: "day")
+* `limit`: Maximum number of results (default: 30, max: 1000)
+* `startTime`: Unix timestamp for start of range
+* `endTime`: Unix timestamp for end of range
 
 Example Response:
+
 ```json
 {
   "history": [
@@ -743,6 +754,7 @@ GET /protocol/treasury
 ```
 
 Example Response:
+
 ```json
 {
   "treasuryFeesUSDTotal": "12345678.90",
@@ -772,12 +784,12 @@ Example Response:
 
 The API uses standard HTTP status codes:
 
-- `200 OK`: Successful request
-- `400 Bad Request`: Invalid parameters
-- `401 Unauthorized`: Missing or invalid API key
-- `404 Not Found`: Resource not found
-- `429 Too Many Requests`: Rate limit exceeded
-- `500 Internal Server Error`: Server error
+* `200 OK`: Successful request
+* `400 Bad Request`: Invalid parameters
+* `401 Unauthorized`: Missing or invalid API key
+* `404 Not Found`: Resource not found
+* `429 Too Many Requests`: Rate limit exceeded
+* `500 Internal Server Error`: Server error
 
 Error responses include a JSON body with details:
 
@@ -803,9 +815,9 @@ The API supports Cross-Origin Resource Sharing (CORS) for browser-based applicat
 
 Rate limits are applied based on your API key tier:
 
-- **Free Tier**: 100 requests per minute
-- **Developer Tier**: 1,000 requests per minute
-- **Enterprise Tier**: Custom limits
+* **Free Tier**: 100 requests per minute
+* **Developer Tier**: 1,000 requests per minute
+* **Enterprise Tier**: Custom limits
 
 Rate limit headers are included in all responses:
 
@@ -838,7 +850,7 @@ Pagination metadata is included in the response:
 
 ## Support and Resources
 
-- **API Status**: [status.synthra.io](https://status.synthra.io)
-- **Developer Portal**: [developers.synthra.io](https://developers.synthra.io)
-- **API Explorer**: [api.synthra.io/explorer](https://api.synthra.io/explorer)
-- **Support**: [developers@synthra.io](mailto:developers@synthra.io)
+* **API Status**: [status.synthra.io](https://status.synthra.io)
+* **Developer Portal**: [developers.synthra.io](https://developers.synthra.io)
+* **API Explorer**: [api.synthra.io/explorer](https://api.synthra.io/explorer)
+* **Support**: [developers@synthra.io](mailto:developers@synthra.io)

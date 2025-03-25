@@ -1,4 +1,4 @@
-# SDK Documentation
+# SDK
 
 This page provides comprehensive documentation for the Synthra SDK, which enables developers to programmatically interact with the Synthra protocol.
 
@@ -27,11 +27,11 @@ pnpm add @synthra-protocol/sdk
 
 The SDK provides several core entities:
 
-- **Token**: Represents an ERC-20 token with chain ID, address, decimals, and symbol
-- **Pool**: Represents a Synthra liquidity pool with two tokens and a fee tier
-- **Position**: Represents a liquidity position with a specific price range
-- **Route**: Represents a path through one or more pools for a swap
-- **Trade**: Represents a trade with input/output amounts and execution parameters
+* **Token**: Represents an ERC-20 token with chain ID, address, decimals, and symbol
+* **Pool**: Represents a Synthra liquidity pool with two tokens and a fee tier
+* **Position**: Represents a liquidity position with a specific price range
+* **Route**: Represents a path through one or more pools for a swap
+* **Trade**: Represents a trade with input/output amounts and execution parameters
 
 ### Configuration
 
@@ -519,7 +519,7 @@ For complete examples of common use cases, see the [Examples](examples.md) page.
 
 ## Support and Resources
 
-- **GitHub Repository**: [github.com/synthra-protocol/sdk](https://github.com/synthra-protocol/sdk)
-- **NPM Package**: [@synthra-protocol/sdk](https://www.npmjs.com/package/@synthra-protocol/sdk)
-- **Issues and Feature Requests**: [GitHub Issues](https://github.com/synthra-protocol/sdk/issues)
-- **Discord**: [discord.synthra.io](https://discord.synthra.io) (Developer channel)
+* **GitHub Repository**: [github.com/synthra-protocol/sdk](https://github.com/synthra-protocol/sdk)
+* **NPM Package**: [@synthra-protocol/sdk](https://www.npmjs.com/package/@synthra-protocol/sdk)
+* **Issues and Feature Requests**: [GitHub Issues](https://github.com/synthra-protocol/sdk/issues)
+* **Discord**: [discord.synthra.io](https://discord.synthra.io) (Developer channel)
