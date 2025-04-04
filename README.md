@@ -25,10 +25,6 @@ The protocol features a unique treasury fee mechanism, where an additional 0.1% 
 
 New to Synthra? Check out our [Getting Started](getting-started.md) guide to learn the basics of using the protocol for swapping tokens and providing liquidity.
 
-## For Developers
-
-If you're a developer looking to integrate with Synthra or build on top of our protocol, visit our [Developer Resources](developers/) section for comprehensive guides, SDK documentation, and code examples.
-
 ## Community & Support
 
 Join our community channels to get help, stay updated on the latest developments, and connect with other Synthra users:
