@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Synthra features
 
 This section highlights the unique features and innovations that set Synthra apart from other decentralized exchanges. These distinctive elements enhance the protocol's sustainability, user experience, and long-term value proposition.

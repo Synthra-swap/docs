@@ -10,7 +10,7 @@ Swapping tokens is the most basic operation in Synthra. The swap interface allow
 
 ### 1. Accessing the Swap Interface
 
-1. Navigate to [app.synthra.io](https://app.synthra.io)
+1. Navigate to[ app.synthra.org](https://app.synthra.org)
 2. Connect your wallet using the "Connect Wallet" button in the top right corner
 3. Select "Swap" from the main navigation menu (it should be selected by default)
 
@@ -155,4 +155,4 @@ After mastering swaps, you might want to explore:
 
 * [Providing Liquidity](add-liquidity.md) to earn fees
 * [Pool Analytics](pool.md) to analyze liquidity and trading activity
-* [Treasury Fee Mechanism](../features/treasury-fee.md) to learn more about how the 0.1% treasury fee is used
+* [Treasury Fee Mechanism](../core-concepts/treasury-fee.md) to learn more about how the 0.1% treasury fee is used

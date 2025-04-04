@@ -53,26 +53,10 @@ Fees are collected in both tokens of the pool, proportional to the swaps that ha
 
 In addition to the pool fees, Synthra implements a fixed 0.1% treasury fee on all swaps. This fee:
 
-* Is added to the base fee tier (e.g., a 0.3% pool effectively charges 0.4% total)
 * Is directed to the protocol treasury
 * Funds the buyback mechanism and protocol development
 
 The treasury fee is a unique feature of Synthra that creates a sustainable funding model for the protocol. For more details, see the [Treasury Fee](treasury-fee.md) page.
-
-## Total Fee Calculation
-
-The total fee for a swap is calculated as:
-
-```
-Total Fee = Pool Fee + Treasury Fee
-```
-
-For example:
-
-* Swap in a 0.01% pool: 0.01% + 0.1% = 0.11% total fee
-* Swap in a 0.05% pool: 0.05% + 0.1% = 0.15% total fee
-* Swap in a 0.3% pool: 0.3% + 0.1% = 0.4% total fee
-* Swap in a 1% pool: 1% + 0.1% = 1.1% total fee
 
 ## Fee Economics
 

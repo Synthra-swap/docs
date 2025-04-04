@@ -45,7 +45,7 @@ Every swap on Synthra incurs two types of fees:
 1. **Pool Fee**: Varies by pool (0.01%, 0.05%, 0.3%, or 1%) and goes to liquidity providers
 2. **Treasury Fee**: A fixed 0.1% that goes to the protocol treasury
 
-The total fee for a swap is the pool fee plus the treasury fee. For example, a swap in a 0.3% pool would have a total fee of 0.4% (0.3% to liquidity providers + 0.1% to treasury).
+The total fee for a swap is the pool fee plus the treasury fee. For example, a swap in a 0.3% pool would is composed 0.2% to liquidity providers + 0.1% to treasury.
 
 ## Minimum Received Amount
 

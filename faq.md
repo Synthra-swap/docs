@@ -19,11 +19,7 @@ Synthra introduces several key innovations:
 
 ### Which networks does Synthra support?
 
-Synthra is currently available on \[list of supported networks]. We're continuously working to expand to additional networks based on community demand.
-
-### Is Synthra safe to use?
-
-Synthra's smart contracts have undergone rigorous security audits by leading firms in the blockchain security space. You can review our audit reports in the [Security](protocol/security.md) section. However, as with any DeFi protocol, users should exercise caution and only invest what they can afford to lose.
+Synthra is currently available on [UOMI Network](https://uomi.ai).&#x20;
 
 ## Trading on Synthra
 
@@ -39,8 +35,6 @@ Synthra has different fee tiers depending on the pool:
 * 0.05% for low volatility pairs
 * 0.3% for standard pairs
 * 1% for exotic pairs with high volatility
-
-Additionally, there's a 0.1% treasury fee on all swaps that goes to the protocol treasury for buybacks.
 
 ### What is slippage and how do I set it?
 
@@ -83,25 +77,17 @@ To collect fees, go to the Pool tab, select your position, and click "Collect Fe
 
 ### What is the treasury fee?
 
-The treasury fee is an additional 0.1% fee applied to all swaps on Synthra. This fee is directed to the protocol treasury and is separate from the liquidity provider fees.
+The treasury fee is a 0.1% fee applied to all swaps on Synthra. This fee is directed to the protocol treasury and is separate from the liquidity provider fees.
 
 ### How are treasury funds used?
 
 Treasury funds are primarily used for token buybacks, which help support the value of the Synthra token. Additionally, a portion may be allocated to protocol development, security audits, and ecosystem growth initiatives.
-
-### How does the buyback mechanism work?
-
-The buyback mechanism uses accumulated treasury funds to purchase Synthra tokens from the open market at regular intervals or based on specific triggers. These purchased tokens may be burned (permanently removed from circulation) or used for other ecosystem incentives. For more details, see our [Buyback Mechanism](features/buyback-mechanism.md) page.
 
 ## Technical Questions
 
 ### Is Synthra open source?
 
 Yes, Synthra's core smart contracts are open source and available on GitHub. This promotes transparency and allows the community to review and contribute to the protocol.
-
-### How can developers integrate with Synthra?
-
-Developers can integrate with Synthra using our SDK and API. Check out our [Developer Resources](developers/) section for comprehensive guides and documentation.
 
 ### Where can I report bugs or suggest features?
 
@@ -132,7 +118,4 @@ We welcome community contributions! You can contribute by:
 
 Follow our official channels:
 
-* Discord: [discord.synthra.io](https://discord.synthra.io)
-* Twitter: [@SynthraProtocol](https://twitter.com/SynthraProtocol)
-* Telegram: [t.me/SynthraProtocol](https://t.me/SynthraProtocol)
-* Blog: [blog.synthra.io](https://blog.synthra.io)
+## TODO

@@ -10,7 +10,7 @@ Removing liquidity from Synthra allows you to withdraw your tokens from a pool w
 
 ### 1. Accessing Your Positions
 
-1. Navigate to [app.synthra.io](https://app.synthra.io)
+1. Navigate to[ app.synthra.org](https://app.synthra.org)
 2. Connect your wallet using the "Connect Wallet" button in the top right corner
 3. Select "Pool" from the main navigation menu
 4. You'll see a list of your active liquidity positions
@@ -172,4 +172,4 @@ After removing liquidity, you might want to:
 * [Add liquidity](add-liquidity.md) in a different price range
 * [Swap tokens](swap.md) to rebalance your portfolio
 * Learn more about [concentrated liquidity](../core-concepts/concentrated-liquidity.md) to optimize your future positions
-* Explore the [treasury fee mechanism](../features/treasury-fee.md) to understand how the 0.1% fee contributes to protocol sustainability
+* Explore the [treasury fee mechanism](../core-concepts/treasury-fee.md) to understand how the 0.1% fee contributes to protocol sustainability

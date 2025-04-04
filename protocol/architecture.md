@@ -97,7 +97,7 @@ Synthra includes a time-weighted average price (TWAP) oracle system:
 
 The governance system consists of:
 
-* **Token Contract**: The SYNTH governance token
+* **Token Contract**: The SYN governance token
 * **Governor Contract**: Manages proposal creation, voting, and execution
 * **Timelock Contract**: Enforces delays between approval and execution of proposals
 * **Delegation System**: Allows token holders to delegate voting power

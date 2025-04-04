@@ -33,8 +33,8 @@ If you're a developer looking to integrate with Synthra or build on top of our p
 
 Join our community channels to get help, stay updated on the latest developments, and connect with other Synthra users:
 
-* Discord: [discord.synthra.io](https://discord.synthra.io)
-* Twitter: [@SynthraProtocol](https://twitter.com/SynthraProtocol)
-* Telegram: [t.me/SynthraProtocol](https://t.me/SynthraProtocol)
+* Discord: TBA
+* Twitter: [@Synthra\_swap](https://x.com/Synthra_swap)
+* Telegram: TBA
 
-For technical support, please visit our [FAQ](faq.md) or submit an issue on our [GitHub repository](https://github.com/synthra-protocol).
+For technical support, please visit our [FAQ](faq.md) or submit an issue on our [GitHub repository](https://github.com/synthra-swap).

@@ -176,55 +176,27 @@ The contract that executes token buybacks using treasury funds.
 
 ## Contract Addresses
 
-| Contract                          | Address                                    | Network          |
-| --------------------------------- | ------------------------------------------ | ---------------- |
-| SynthraFactory                    | 0x1F98431c8aD98523631AE4a59f267346ea31F984 | Ethereum Mainnet |
-| SynthraTreasuryFeeCollector       | 0x8F97B2E6eD45D31CFB9A51144e17F6F5e2F5E44F | Ethereum Mainnet |
-| SynthraRouter                     | 0xE592427A0AEce92De3Edee1F18E0157C05861564 | Ethereum Mainnet |
-| SynthraNonfungiblePositionManager | 0xC36442b4a4522E871399CD717aBDD847Ab11FE88 | Ethereum Mainnet |
-| SynthraToken                      | 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | Ethereum Mainnet |
-| SynthraGovernor                   | 0x408ED6354d4973f66138C91495F2f2FCbd8724C3 | Ethereum Mainnet |
-| SynthraBuyback                    | 0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B | Ethereum Mainnet |
+## TO DO
 
 ## Contract Interactions
 
 The following diagram illustrates the typical interactions between contracts:
 
 ```
-User -> SynthraRouter -> SynthraPool -> SynthraTreasuryFeeCollector
+User -> SynthraRouter -> SynthraPool -> SynthraTreasuryFeeCollecto
                       -> SynthraNonfungiblePositionManager
                       
 Governance -> SynthraGovernor -> SynthraTreasuryFeeCollector
                               -> SynthraBuyback
 ```
 
-## Contract Security
 
-All Synthra contracts have undergone rigorous security audits and implement best practices:
-
-* Formal verification of critical components
-* Comprehensive test coverage
-* Access control restrictions
-* Reentrancy protection
-* Integer overflow/underflow protection
-* Gas optimization
-
-For more details on security measures, see the [Security](security.md) and [Audits](audits.md) pages.
-
-## For Developers
-
-Developers looking to integrate with Synthra should:
-
-1. Use the periphery contracts (Router, NonfungiblePositionManager) rather than interacting directly with core contracts
-2. Refer to the [SDK](../developers/sdk.md) documentation for simplified integration
-3. Review the [Examples](../developers/examples.md) for common integration patterns
 
 ## Contract Upgradability
 
 The core contracts (Factory, Pool) are immutable for security reasons. Protocol upgrades are handled through:
 
 1. Deploying new periphery contracts that maintain compatibility with existing core contracts
-2. Governance-approved migrations to new versions when necessary
-3. Phased deployments of new features
+2. Phased deployments of new features
 
 This approach balances security with the need for protocol evolution.

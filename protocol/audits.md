@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Audits
 
 This page provides information about the security audits conducted on the Synthra protocol. Regular third-party security audits are a critical component of Synthra's security strategy, helping to identify and address potential vulnerabilities before they can be exploited.

@@ -6,7 +6,7 @@ This guide will walk you through the basics of using Synthra, from connecting yo
 
 To start using Synthra, you'll need to connect a compatible Web3 wallet:
 
-1. Visit the [Synthra app](https://app.synthra.io)
+1. Visit the [Synthra app](https://synthra.org)
 2. Click the "Connect Wallet" button in the top right corner
 3. Select your preferred wallet (MetaMask, WalletConnect, Coinbase Wallet, etc.)
 4. Approve the connection request in your wallet
@@ -35,8 +35,7 @@ Swapping tokens on Synthra is straightforward:
    * Exchange rate
    * Price impact
    * Minimum received amount
-   * Liquidity provider fee
-   * Treasury fee (0.1%)
+   * Fees
 6. Click "Swap" and confirm the transaction in your wallet
 
 The interface will display a confirmation once your swap is complete, showing the exact amount of tokens received.
@@ -81,12 +80,6 @@ To view and manage your liquidity positions:
    * Collect fees: Claim earned trading fees
    * Adjust range: Modify your price range (requires creating a new position)
 
-## Next Steps
 
-Now that you're familiar with the basics of Synthra, you might want to explore:
-
-* [Core Concepts](core-concepts/) to understand the protocol in depth
-* [Treasury Fee Mechanism](features/treasury-fee.md) to learn about Synthra's unique fee structure
-* [Buyback Mechanism](features/buyback-mechanism.md) to understand how treasury funds are utilized
 
 If you have any questions, check out our [FAQ](faq.md) or join our community channels for support.

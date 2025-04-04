@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Security
 
 This page outlines the security measures implemented in the Synthra protocol to protect user funds and ensure protocol stability. Security is a foundational principle of Synthra's design and development process.

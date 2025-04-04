@@ -4,21 +4,9 @@ The Treasury Fee is a unique feature of Synthra that distinguishes it from other
 
 ## What is the Treasury Fee?
 
-The Treasury Fee is an additional 0.1% fee applied to all swaps on the Synthra protocol. Unlike the standard pool fees that go to liquidity providers, the treasury fee is directed to the protocol treasury, creating a sustainable funding source for protocol development and token buybacks.
+Unlike standard pool fees that go to liquidity providers, the treasury fee is directed to the protocol’s treasury, providing a consistent income stream in external tokens. While many protocols are forced to sell their own token — creating downward pressure on its price — just to keep the platform running, our model ensures sustainable funding for development and buybacks without relying on native token sales.
 
 ## How the Treasury Fee Works
-
-### Fee Collection
-
-When a user performs a swap on Synthra, the total fee they pay consists of:
-
-1. The pool fee (0.01%, 0.05%, 0.3%, or 1% depending on the pool)
-2. The 0.1% treasury fee
-
-For example, if a user swaps tokens in a 0.3% pool, they'll pay a total fee of 0.4%, with:
-
-* 0.3% going to liquidity providers
-* 0.1% going to the treasury
 
 ### Fee Calculation
 
@@ -29,7 +17,7 @@ The treasury fee is calculated as 0.1% of the input amount of the swap. For exam
 
 ### Treasury Management
 
-The collected fees are automatically sent to the Synthra Treasury, which is a multi-signature wallet controlled by the protocol governance. This ensures that treasury funds are managed securely and transparently.
+The collected fees are automatically sent to the Synthra Treasury, which is a multi-signature wallet. This ensures that treasury funds are managed securely and transparently.
 
 ## Purpose of the Treasury Fee
 
@@ -78,8 +66,7 @@ Buybacks occur on a regular schedule, typically:
 Buybacks are executed through:
 
 1. Direct market purchases on Synthra itself
-2. Limit orders to minimize price impact
-3. Batch processing to optimize gas costs
+2. Batch processing to optimize gas costs
 
 ### Token Destination
 
@@ -89,7 +76,7 @@ Tokens acquired through buybacks may be:
 * Held in the treasury for future use
 * Distributed to stakers as additional rewards
 
-For more details on the buyback process, see the [Buyback Mechanism](../features/buyback-mechanism.md) page.
+For more details on the buyback process, see the [Buyback Mechanism](broken-reference) page.
 
 ## Treasury Fee vs. Other Models
 
@@ -132,15 +119,7 @@ The treasury fee creates a virtuous cycle for the Synthra ecosystem:
 
 This alignment of incentives helps ensure the long-term sustainability of the protocol.
 
-## Governance Control
 
-The treasury fee parameters are controlled by governance, allowing the community to adjust:
-
-* The fee percentage (currently 0.1%)
-* The allocation of treasury funds
-* The buyback strategy and schedule
-
-Any changes to these parameters require a governance proposal and vote.
 
 ## Future Developments
 
@@ -151,8 +130,3 @@ Potential future developments for the treasury fee mechanism include:
 * Integration with other DeFi protocols for treasury management
 * Enhanced transparency and reporting tools
 
-## Impact on Users
-
-For traders, the 0.1% treasury fee represents a small additional cost that contributes to the long-term health of the protocol. The benefits of a well-funded protocol (better liquidity, security, and features) typically outweigh this small fee.
-
-For liquidity providers, the treasury fee doesn't directly impact their earnings, as they still receive 100% of the pool fees. Indirectly, they benefit from the protocol improvements and token value appreciation funded by the treasury.

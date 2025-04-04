@@ -9,7 +9,6 @@
   * [Swaps](core-concepts/swaps.md)
   * [Fees](core-concepts/fees.md)
   * [Treasury Fee](core-concepts/treasury-fee.md)
-  * [Governance](core-concepts/governance.md)
 * [Protocol](protocol/README.md)
   * [Architecture](protocol/architecture.md)
   * [Smart Contracts](protocol/smart-contracts.md)
@@ -21,8 +20,6 @@
   * [Add Liquidity](interface/add-liquidity.md)
   * [Remove Liquidity](interface/remove-liquidity.md)
 * [Synthra features](features/README.md)
-  * [Treasury Fee](features/treasury-fee.md)
-  * [Buyback Mechanism](features/buyback-mechanism.md)
   * [Tokenomics](features/tokenomics.md)
 
 ## Synthra Features
