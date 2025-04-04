@@ -97,7 +97,7 @@ Providing liquidity to Synthra pools involves several risks:
 
 In addition to the standard fee tiers that go to liquidity providers, Synthra implements a 0.1% treasury fee on all swaps. This fee:
 
-* Is added to the base fee tier (e.g., a 0.3% pool effectively charges 0.4%)
+* Is deducted from the base fee tier (e.g., a 0.3% pool effectively goes 0.2% to liquidity providers and 0.1% to treasury)
 * Is directed to the protocol treasury
 * Funds the buyback mechanism and protocol development
 
