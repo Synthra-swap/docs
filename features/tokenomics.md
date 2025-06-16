@@ -2,6 +2,9 @@
 
 Synthra's tokenomics are designed to create sustainable value for all stakeholders through innovative mechanisms that align protocol success with token holder benefits.
 
+![Synthra Tokenomics Distribution](../images/tokenomics.jpeg)
+*Token distribution breakdown showing balanced allocation across key stakeholders*
+
 ## Token Overview
 
 ### Basic Information
@@ -16,14 +19,45 @@ Synthra's tokenomics are designed to create sustainable value for all stakeholde
 
 The total supply of 100M SYNTH tokens is allocated as follows:
 
-| Allocation | Amount | Percentage | Vesting |
-|------------|--------|------------|---------|
-| Community Treasury | 40M | 40% | Gradual release via governance |
-| Liquidity Incentives | 25M | 25% | 3-year linear vesting |
-| Core Team | 15M | 15% | 3-year vesting, 1-year cliff |
-| Early Investors | 10M | 10% | 2-year vesting, 6-month cliff |
-| Protocol Reserve | 5M | 5% | Locked for 2 years |
-| Launch Liquidity | 5M | 5% | Immediate unlock |
+| Allocation | Amount | Percentage | Vesting | Purpose |
+|------------|--------|------------|---------|---------|
+| **Public Sale** | 25M | 25% | No vesting | Fair public distribution and initial liquidity |
+| **Liquidity** | 25M | 25% | Immediate unlock | DEX liquidity pools and market making |
+| **Ecosystem** | 25M | 25% | 2-year gradual release | Community incentives, partnerships, grants |
+| **Investors** | 15M | 15% | 2-year vesting, 3-month cliff | Strategic investors and early backers |
+| **Team** | 10M | 10% | 2-year vesting, 3-month cliff | Core team and advisors |
+
+### Distribution Rationale
+
+#### Public Sale (25%)
+- **Fair Launch**: Maximum accessibility for retail participants
+- **Price Discovery**: Market-driven token valuation
+- **Community Building**: Broad token distribution from day one
+- **Immediate Liquidity**: Supports trading and ecosystem growth
+
+#### Liquidity (25%)
+- **DEX Liquidity**: Ensures deep liquidity on launch
+- **Market Stability**: Reduces price volatility
+- **Trading Efficiency**: Enables large swaps with minimal slippage
+- **Ecosystem Bootstrap**: Funds initial pool incentives
+
+#### Ecosystem (25%)
+- **Long-term Growth**: Funds sustainable ecosystem development
+- **Community Incentives**: Rewards active participation
+- **Partnership Development**: Strategic alliances and integrations
+- **Grant Programs**: Supports developers building on Synthra
+
+#### Investors (15%)
+- **Strategic Capital**: Provides development funding
+- **Industry Expertise**: Access to experienced advisors
+- **Network Effects**: Leverages investor connections
+- **Reduced Public Dilution**: Lower allocation than typical projects
+
+#### Team (10%)
+- **Talent Retention**: Competitive but conservative allocation
+- **Long-term Alignment**: Extended vesting ensures commitment
+- **Performance Incentives**: Success directly benefits team
+- **Sustainable Development**: Funds ongoing protocol development
 
 ### Deflationary Mechanism
 
@@ -124,3 +158,45 @@ Unlike many DeFi protocols that rely on unsustainable token emissions:
 ---
 
 Synthra's tokenomics create a sustainable foundation for long-term value creation, aligning incentives across all stakeholders while maintaining the decentralized and permissionless nature of DeFi.
+
+### Vesting Schedule Details
+
+#### Public Sale Tokens (25M SYNTH)
+- **Unlock**: 100% at Token Generation Event (TGE)
+- **Rationale**: Immediate tradability for fair price discovery
+- **Impact**: Provides initial circulating supply for markets
+
+#### Liquidity Tokens (25M SYNTH)  
+- **Unlock**: 100% at TGE
+- **Allocation**: DEX pools, market making, initial liquidity
+- **Management**: Protocol-controlled for optimal market efficiency
+
+#### Ecosystem Tokens (25M SYNTH)
+- **Cliff Period**: 6 months from TGE
+- **Vesting**: 3-year linear vesting after cliff
+- **Monthly Release**: ~694,444 SYNTH (post-cliff)
+- **Governance**: Community oversight of fund allocation
+
+#### Investor Tokens (15M SYNTH)
+- **Cliff Period**: 6 months from TGE  
+- **Vesting**: 2-year linear vesting after cliff
+- **Monthly Release**: ~625,000 SYNTH (post-cliff)
+- **Lock-up**: Ensures aligned incentives with protocol success
+
+#### Team Tokens (10M SYNTH)
+- **Cliff Period**: 12 months from TGE
+- **Vesting**: 3-year linear vesting after cliff  
+- **Monthly Release**: ~277,778 SYNTH (post-cliff)
+- **Performance**: Additional milestones may accelerate vesting
+
+### Circulating Supply Projection
+
+| Timeline | Public Sale | Liquidity | Ecosystem | Investors | Team | **Total Circulating** |
+|----------|-------------|-----------|-----------|-----------|------|----------------------|
+| **TGE** | 25M | 25M | 0 | 0 | 0 | **50M (50%)** |
+| **Month 6** | 25M | 25M | 0 | 0 | 0 | **50M (50%)** |
+| **Month 12** | 25M | 25M | 4.2M | 3.8M | 0 | **58M (58%)** |
+| **Month 24** | 25M | 25M | 12.5M | 15M | 5.6M | **83.1M (83.1%)** |
+| **Month 36** | 25M | 25M | 25M | 15M | 10M | **100M (100%)** |
+
+*Note: Assumes ecosystem tokens start vesting at month 6**
