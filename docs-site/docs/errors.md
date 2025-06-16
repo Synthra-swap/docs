@@ -532,7 +532,7 @@ class SynthraClient {
 
 - [Smart Contract Architecture](architecture.md)
 - [Security Documentation](security.md)
-- [SDK Error Handling](../developers/sdk.md#error-handling)
-- [Integration Best Practices](../developers/integration.md#error-handling)
+- [SDK Error Handling](sdk.md#error-handling)
+- [Integration Best Practices](integration.md)
 
 For questions about specific errors or error handling patterns, join our [Discord community](https://discord.gg/eesEKPRDtd) or contact our technical team at [developers@synthra.org](mailto:developers@synthra.org).

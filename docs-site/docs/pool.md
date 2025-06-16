@@ -191,4 +191,4 @@ After exploring pools, you might want to:
 
 * [Add Liquidity](add-liquidity.md) to start earning fees
 * [Remove Liquidity](remove-liquidity.md) from existing positions
-* Learn more about [Concentrated Liquidity](../core-concepts/concentrated-liquidity.md) to optimize your positions
+* Learn more about [Concentrated Liquidity](concentrated-liquidity.md) to optimize your positions

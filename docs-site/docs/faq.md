@@ -82,7 +82,7 @@ To provide liquidity, navigate to the Pool tab, click "New Position," select a t
 
 ### What is concentrated liquidity?
 
-Concentrated liquidity allows you to provide liquidity within a specific price range, rather than across the entire price spectrum. This means your capital is used more efficiently, potentially generating higher returns. Learn more in our [Concentrated Liquidity](core-concepts/concentrated-liquidity.md) guide.
+Concentrated liquidity allows you to provide liquidity within a specific price range, rather than across the entire price spectrum. This means your capital is used more efficiently, potentially generating higher returns. Learn more in our [Concentrated Liquidity](concentrated-liquidity.md) guide.
 
 ### How do I earn fees as a liquidity provider?
 

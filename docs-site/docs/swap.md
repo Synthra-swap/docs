@@ -155,4 +155,4 @@ After mastering swaps, you might want to explore:
 
 * [Providing Liquidity](add-liquidity.md) to earn fees
 * [Pool Analytics](pool.md) to analyze liquidity and trading activity
-* [Treasury Fee Mechanism](../core-concepts/treasury-fee.md) to learn more about how the 0.1% treasury fee is used
+* [Treasury Fee Mechanism](treasury-fee.md) to learn more about how the 0.1% treasury fee is used

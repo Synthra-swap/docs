@@ -171,5 +171,5 @@ After removing liquidity, you might want to:
 
 * [Add liquidity](add-liquidity.md) in a different price range
 * [Swap tokens](swap.md) to rebalance your portfolio
-* Learn more about [concentrated liquidity](../core-concepts/concentrated-liquidity.md) to optimize your future positions
-* Explore the [treasury fee mechanism](../core-concepts/treasury-fee.md) to understand how the 0.1% fee contributes to protocol sustainability
+* Learn more about [concentrated liquidity](concentrated-liquidity.md) to optimize your future positions
+* Explore the [treasury fee mechanism](treasury-fee.md) to understand how the 0.1% fee contributes to protocol sustainability

@@ -102,7 +102,7 @@ All addresses have been verified and are:
 * ✅ Consistent with official deployments
 * ✅ Ready for production use
 
-For the complete contract reference, see [Smart Contracts](../protocol/smart-contracts.md).
+For the complete contract reference, see [Smart Contracts](smart-contracts.md).
 
 ### Usage Examples
 
@@ -161,6 +161,6 @@ contract SynthraIntegration {
 3. **Version compatibility**: These addresses are for the current protocol version
 4. **Security**: Never hardcode private keys or sensitive data in your contracts
 
-For testnet addresses and deployment information on other networks, see the [Smart Contracts](../protocol/smart-contracts.md) documentation.
+For testnet addresses and deployment information on other networks, see the [Smart Contracts](smart-contracts.md) documentation.
 
 We're committed to supporting developers building on Synthra and welcome contributions to our open-source repositories.

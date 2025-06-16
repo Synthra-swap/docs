@@ -52,4 +52,4 @@ The buyback mechanism is particularly important as it creates a value accrual me
 
 Ready to dive into Synthra? Check out our [Getting Started](getting-started.md) guide to learn how to connect your wallet, make your first swap, and provide liquidity to earn fees.
 
-For a deeper understanding of how Synthra works, explore our [Core Concepts](core-concepts/README.md) section.
+For a deeper understanding of how Synthra works, explore our [Core Concepts](pools.md) section.

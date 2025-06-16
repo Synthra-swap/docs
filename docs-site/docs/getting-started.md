@@ -176,7 +176,7 @@ Providing liquidity on Synthra allows you to earn fees from trades while support
 
 💡 **Pro Tip**: The narrower your price range, the more concentrated your liquidity will be, potentially earning higher fees when the price stays within that range.
 
-For detailed instructions, see our [Add Liquidity Guide](interface/add-liquidity.md).
+For detailed instructions, see our [Add Liquidity Guide](add-liquidity.md).
 
 ## Managing Your Positions
 
@@ -193,14 +193,14 @@ To view and manage your liquidity positions:
    - **Collect fees**: Claim earned trading fees (67% of pool fees)
    - **Close position**: Remove all liquidity and collect fees
 
-For complete guidance, check our [Pool Management Guide](interface/pool.md).
+For complete guidance, check our [Pool Management Guide](pool.md).
 
 ## Next Steps
 
 Now that you know the basics:
 
 1. **Start Small**: Begin with a small swap or liquidity position to learn
-2. **Explore Documentation**: Read [Core Concepts](core-concepts/README.md) for deeper understanding
+2. **Explore Documentation**: Read [Core Concepts](pools.md) for deeper understanding
 3. **Join Community**: Connect with other users for tips and support
 4. **Monitor Performance**: Track your positions and optimize strategies
 

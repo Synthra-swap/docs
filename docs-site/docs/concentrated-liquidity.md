@@ -141,4 +141,4 @@ To start providing concentrated liquidity on Synthra:
 4. Set your price range
 5. Deposit your tokens
 
-For a step-by-step guide, see the [Add Liquidity](../interface/add-liquidity.md) section.
+For a step-by-step guide, see the [Add Liquidity](add-liquidity.md) section.

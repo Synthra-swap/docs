@@ -185,4 +185,4 @@ After adding liquidity, you might want to:
 
 * [Manage your positions](pool.md) to monitor performance
 * [Remove liquidity](remove-liquidity.md) when needed
-* Learn more about [concentrated liquidity](../core-concepts/concentrated-liquidity.md) to optimize your strategy
+* Learn more about [concentrated liquidity](concentrated-liquidity.md) to optimize your strategy
