@@ -12,13 +12,13 @@ Install the SDK using your preferred package manager:
 
 ```bash
 # npm
-npm install @synthra-protocol/sdk
+npm install @synthra-swap/sdk
 
 # yarn
-yarn add @synthra-protocol/sdk
+yarn add @synthra-swap/sdk
 
 # pnpm
-pnpm add @synthra-protocol/sdk
+pnpm add @synthra-swap/sdk
 ```
 
 ## Core Concepts
@@ -38,7 +38,7 @@ The SDK provides several core entities:
 Initialize the SDK with your preferred configuration:
 
 ```typescript
-import { SynthraSDK } from '@synthra-protocol/sdk'
+import { SynthraSDK } from '@synthra-swap/sdk'
 
 // Initialize with default settings
 const sdk = new SynthraSDK()
@@ -47,7 +47,7 @@ const sdk = new SynthraSDK()
 const sdk = new SynthraSDK({
   chainId: 1, // Ethereum Mainnet
   rpcUrl: 'https://mainnet.infura.io/v3/YOUR_INFURA_KEY',
-  subgraphUrl: 'https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-mainnet'
+  subgraphUrl: 'https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet'
 })
 ```
 
@@ -56,7 +56,7 @@ const sdk = new SynthraSDK({
 ### Creating Token Instances
 
 ```typescript
-import { Token, ChainId } from '@synthra-protocol/sdk'
+import { Token, ChainId } from '@synthra-swap/sdk'
 
 // Create token instances
 const WETH = new Token(
@@ -79,7 +79,7 @@ const USDC = new Token(
 ### Working with Token Amounts
 
 ```typescript
-import { CurrencyAmount } from '@synthra-protocol/sdk'
+import { CurrencyAmount } from '@synthra-swap/sdk'
 
 // Create amount from raw value (considering decimals)
 const wethAmount = CurrencyAmount.fromRawAmount(WETH, '1000000000000000000') // 1 WETH
@@ -97,7 +97,7 @@ const doubled = wethAmount.multiply(2)
 ### Fetching Pools
 
 ```typescript
-import { FeeAmount, Pool } from '@synthra-protocol/sdk'
+import { FeeAmount, Pool } from '@synthra-swap/sdk'
 
 // Fetch a pool using the provider
 async function getPool() {
@@ -154,7 +154,7 @@ const liquidity = pool.getLiquidityForAmounts(
 ### Creating and Executing Swaps
 
 ```typescript
-import { Trade, TradeType, Percent, SwapRouter } from '@synthra-protocol/sdk'
+import { Trade, TradeType, Percent, SwapRouter } from '@synthra-swap/sdk'
 
 async function executeSwap() {
   // Create a provider and signer
@@ -218,7 +218,7 @@ const isHighImpact = priceImpact.greaterThan(new Percent(5, 100)) // > 5%
 ### Creating Positions
 
 ```typescript
-import { NonfungiblePositionManager, Position } from '@synthra-protocol/sdk'
+import { NonfungiblePositionManager, Position } from '@synthra-swap/sdk'
 
 async function createPosition() {
   // Create a provider and signer
@@ -320,7 +320,7 @@ const collectFeesData = NonfungiblePositionManager.collectCallParameters(collect
 ### Accessing TWAP Data
 
 ```typescript
-import { TickMath, SqrtPriceMath } from '@synthra-protocol/sdk'
+import { TickMath, SqrtPriceMath } from '@synthra-swap/sdk'
 
 async function getTimeWeightedAveragePrice(poolAddress, period) {
   const provider = new ethers.providers.JsonRpcProvider('https://mainnet.infura.io/v3/YOUR_KEY')
@@ -359,7 +359,7 @@ async function getTimeWeightedAveragePrice(poolAddress, period) {
 ### Tick Calculations
 
 ```typescript
-import { TickMath } from '@synthra-protocol/sdk'
+import { TickMath } from '@synthra-swap/sdk'
 
 // Convert price to tick
 const priceToTick = (price) => {
@@ -402,7 +402,7 @@ const calculateTotalFee = (amount, poolFee, treasuryFee = 0.001) => {
 ### Multicall
 
 ```typescript
-import { Multicall } from '@synthra-protocol/sdk'
+import { Multicall } from '@synthra-swap/sdk'
 
 // Batch multiple calls into a single transaction
 const calls = [
@@ -492,7 +492,7 @@ const expectedOutput = inputAmount.multiply(1 - totalFee)
 For browser environments, you can use the SDK via CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@synthra-protocol/sdk@latest/dist/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@synthra-swap/sdk@latest/dist/index.min.js"></script>
 <script>
   const { Token, ChainId, CurrencyAmount } = SynthraSDK
   
@@ -506,7 +506,7 @@ For browser environments, you can use the SDK via CDN:
 The SDK is written in TypeScript and provides full type definitions:
 
 ```typescript
-import { Token, ChainId, FeeAmount, Pool, Position } from '@synthra-protocol/sdk'
+import { Token, ChainId, FeeAmount, Pool, Position } from '@synthra-swap/sdk'
 
 // Types are available for all SDK components
 const token: Token = new Token(ChainId.MAINNET, '0x...', 18, 'TOKEN')
@@ -519,7 +519,7 @@ For complete examples of common use cases, see the [Examples](examples.md) page.
 
 ## Support and Resources
 
-* **GitHub Repository**: [github.com/synthra-protocol/sdk](https://github.com/synthra-protocol/sdk)
-* **NPM Package**: [@synthra-protocol/sdk](https://www.npmjs.com/package/@synthra-protocol/sdk)
-* **Issues and Feature Requests**: [GitHub Issues](https://github.com/synthra-protocol/sdk/issues)
-* **Discord**: [discord.synthra.io](https://discord.synthra.io) (Developer channel)
+* **GitHub Repository**: [github.com/synthra-swap/sdk](https://github.com/synthra-swap/sdk)
+* **NPM Package**: [@synthra-swap/sdk](https://www.npmjs.com/package/@synthra-swap/sdk)
+* **Issues and Feature Requests**: [GitHub Issues](https://github.com/synthra-swap/sdk/issues)
+* **Discord**: [discord.gg/synthra](https://discord.gg/synthra) - Developer channel available

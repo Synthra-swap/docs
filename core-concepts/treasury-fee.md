@@ -1,4 +1,15 @@
-# Treasury Fee
+# Treasury Fee System
+
+The Treasury Fee is Synthra's revolutionary mechanism that creates sustainable protocol revenue while maintaining competitive returns for liquidity providers. This system represents a fundamental innovation in DEX economics.
+
+## Overview
+
+Unlike traditional AMMs where 100% of trading fees go to liquidity providers, Synthra implements a **67/33 split** where:
+
+- **67% goes to Liquidity Providers** - Maintaining competitive yields
+- **33% goes to Protocol Treasury** - Funding sustainable growth
+
+This creates the first self-sustaining DEX economy that doesn't rely on token emissions or external funding for operations and development.ury Fee
 
 The Treasury Fee is a unique feature of Synthra that distinguishes it from other decentralized exchanges. This page explains how the treasury fee works, its purpose, and the benefits it brings to the Synthra ecosystem.
 
@@ -8,125 +19,130 @@ Unlike standard pool fees that go to liquidity providers, the treasury fee is di
 
 ## How the Treasury Fee Works
 
-### Fee Calculation
+### Automatic Fee Distribution
 
-The treasury fee is calculated as 0.1% of the input amount of the swap. For example:
+The treasury fee operates seamlessly within every trade:
 
-* If you swap 1,000 USDC, the treasury fee would be 1 USDC
-* If you swap 10 ETH, the treasury fee would be 0.01 ETH
+1. **User initiates swap** on any fee tier pool
+2. **Total fee calculated** based on pool tier (0.01%, 0.05%, 0.3%, or 1%)
+3. **Automatic split executed**:
+   - 67% allocated to active liquidity providers
+   - 33% transferred to protocol treasury
+4. **Transaction completes** with full transparency
 
-### Treasury Management
+### Mathematical Breakdown
 
-The collected fees are automatically sent to the Synthra Treasury, which is a multi-signature wallet. This ensures that treasury funds are managed securely and transparently.
+**Example: $10,000 USDC → ETH swap on 0.3% fee tier**
 
-## Purpose of the Treasury Fee
+```
+Total Trading Fee: $10,000 × 0.3% = $30 USDC
 
-The treasury fee serves several critical purposes in the Synthra ecosystem:
+Distribution:
+• Liquidity Providers: $30 × 67% = $20.10 USDC  
+• Protocol Treasury: $30 × 33% = $9.90 USDC
 
-### 1. Funding Token Buybacks
+Effective Rates:
+• LP Rate: 0.201% of swap volume
+• Treasury Rate: 0.099% of swap volume
+```
 
-The primary use of treasury funds is to buy back Synthra tokens from the open market. These buybacks:
+**No Additional Cost to Traders**: The fee split happens within existing fee structures, so traders pay the same total fees as any comparable DEX.
 
-* Create consistent buying pressure for the token
-* Reduce the circulating supply if tokens are burned
-* Provide value accrual for token holders
+## Treasury Fund Utilization
 
-### 2. Protocol Development
+### Primary Allocation (60% - Buybacks)
 
-A portion of the treasury funds may be allocated to:
+**Token Buyback Program**
+- Weekly systematic buybacks during normal conditions
+- Daily buybacks during high-volume periods
+- Emergency buybacks during market stress
+- All purchased tokens immediately burned
 
-* Core protocol development
-* Security audits
-* Bug bounties
-* Infrastructure costs
+### Development Funding (25%)
 
-### 3. Ecosystem Growth
+**Core Protocol Development**
+- Smart contract upgrades and new features
+- Security audits by leading firms
+- Bug bounty programs
+- Infrastructure and hosting costs
 
-Treasury funds can also support:
+### Ecosystem Growth (10%)
 
-* Grants for developers building on Synthra
-* Liquidity mining programs
-* Marketing and community initiatives
-* Integration partnerships
+**Community Building**
+- Marketing and awareness campaigns
+- Educational content creation
+- Developer grants and incentives
+- Strategic partnerships
 
-## Buyback Mechanism
+### Emergency Reserve (5%)
 
-The buyback mechanism is a key component of Synthra's tokenomics:
+**Protocol Insurance**
+- Emergency response fund
+- Market crisis management
+- Regulatory compliance costs
+- Unforeseen technical issues
 
-### Buyback Schedule
+## Economic Benefits
 
-Buybacks occur on a regular schedule, typically:
+### For Token Holders
 
-* Weekly small buybacks for consistent pressure
-* Monthly larger buybacks announced to the community
-* Special buybacks during significant market events
+**Deflationary Pressure**
+- Regular buybacks reduce circulating supply
+- Permanent token burning increases scarcity
+- No dilution from new token emissions
+- Value accrual from protocol success
 
-### Buyback Execution
+### For Liquidity Providers
 
-Buybacks are executed through:
+**Competitive Returns**
+- 67% fee share maintains strong yields
+- Treasury buybacks support token value
+- Reduced impermanent loss from price stability
+- Multiple fee tiers for strategy optimization
 
-1. Direct market purchases on Synthra itself
-2. Batch processing to optimize gas costs
+### For Traders
 
-### Token Destination
+**Improved Trading Experience**
+- Better liquidity as treasury funds growth
+- Lower slippage from deeper pools
+- Platform reliability from sustainable funding
+- Competitive fees with added value
 
-Tokens acquired through buybacks may be:
+## Treasury Management
 
-* Burned (permanently removed from circulation)
-* Held in the treasury for future use
-* Distributed to stakers as additional rewards
+### Multi-Signature Security
 
-For more details on the buyback process, see the [Buyback Mechanism](broken-reference) page.
+**5-of-9 Multi-Sig Wallet**
+- Geographic distribution of signers
+- Hardware wallet security for all keys
+- Time-locked withdrawals for large amounts
+- Regular security audits and updates
 
-## Treasury Fee vs. Other Models
+**Governance Integration**
+- Major decisions require community approval
+- Transparent proposal and voting process
+- Public reporting of all fund movements
+- Emergency procedures for critical situations
 
-The treasury fee model offers several advantages over alternative funding models:
+## Transparency & Reporting
 
-### Compared to Inflation
+### Real-Time Dashboard
 
-Many protocols rely on token inflation to fund development, which dilutes existing holders. Synthra's treasury fee:
+**Live Treasury Metrics**
+- Current balance by asset type
+- Real-time fee accumulation rates
+- Historical buyback transactions
+- Allocation breakdown by category
 
-* Does not dilute token holders
-* Creates buying pressure rather than selling pressure
-* Scales with protocol usage
+### Monthly Reports
 
-### Compared to One-time Funding
+**Financial Statements**
+- Detailed asset holdings and changes
+- Fee collection and allocation breakdown
+- Buyback execution and burning records
+- Forward-looking projections
 
-Unlike protocols funded by one-time token sales or venture capital:
+---
 
-* Treasury fee provides ongoing, sustainable funding
-* Revenue scales with protocol success
-* Aligns incentives between users and token holders
-
-## Treasury Transparency
-
-Synthra is committed to transparency in treasury management:
-
-* All treasury addresses are public
-* Regular reports on treasury holdings and activities
-* Community oversight through governance
-* Clear guidelines for fund allocation
-
-## Treasury Fee Economics
-
-The treasury fee creates a virtuous cycle for the Synthra ecosystem:
-
-1. More trading volume → More fees collected
-2. More fees collected → More buybacks
-3. More buybacks → Higher token value
-4. Higher token value → More interest in the protocol
-5. More interest → More trading volume
-
-This alignment of incentives helps ensure the long-term sustainability of the protocol.
-
-
-
-## Future Developments
-
-Potential future developments for the treasury fee mechanism include:
-
-* Dynamic fee adjustment based on market conditions
-* Additional use cases for treasury funds
-* Integration with other DeFi protocols for treasury management
-* Enhanced transparency and reporting tools
+The Synthra treasury fee system creates a sustainable foundation for protocol growth while aligning incentives across all stakeholders in the ecosystem.
 

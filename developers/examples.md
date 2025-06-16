@@ -18,8 +18,8 @@ This example demonstrates how to execute a simple token swap using the Synthra S
 
 ```javascript
 import { ethers } from 'ethers'
-import { Token, CurrencyAmount, TradeType, Percent } from '@synthra-protocol/sdk'
-import { SynthraSwapRouter } from '@synthra-protocol/swap-router-sdk'
+import { Token, CurrencyAmount, TradeType, Percent } from '@synthra-swap/sdk'
+import { SynthraSwapRouter } from '@synthra-swap/swap-router-sdk'
 
 // Initialize provider and signer
 const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -35,7 +35,7 @@ async function executeSwap() {
     await window.ethereum.request({ method: 'eth_requestAccounts' })
     
     // Initialize the router contract
-    const routerAddress = '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45' // Synthra Router
+    const routerAddress = '0x2046bAA610FFCF4FBfaCE6bB5c3178f51773db82' // Synthra SwapRouter02
     const router = new ethers.Contract(
       routerAddress,
       ['function exactInputSingle(tuple(address,address,uint24,address,uint256,uint256,uint256,uint160)) external payable returns (uint256)'],
@@ -92,8 +92,8 @@ async function executeSwap() {
 ```jsx
 import React, { useState } from 'react'
 import { ethers } from 'ethers'
-import { Token, CurrencyAmount, TradeType, Percent } from '@synthra-protocol/sdk'
-import { SynthraSwapRouter } from '@synthra-protocol/swap-router-sdk'
+import { Token, CurrencyAmount, TradeType, Percent } from '@synthra-swap/sdk'
+import { SynthraSwapRouter } from '@synthra-swap/swap-router-sdk'
 
 const SwapComponent = () => {
   const [inputAmount, setInputAmount] = useState('')
@@ -223,8 +223,8 @@ This example demonstrates how to add liquidity to a Synthra pool.
 
 ```javascript
 import { ethers } from 'ethers'
-import { Token, CurrencyAmount, Position, nearestUsableTick } from '@synthra-protocol/sdk'
-import { NonfungiblePositionManager } from '@synthra-protocol/periphery-sdk'
+import { Token, CurrencyAmount, Position, nearestUsableTick } from '@synthra-swap/sdk'
+import { NonfungiblePositionManager } from '@synthra-swap/periphery-sdk'
 
 // Initialize provider and signer
 const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -348,7 +348,7 @@ This example demonstrates how to remove liquidity from a Synthra position.
 
 ```javascript
 import { ethers } from 'ethers'
-import { NonfungiblePositionManager } from '@synthra-protocol/periphery-sdk'
+import { NonfungiblePositionManager } from '@synthra-swap/periphery-sdk'
 
 // Initialize provider and signer
 const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -398,7 +398,7 @@ This example demonstrates how to collect fees from a Synthra position.
 
 ```javascript
 import { ethers } from 'ethers'
-import { NonfungiblePositionManager } from '@synthra-protocol/periphery-sdk'
+import { NonfungiblePositionManager } from '@synthra-swap/periphery-sdk'
 
 // Initialize provider and signer
 const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -447,7 +447,7 @@ This example demonstrates how to fetch and display data for a Synthra pool.
 
 ```javascript
 import { ethers } from 'ethers'
-import { Token, Pool } from '@synthra-protocol/sdk'
+import { Token, Pool } from '@synthra-swap/sdk'
 
 // Initialize provider
 const provider = new ethers.providers.JsonRpcProvider('https://mainnet.infura.io/v3/YOUR_INFURA_KEY')
@@ -535,7 +535,7 @@ This example demonstrates how to fetch a user's Synthra positions.
 
 ```javascript
 import { ethers } from 'ethers'
-import { Token, Pool, Position } from '@synthra-protocol/sdk'
+import { Token, Pool, Position } from '@synthra-swap/sdk'
 
 // Initialize provider
 const provider = new ethers.providers.JsonRpcProvider('https://mainnet.infura.io/v3/YOUR_INFURA_KEY')
@@ -547,7 +547,7 @@ const USDC = new Token(1, '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 6, 'USDC
 async function getUserPositions(userAddress) {
   try {
     // Create position manager contract instance
-    const positionManagerAddress = '0xC36442b4a4522E871399CD717aBDD847Ab11FE88' // Synthra Position Manager
+    const positionManagerAddress = '0x906515Dc7c32ab887C8B8Dce6463ac3a7816Af38' // Synthra Position Manager
     const positionManagerAbi = [
       'function balanceOf(address owner) external view returns (uint256)',
       'function tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256)',
@@ -601,7 +601,7 @@ This example demonstrates how to use the Synthra GraphQL API to fetch data.
 ```javascript
 import { request, gql } from 'graphql-request'
 
-const SYNTHRA_SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-mainnet'
+const SYNTHRA_SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet'
 
 // Fetch top pools by volume
 async function getTopPools(limit = 10) {
@@ -729,7 +729,7 @@ This example demonstrates how to use the Synthra REST API.
 // Initialize API client
 class SynthraAPI {
   constructor(apiKey = null) {
-    this.baseUrl = 'https://api.synthra.io/v1'
+    this.baseUrl = 'https://api.synthra.org/v1'
     this.apiKey = apiKey
   }
   
@@ -832,7 +832,7 @@ This example demonstrates how to calculate and display the treasury fee for swap
 
 ```javascript
 import { ethers } from 'ethers'
-import { Token, CurrencyAmount, Percent } from '@synthra-protocol/sdk'
+import { Token, CurrencyAmount, Percent } from '@synthra-swap/sdk'
 
 // Initialize provider
 const provider = new ethers.providers.JsonRpcProvider('https://mainnet.infura.io/v3/YOUR_INFURA_KEY')
@@ -899,8 +899,8 @@ This example provides a custom React hook for Synthra integration.
 ```jsx
 import { useState, useEffect, useCallback } from 'react'
 import { ethers } from 'ethers'
-import { Token, Pool, CurrencyAmount, TradeType } from '@synthra-protocol/sdk'
-import { SynthraSwapRouter } from '@synthra-protocol/swap-router-sdk'
+import { Token, Pool, CurrencyAmount, TradeType } from '@synthra-swap/sdk'
+import { SynthraSwapRouter } from '@synthra-swap/swap-router-sdk'
 
 // Custom hook for Synthra integration
 function useSynthra() {
@@ -1253,4 +1253,4 @@ These examples demonstrate the core functionality of the Synthra protocol and pr
 
 Remember that all swaps on Synthra include the 0.1% treasury fee in addition to the pool fee, which funds protocol development and token buybacks. This should be accounted for in your integration to provide accurate fee information to users.
 
-For additional support, join our [Discord community](https://discord.synthra.io) or reach out to our developer support team at [developers@synthra.io](mailto:developers@synthra.io).
+For additional support, join our [Discord community](https://discord.synthra.org) or reach out to our developer support team at [developers@synthra.org](mailto:developers@synthra.org).

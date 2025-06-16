@@ -151,7 +151,7 @@ Synthra maintains an ongoing bug bounty program to incentivize the responsible d
 * **Scope**: All deployed smart contracts
 * **Eligibility**: Open to all security researchers
 
-[View Bug Bounty Program](https://bounty.synthra.io)
+[View Bug Bounty Program](https://bounty.synthra.org)
 
 ## Audit Findings Resolution
 
@@ -184,12 +184,12 @@ Synthra is committed to ongoing security reviews:
 
 For security researchers:
 
-* **Email**: security@synthra.io
+* **Email**: security@synthra.org
 * **PGP Key**: Available at [security.synthra.io/pgp](https://security.synthra.io/pgp)
-* **Bug Bounty**: [bounty.synthra.io](https://bounty.synthra.io)
+* **Bug Bounty**: [bounty.synthra.org](https://bounty.synthra.org)
 
 ## Community Security Resources
 
-* [Security Best Practices](https://docs.synthra.io/security-best-practices)
-* [Smart Contract Verification Guide](https://docs.synthra.io/verify-contracts)
-* [Phishing Prevention](https://docs.synthra.io/avoid-scams)
+* [Security Best Practices](https://docs.synthra.org/security-best-practices)
+* [Smart Contract Verification Guide](https://docs.synthra.org/verify-contracts)
+* [Phishing Prevention](https://docs.synthra.org/avoid-scams)

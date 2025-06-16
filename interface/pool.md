@@ -10,7 +10,7 @@ The Pool interface allows you to explore existing liquidity pools, analyze their
 
 ### 1. Accessing the Pool Interface
 
-1. Navigate to[ app.synthra.org](https://app.synthra.org)
+1. Navigate to [app.synthra.org](https://app.synthra.org)
 2. Connect your wallet using the "Connect Wallet" button in the top right corner
 3. Select "Pool" from the main navigation menu
 

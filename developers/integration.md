@@ -62,7 +62,7 @@ Embed Synthra functionality in your user interface:
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import '@synthra-protocol/periphery/contracts/interfaces/ISynthraRouter.sol';
+import '@synthra-swap/periphery/contracts/interfaces/ISynthraRouter.sol';
 import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 
 contract SynthraSwapExample {
@@ -110,7 +110,7 @@ contract SynthraSwapExample {
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import '@synthra-protocol/periphery/contracts/interfaces/ISynthraNonfungiblePositionManager.sol';
+import '@synthra-swap/periphery/contracts/interfaces/ISynthraNonfungiblePositionManager.sol';
 import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 
 contract SynthraLiquidityExample {
@@ -174,20 +174,20 @@ contract SynthraLiquidityExample {
 
 ```bash
 # npm
-npm install @synthra-protocol/sdk
+npm install @synthra-swap/sdk
 
 # yarn
-yarn add @synthra-protocol/sdk
+yarn add @synthra-swap/sdk
 
 # pnpm
-pnpm add @synthra-protocol/sdk
+pnpm add @synthra-swap/sdk
 ```
 
 ### Basic Usage
 
 ```typescript
-import { ChainId, Token, CurrencyAmount, TradeType, Percent } from '@synthra-protocol/sdk'
-import { SynthraSwapRouter } from '@synthra-protocol/swap-router-sdk'
+import { ChainId, Token, CurrencyAmount, TradeType, Percent } from '@synthra-swap/sdk'
+import { SynthraSwapRouter } from '@synthra-swap/swap-router-sdk'
 
 // Define tokens
 const WETH = new Token(ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH')
@@ -248,8 +248,8 @@ The SDK provides additional functionality for:
 
 ### Subgraph Endpoints
 
-* **Mainnet**: `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-mainnet`
-* **Testnet**: `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-goerli`
+* **Mainnet**: `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet`
+* **Testnet**: `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-goerli`
 
 ### Example Queries
 
@@ -308,7 +308,7 @@ Embed the Synthra swap widget in your application:
 
 ```html
 <iframe
-  src="https://app.synthra.io/swap?embed=true&theme=dark"
+  src="https://app.synthra.org/swap?embed=true&theme=dark"
   height="660"
   width="100%"
   style="border: none; border-radius: 16px;"
@@ -331,14 +331,14 @@ Use our REST API for data integration:
 ```javascript
 // Get token price
 async function getTokenPrice(tokenAddress) {
-  const response = await fetch(`https://api.synthra.io/v1/tokens/${tokenAddress}/price`)
+  const response = await fetch(`https://api.synthra.org/v1/tokens/${tokenAddress}/price`)
   const data = await response.json()
   return data.price
 }
 
 // Get pool data
 async function getPoolData(poolAddress) {
-  const response = await fetch(`https://api.synthra.io/v1/pools/${poolAddress}`)
+  const response = await fetch(`https://api.synthra.org/v1/pools/${poolAddress}`)
   const data = await response.json()
   return data
 }
@@ -380,9 +380,9 @@ When integrating with Synthra, be aware that all swaps incur a 0.1% treasury fee
 
 ## Support and Resources
 
-* **Documentation**: [docs.synthra.io](https://docs.synthra.io)
-* **GitHub**: [github.com/synthra-protocol](https://github.com/synthra-protocol)
-* **Discord**: [discord.synthra.io](https://discord.synthra.io) (Developer channel)
-* **Email**: [developers@synthra.io](mailto:developers@synthra.io)
+* **Documentation**: [synthra.org/docs](https://synthra.org/docs)
+* **GitHub**: [github.com/synthra-swap](https://github.com/synthra-swap)
+* **Discord**: [discord.gg/synthra](https://discord.gg/synthra) - Developer channel available
+* **Email**: [developers@synthra.org](mailto:developers@synthra.org)
 
-For bug reports and feature requests, please use our [GitHub Issues](https://github.com/synthra-protocol/issues) page.
+For bug reports and feature requests, please use our [GitHub Issues](https://github.com/synthra-swap/issues) page.

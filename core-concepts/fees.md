@@ -1,53 +1,154 @@
-# Fees
+# Fee Structure
 
-Fees are a critical component of the Synthra protocol, incentivizing liquidity provision and supporting protocol sustainability. This page explains the fee structure in Synthra and how fees are collected, distributed, and utilized.
+Synthra's innovative fee structure balances competitive returns for liquidity providers with sustainable protocol development funding. This page explains how fees work, their distribution, and the benefits for all participants.
 
 ## Fee Structure Overview
 
-Synthra implements a dual fee structure:
+Synthra implements a **dual-benefit fee system** where every trade generates value for both:
 
-1. **Pool Fees**: Variable fees that go to liquidity providers
-2. **Treasury Fee**: A fixed 0.1% fee that goes to the protocol treasury
+1. **Liquidity Providers (67%)**: Competitive returns for capital providers
+2. **Protocol Treasury (33%)**: Sustainable funding for ecosystem growth
 
-## Pool Fees
+This structure creates a win-win scenario: LPs earn substantial returns while the protocol builds resources for long-term development and token value appreciation.
 
-### Multiple Fee Tiers
+## Pool Fee Tiers
 
-Synthra offers four fee tiers for liquidity pools:
+Synthra offers four carefully designed fee tiers optimized for different trading pair characteristics:
 
-* **0.01%**: Designed for stable pairs (e.g., stablecoin to stablecoin)
-* **0.05%**: For pairs with low volatility
-* **0.3%**: For most standard pairs
-* **1%**: For exotic pairs with high volatility
+### 0.01% Fee Tier
+- **Target Pairs**: Stablecoin pairs (USDC/USDT, DAI/USDC)
+- **LP Share**: 0.0067% per trade
+- **Treasury Share**: 0.0033% per trade
+- **Use Case**: High-frequency, low-risk arbitrage trading
 
-Each fee tier for the same token pair creates a separate pool with its own liquidity and price curve. This allows:
+### 0.05% Fee Tier  
+- **Target Pairs**: Low volatility pairs (ETH/stETH, WBTC/BTCB)
+- **LP Share**: 0.0335% per trade
+- **Treasury Share**: 0.0165% per trade
+- **Use Case**: Pegged assets and highly correlated tokens
 
-* Liquidity providers to choose the risk-reward profile that best suits their strategy
-* Traders to select the pool that offers the best price considering fees
-* Market forces to determine the optimal fee for each token pair
+### 0.30% Fee Tier
+- **Target Pairs**: Standard pairs (ETH/USDC, WBTC/ETH)
+- **LP Share**: 0.201% per trade
+- **Treasury Share**: 0.099% per trade
+- **Use Case**: Most common trading pairs with moderate volatility
 
-### Fee Collection
+### 1.00% Fee Tier
+- **Target Pairs**: Exotic pairs (new tokens, high volatility assets)
+- **LP Share**: 0.67% per trade  
+- **Treasury Share**: 0.33% per trade
+- **Use Case**: High-risk, high-reward trading pairs
 
-When a swap occurs, the pool fee is calculated as a percentage of the input amount and deducted from the tokens being swapped. These fees are not immediately distributed to liquidity providers but are accumulated within the pool.
+## Fee Distribution Mechanics
 
-### Fee Distribution
+### Automatic Split Process
 
-Fees are distributed proportionally to liquidity providers based on:
+Every trade automatically triggers the fee distribution:
 
-1. The amount of liquidity they've provided
-2. Whether their liquidity is active (within range) at the time of the swap
+1. **User initiates swap** with total fee based on pool tier
+2. **Smart contract calculates** 67/33 split instantly
+3. **LP portion (67%)** accumulates in the pool for active liquidity
+4. **Treasury portion (33%)** transfers to protocol multi-sig
+5. **Transaction completes** with full transparency on-chain
 
-Only liquidity that is active at the current price earns fees. This incentivizes liquidity providers to position their liquidity where it's most useful for traders.
+### Liquidity Provider Rewards
 
-### Collecting Earned Fees
+#### Active Liquidity Earns Fees
+Only liquidity positioned within the current trading range earns fees:
+- **In-range positions** collect 67% of trading fees continuously
+- **Out-of-range positions** earn zero fees until price returns to range
+- **Concentrated positions** earn higher fee density per dollar deployed
 
-Liquidity providers can collect their earned fees at any time by:
+#### Fee Accumulation
+- Fees accumulate automatically within each position
+- No minimum collection amount or time requirement
+- Compound growth as fees can be reinvested into positions
+- Both tokens of the pair are earned proportionally to swap volume
 
-1. Navigating to the Pool section of the interface
-2. Selecting their position
-3. Clicking "Collect Fees"
+#### Collecting Your Fees
 
-Fees are collected in both tokens of the pool, proportional to the swaps that have occurred while the position was active.
+**Step-by-Step Process:**
+1. Navigate to the **"Pool"** section in the Synthra interface
+2. Select your active liquidity position
+3. Review accumulated fees in both tokens
+4. Click **"Collect Fees"** to claim earnings
+5. Confirm transaction and receive tokens to your wallet
+
+**Pro Tips:**
+- Collect fees regularly to compound your returns
+- Consider gas costs vs. fee amounts for optimal timing
+- Reinvest fees to increase your position size over time
+
+## Economic Benefits
+
+### For Liquidity Providers
+
+#### Competitive Returns
+- **67% fee share** maintains strong LP profitability
+- **Multiple fee tiers** allow risk-adjusted strategies  
+- **Concentrated liquidity** amplifies returns per dollar
+- **Treasury buybacks** support overall token value
+
+#### Risk Mitigation
+- **Reduced impermanent loss** risk from token value stability
+- **Diversified income** from multiple trading pairs
+- **Protocol longevity** through sustainable funding model
+
+### For the Ecosystem
+
+#### Treasury Growth Engine
+- **33% of all fees** create substantial protocol revenue
+- **Diversified assets** provide stability and optionality
+- **Reinvestment capability** for continuous improvement
+- **Token buybacks** create deflationary pressure
+
+#### Network Effects
+- **Deeper liquidity** as treasury funds ecosystem growth
+- **Better execution** for all users over time
+- **Developer incentives** fund innovation and features
+- **Community growth** through strategic initiatives
+
+## Fee Optimization Strategies
+
+### For Liquidity Providers
+
+#### Range Management
+- **Narrow ranges** in stable pairs for maximum fee density
+- **Wider ranges** in volatile pairs for reduced management
+- **Multiple positions** across different fee tiers
+- **Rebalancing strategies** based on market conditions
+
+#### Fee Tier Selection
+- **0.01% tier**: For frequent traders seeking tight spreads
+- **0.05% tier**: For moderate volatility with good volume
+- **0.30% tier**: Best balance of fees and trading activity
+- **1.00% tier**: High risk/reward for volatile assets
+
+### For Traders
+
+#### Cost Optimization
+- **Compare effective rates** across different fee tiers
+- **Consider slippage** alongside fee costs
+- **Route optimization** through multiple pools if beneficial
+- **Timing strategies** during high-liquidity periods
+
+## Transparency & Analytics
+
+### Real-Time Data
+- **Live fee rates** for all pools and tiers
+- **Historical volume** and fee generation
+- **LP performance** metrics and comparisons
+- **Treasury accumulation** tracking
+
+### Fee Distribution Dashboard
+- **Total fees generated** (all-time and periodic)
+- **LP vs Treasury allocation** breakdowns  
+- **Fee tier performance** comparisons
+- **Individual position** tracking and analytics
+
+---
+
+Synthra's fee structure creates sustainable value for all participants while maintaining the competitive edge that attracts both liquidity providers and traders to the platform.
 
 ## Treasury Fee
 

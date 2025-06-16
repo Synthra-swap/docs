@@ -160,10 +160,10 @@ We recommend users follow these security practices:
 
 ## Security Resources
 
-* [Bug Bounty Program](https://bounty.synthra.io)
-* [Security Disclosure Policy](https://docs.synthra.io/security-policy)
+* [Bug Bounty Program](https://bounty.synthra.org)
+* [Security Disclosure Policy](https://docs.synthra.org/security-policy)
 * [Audit Reports](audits.md)
-* [Emergency Contact](mailto:security@synthra.io)
+* [Emergency Contact](mailto:security@synthra.org)
 
 ## Future Security Enhancements
 

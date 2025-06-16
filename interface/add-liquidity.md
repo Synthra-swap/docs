@@ -10,7 +10,7 @@ Adding liquidity to Synthra allows you to earn fees from trades that occur throu
 
 ### 1. Accessing the Liquidity Interface
 
-1. Navigate to[ app.synthra.org](https://app.synthra.org)
+1. Navigate to [app.synthra.org](https://app.synthra.org)
 2. Connect your wallet using the "Connect Wallet" button in the top right corner
 3. Select "Pool" from the main navigation menu
 4. Click the "New Position" button

@@ -12,29 +12,52 @@ Synthra is a decentralized exchange protocol that uses concentrated liquidity to
 
 Synthra introduces several key innovations:
 
-* Concentrated liquidity for superior capital efficiency
-* Multiple fee tiers optimized for different asset pairs
-* A unique treasury fee mechanism (0.1%) that funds protocol buybacks
-* Advanced position management for liquidity providers
+* **Concentrated liquidity** for up to 4000x greater capital efficiency
+* **Innovative fee structure**: 67% to LPs, 33% to treasury
+* **Deflationary tokenomics** through systematic token buybacks
+* **Sustainable funding** model without relying on token emissions
+* **Multiple fee tiers** optimized for different asset pairs
+* **Advanced position management** for sophisticated liquidity strategies
 
 ### Which networks does Synthra support?
 
-Synthra is currently available on [UOMI Network](https://uomi.ai).&#x20;
+Synthra is available on multiple networks:
+
+* **Ethereum Mainnet** (Primary deployment)
+* **Arbitrum** (Lower gas fees)  
+* **Polygon** (Fast and cheap transactions)
+* *Additional networks coming soon*
 
 ## Trading on Synthra
 
 ### How do I swap tokens on Synthra?
 
-To swap tokens, connect your wallet, select the tokens you want to exchange, enter the amount, and click "Swap." For detailed instructions, see our [Getting Started](getting-started.md) guide.
+1. Visit [app.synthra.org](https://app.synthra.org)
+2. Connect your wallet
+3. Select the tokens you want to exchange
+4. Enter the amount and review the trade details
+5. Click "Swap" and confirm in your wallet
+
+For detailed instructions, see our [Getting Started](getting-started.md) guide.
 
 ### What are the fees for swapping tokens?
 
-Synthra has different fee tiers depending on the pool:
+Synthra has different fee tiers with a unique **67/33 split**:
 
-* 0.01% for stable pairs
-* 0.05% for low volatility pairs
-* 0.3% for standard pairs
-* 1% for exotic pairs with high volatility
+**Fee Tiers:**
+* **0.01%** for stable pairs (USDC/USDT)
+* **0.05%** for low volatility pairs (ETH/stETH)  
+* **0.30%** for standard pairs (ETH/USDC)
+* **1.00%** for high volatility pairs
+
+**Fee Distribution:**
+* **67% goes to Liquidity Providers** - Competitive yields
+* **33% goes to Protocol Treasury** - Funds buybacks and development
+
+**Example**: On a $1,000 trade with 0.3% fees:
+- Total fee: $3.00
+- LP earnings: $2.01  
+- Treasury: $0.99 (used for token buybacks)
 
 ### What is slippage and how do I set it?
 

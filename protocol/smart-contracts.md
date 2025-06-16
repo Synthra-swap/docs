@@ -1,6 +1,36 @@
 # Smart Contracts
 
-This page provides an overview of the key smart contracts that power the Synthra protocol. Understanding these contracts is essential for developers who want to integrate with Synthra or build on top of it.
+This page provides an overview of the key smart contracts that power the Synthra protocol and their official addresses on Ethereum Mainnet.
+
+## Contract Addresses - Ethereum Mainnet
+
+### Core Protocol Contracts
+
+| Contract Name | Address | Description |
+|---------------|---------|-------------|
+| **V3CoreFactory** | `0x490d9C4bFEC3CeE8DFF45C90f9a6F550337c9517` | Creates and manages all Synthra V3 pools |
+| **SwapRouter02** | `0x2046bAA610FFCF4FBfaCE6bB5c3178f51773db82` | Main router contract for executing swaps |
+| **UniversalRouter** | `0x197EEAd5Fe3DB82c4Cd55C5752Bc87AEdE11f230` | Universal router for complex multi-step transactions |
+| **NonfungiblePositionManager** | `0x906515Dc7c32ab887C8B8Dce6463ac3a7816Af38` | Manages NFT-based liquidity positions |
+| **QuoterV2** | `0xCcB2B2F8395e4462d28703469F84c95293845332` | Provides accurate price quotes without executing trades |
+
+### Periphery Contracts
+
+| Contract Name | Address | Description |
+|---------------|---------|-------------|
+| **Multicall2** | `0xaDD90b7787B22106e10E4530dfc9d58D4c508791` | Enables batching multiple contract calls |
+| **TickLens** | `0xD36cA9255dea7837cE1D5B816B3b8d89c3D41152` | Reads tick data from pools efficiently |
+| **V3Migrator** | `0xde4d72aB8f4E5B2b3eA80FBe7FcFFE7687e929e2` | Migrates liquidity from Uniswap V2 to Synthra V3 |
+| **V3Staker** | `0xC40889eEa4a0471748ea0faa217A7d77D920dD75` | Handles staking rewards for liquidity providers |
+
+### Administrative Contracts
+
+| Contract Name | Address | Description |
+|---------------|---------|-------------|
+| **ProxyAdmin** | `0x0d067e1b2367886c54977Fa1E086408895DE5a8C` | Manages upgradeable proxy contracts |
+| **NFTDescriptorLibrary** | `0xd12Ff889A90BFA5c00618086BAcE6455d695870e` | Library for generating NFT position metadata |
+| **NFTPositionDescriptor** | `0xa90d0f120D31F1d934c85744a02C74b08927Ed79` | Generates SVG and metadata for position NFTs |
+| **DescriptorProxy** | `0xcc8235ea582984B6ed04EFB279A39B8c7102980c` | Proxy contract for the position descriptor |
 
 ## Contract Architecture
 
@@ -173,10 +203,6 @@ The contract that executes token buybacks using treasury funds.
 * `BuybackExecuted`: Emitted when a buyback is executed
 * `StrategyUpdated`: Emitted when the buyback strategy is updated
 * `EmergencyWithdrawal`: Emitted during an emergency withdrawal
-
-## Contract Addresses
-
-## TO DO
 
 ## Contract Interactions
 

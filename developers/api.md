@@ -1,6 +1,15 @@
 # API
 
-This page provides comprehensive documentation for the Synthra API, which allows developers to access Synthra data and analytics programmatically.
+This page pr| Network          | Subgraph URL                                                                 |
+| ---------------- | ---------------------------------------------------------------------------- |
+| Ethereum Mainnetconst client = new ApolloClient({
+  uri: 'https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet',
+  cache: new InMemoryCache(),
+})https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet`      |
+| Arbitrum         | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-arbitrum`     |
+| Optimism         | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-optimism`     |
+| Polygon          | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-polygon`      |
+| Goerli (Testnet) | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-goerli`       |comprehensive documentation for the Synthra API, which allows developers to access Synthra data and analytics programmatically.
 
 ## Overview
 
@@ -19,11 +28,11 @@ The GraphQL API is powered by The Graph protocol and provides the most comprehen
 
 | Network          | Endpoint URL                                                                |
 | ---------------- | --------------------------------------------------------------------------- |
-| Ethereum Mainnet | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-mainnet`  |
-| Arbitrum         | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-arbitrum` |
-| Optimism         | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-optimism` |
-| Polygon          | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-polygon`  |
-| Goerli (Testnet) | `https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-goerli`   |
+| Ethereum Mainnet | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet`  |
+| Arbitrum         | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-arbitrum` |
+| Optimism         | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-optimism` |
+| Polygon          | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-polygon`  |
+| Goerli (Testnet) | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-goerli`   |
 
 ### Authentication
 
@@ -230,7 +239,7 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 
 // Initialize client
 const client = new ApolloClient({
-  uri: 'https://api.thegraph.com/subgraphs/name/synthra-protocol/synthra-mainnet',
+  uri: 'https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet',
   cache: new InMemoryCache()
 })
 
@@ -295,7 +304,7 @@ The REST API provides simplified access to common Synthra data through standard 
 ### Base URL
 
 ```
-https://api.synthra.io/v1
+https://api.synthra.org/v1
 ```
 
 ### Authentication
@@ -306,7 +315,7 @@ Some endpoints require API keys for access:
 Authorization: Bearer YOUR_API_KEY
 ```
 
-To obtain an API key, visit the [Synthra Developer Portal](https://developers.synthra.io).
+To obtain an API key, visit the [Synthra Developer Portal](https://developers.synthra.org).
 
 ### Endpoints
 
@@ -573,7 +582,7 @@ A simple JavaScript client for the REST API:
 
 ```javascript
 class SynthraAPI {
-  constructor(apiKey = null, baseUrl = 'https://api.synthra.io/v1') {
+  constructor(apiKey = null, baseUrl = 'https://api.synthra.org/v1') {
     this.apiKey = apiKey
     this.baseUrl = baseUrl
   }
@@ -651,7 +660,7 @@ async function getUserPositions(address) {
 Synthra also offers a WebSocket API for real-time updates:
 
 ```
-wss://ws.synthra.io/v1
+wss://ws.synthra.org/v1
 ```
 
 ### Authentication
@@ -850,7 +859,7 @@ Pagination metadata is included in the response:
 
 ## Support and Resources
 
-* **API Status**: [status.synthra.io](https://status.synthra.io)
-* **Developer Portal**: [developers.synthra.io](https://developers.synthra.io)
-* **API Explorer**: [api.synthra.io/explorer](https://api.synthra.io/explorer)
-* **Support**: [developers@synthra.io](mailto:developers@synthra.io)
+* **API Status**: [status.synthra.org](https://status.synthra.org)
+* **Developer Portal**: [developers.synthra.org](https://developers.synthra.org)
+* **API Explorer**: [api.synthra.org/explorer](https://api.synthra.org/explorer)
+* **Support**: [developers@synthra.org](mailto:developers@synthra.org)
