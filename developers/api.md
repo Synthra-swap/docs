@@ -1,15 +1,8 @@
-# API
+---
+hidden: true
+---
 
-This page pr| Network          | Subgraph URL                                                                 |
-| ---------------- | ---------------------------------------------------------------------------- |
-| Ethereum Mainnetconst client = new ApolloClient({
-  uri: 'https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet',
-  cache: new InMemoryCache(),
-})https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet`      |
-| Arbitrum         | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-arbitrum`     |
-| Optimism         | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-optimism`     |
-| Polygon          | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-polygon`      |
-| Goerli (Testnet) | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-goerli`       |comprehensive documentation for the Synthra API, which allows developers to access Synthra data and analytics programmatically.
+# API Reference
 
 ## Overview
 
@@ -26,8 +19,8 @@ The GraphQL API is powered by The Graph protocol and provides the most comprehen
 
 ### Endpoints
 
-| Network          | Endpoint URL                                                                |
-| ---------------- | --------------------------------------------------------------------------- |
+| Network          | Endpoint URL                                                            |
+| ---------------- | ----------------------------------------------------------------------- |
 | Ethereum Mainnet | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-mainnet`  |
 | Arbitrum         | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-arbitrum` |
 | Optimism         | `https://api.thegraph.com/subgraphs/name/synthra-swap/synthra-optimism` |
