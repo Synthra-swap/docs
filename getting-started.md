@@ -64,10 +64,7 @@ Synthra is available on multiple blockchain networks. To switch networks:
 3. Approve the network switch in your wallet if prompted
 
 **Supported Networks**:
-- **Ethereum Mainnet** (Primary deployment)
-- **Arbitrum** (Lower gas fees)
-- **Polygon** (Fast and cheap transactions)
-- *More networks coming soon*
+- **UOMI Finney** (Primary deployment)
 
 💰 **Gas Fees**: Remember to keep some native tokens (ETH, MATIC, etc.) for transaction fees.
 
