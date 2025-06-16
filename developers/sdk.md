@@ -519,7 +519,7 @@ For complete examples of common use cases, see the [Examples](examples.md) page.
 
 ## Support and Resources
 
-* **GitHub Repository**: [github.com/synthra-swap/sdk](https://github.com/synthra-swap/sdk)
+* **GitHub Repository**: [github.com/Synthra-swap/sdk](https://github.com/Synthra-swap/sdk)
 * **NPM Package**: [@synthra-swap/sdk](https://www.npmjs.com/package/@synthra-swap/sdk)
-* **Issues and Feature Requests**: [GitHub Issues](https://github.com/synthra-swap/sdk/issues)
-* **Discord**: [discord.gg/synthra](https://discord.gg/synthra) - Developer channel available
+* **Issues and Feature Requests**: [GitHub Issues](https://github.com/Synthra-swap/sdk/issues)
+* **Discord**: [discord.gg/eesEKPRDtd](https://discord.gg/eesEKPRDtd) - Developer channel available

@@ -381,8 +381,8 @@ When integrating with Synthra, be aware that all swaps incur a 0.1% treasury fee
 ## Support and Resources
 
 * **Documentation**: [synthra.org/docs](https://synthra.org/docs)
-* **GitHub**: [github.com/synthra-swap](https://github.com/synthra-swap)
-* **Discord**: [discord.gg/synthra](https://discord.gg/synthra) - Developer channel available
+* **GitHub**: [github.com/Synthra-swap](https://github.com/Synthra-swap)
+* **Discord**: [discord.gg/eesEKPRDtd](https://discord.gg/eesEKPRDtd) - Developer channel available
 * **Email**: [developers@synthra.org](mailto:developers@synthra.org)
 
-For bug reports and feature requests, please use our [GitHub Issues](https://github.com/synthra-swap/issues) page.
+For bug reports and feature requests, please use our [GitHub Issues](https://github.com/Synthra-swap/issues) page.

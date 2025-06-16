@@ -173,8 +173,8 @@ Now that you know the basics:
 
 ### Community & Support
 
-- **Discord**: [discord.gg/synthra](https://discord.gg/synthra) - Real-time help and discussions
-- **Twitter**: [@Synthra_Protocol](https://x.com/Synthra_Protocol) - Latest updates
+- **Discord**: [discord.gg/eesEKPRDtd](https://discord.gg/eesEKPRDtd) - Real-time help and discussions
+- **Twitter**: [@synthra_swap](https://x.com/synthra_swap) - Latest updates
 - **Documentation**: Comprehensive guides for all features
 - **FAQ**: [Common questions](faq.md) and troubleshooting
 

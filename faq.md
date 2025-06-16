@@ -141,4 +141,11 @@ We welcome community contributions! You can contribute by:
 
 Follow our official channels:
 
-## TODO
+- **Discord**: [discord.gg/eesEKPRDtd](https://discord.gg/eesEKPRDtd) - Community discussions and support
+- **Twitter**: [@synthra_swap](https://x.com/synthra_swap) - Latest updates and announcements
+- **GitHub**: [github.com/Synthra-swap](https://github.com/Synthra-swap) - Open source development
+- **Documentation**: [synthra.org/docs](https://synthra.org/docs) - Technical guides and updates
+
+## Community and Support
+
+For additional help and community discussions, join our Discord server where our team and community members are available to answer questions and provide support.

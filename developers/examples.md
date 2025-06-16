@@ -1253,4 +1253,4 @@ These examples demonstrate the core functionality of the Synthra protocol and pr
 
 Remember that all swaps on Synthra include the 0.1% treasury fee in addition to the pool fee, which funds protocol development and token buybacks. This should be accounted for in your integration to provide accurate fee information to users.
 
-For additional support, join our [Discord community](https://discord.synthra.org) or reach out to our developer support team at [developers@synthra.org](mailto:developers@synthra.org).
+For additional support, join our [Discord community](https://discord.gg/eesEKPRDtd) or reach out to our developer support team at [developers@synthra.org](mailto:developers@synthra.org).

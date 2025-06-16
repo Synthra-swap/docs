@@ -226,3 +226,18 @@ The core contracts (Factory, Pool) are immutable for security reasons. Protocol 
 2. Phased deployments of new features
 
 This approach balances security with the need for protocol evolution.
+
+## Support
+
+If you have questions about contract addresses or need help with integration:
+
+- **Discord**: [discord.gg/eesEKPRDtd](https://discord.gg/eesEKPRDtd) - Developer support channel
+- **Documentation**: [synthra.org/docs](https://synthra.org/docs)
+- **GitHub Issues**: [github.com/Synthra-swap/issues](https://github.com/Synthra-swap/issues)
+- **Email**: [developers@synthra.org](mailto:developers@synthra.org)
+
+## Updates and Changes
+
+Contract addresses are immutable once deployed. Any changes to the protocol will result in new contract deployments with new addresses. Always check this page for the latest official addresses.
+
+Subscribe to our [Discord announcements](https://discord.gg/eesEKPRDtd) or follow [@synthra_swap](https://x.com/synthra_swap) for updates about new deployments or important changes.

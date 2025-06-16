@@ -535,4 +535,4 @@ class SynthraClient {
 - [SDK Error Handling](../developers/sdk.md#error-handling)
 - [Integration Best Practices](../developers/integration.md#error-handling)
 
-For questions about specific errors or error handling patterns, join our [Discord community](https://discord.synthra.org) or contact our technical team at [developers@synthra.org](mailto:developers@synthra.org).
+For questions about specific errors or error handling patterns, join our [Discord community](https://discord.gg/eesEKPRDtd) or contact our technical team at [developers@synthra.org](mailto:developers@synthra.org).

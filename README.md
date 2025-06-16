@@ -70,10 +70,9 @@ Step-by-step tutorials for [Swapping](interface/swap.md), [Adding Liquidity](int
 
 Join the Synthra community to get help, stay updated, and connect with other users:
 
-- **Discord**: [discord.gg/synthra](https://discord.gg/synthra) - Real-time chat and support
-- **Twitter**: [@Synthra_Protocol](https://x.com/Synthra_Protocol) - Latest updates and announcements  
-- **Telegram**: [t.me/SynthraProtocol](https://t.me/SynthraProtocol) - Community discussions
-- **GitHub**: [github.com/synthra-swap](https://github.com/synthra-swap) - Open source development
+- **Discord**: [discord.gg/eesEKPRDtd](https://discord.gg/eesEKPRDtd) - Real-time chat and support
+- **Twitter**: [@synthra_swap](https://x.com/synthra_swap) - Latest updates and announcements  
+- **GitHub**: [github.com/Synthra-swap](https://github.com/Synthra-swap) - Open source development
 
 ### Need Help?
 

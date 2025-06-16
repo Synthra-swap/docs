@@ -34,10 +34,10 @@ For those looking to build more complex integrations, the [Examples](examples.md
 
 Join our developer community for support and collaboration:
 
-* **Discord**: [discord.gg/synthra](https://discord.gg/synthra) - Developer channel available
-* **GitHub**: [github.com/synthra-swap](https://github.com/synthra-swap)
+* **Discord**: [discord.gg/eesEKPRDtd](https://discord.gg/eesEKPRDtd) - Developer channel available
+* **GitHub**: [github.com/Synthra-swap](https://github.com/Synthra-swap)
 * **Documentation**: [synthra.org/docs](https://synthra.org/docs) - Developer guides
-* **Bug Reports**: [github.com/synthra-swap/issues](https://github.com/synthra-swap/issues)
+* **Bug Reports**: [github.com/Synthra-swap/issues](https://github.com/Synthra-swap/issues)
 
 ## Contract Addresses
 
