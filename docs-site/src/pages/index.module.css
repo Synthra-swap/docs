@@ -1,0 +1,123 @@
+/**
+ * Minimal Homepage Styles for Synthra Swap
+ */
+
+.heroBanner {
+  padding: 6rem 0;
+  text-align: center;
+  background: var(--synthra-bg-primary);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.heroTitle {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  color: var(--synthra-text-primary) !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.2 !important;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem !important;
+  font-weight: 400 !important;
+  color: var(--synthra-accent) !important;
+  margin-bottom: 1rem !important;
+}
+
+.heroDescription {
+  font-size: 1rem;
+  color: var(--synthra-text-secondary);
+  max-width: 500px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.getStartedButton {
+  background: var(--synthra-accent) !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.getStartedButton:hover {
+  background: var(--synthra-purple-dark) !important;
+  color: white !important;
+}
+
+.launchButton {
+  background: transparent !important;
+  border: 1px solid var(--ifm-color-emphasis-300) !important;
+  border-radius: 6px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  color: var(--synthra-text-secondary) !important;
+  transition: all 0.2s ease !important;
+}
+
+.launchButton:hover {
+  background: var(--ifm-color-emphasis-200) !important;
+  color: var(--synthra-text-primary) !important;
+  border-color: var(--synthra-accent) !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 0;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem !important;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.125rem !important;
+  }
+  
+  .heroDescription {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0 1rem;
+  }
+  
+  .getStartedButton,
+  .launchButton {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.625rem 1.25rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding: 3rem 0;
+  }
+  
+  .heroTitle {
+    font-size: 2rem !important;
+  }
+  
+  .heroSubtitle {
+    font-size: 1rem !important;
+  }
+}

@@ -1,0 +1,536 @@
+/**
+ * Synthra Swap Documentation Theme
+ * Minimal dark theme with subtle purple accents
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Custom color palette - More minimal */
+:root {
+  /* Minimal purple accents */
+  --synthra-purple-dark: #5b21b6;
+  --synthra-purple: #8b5cf6;
+  --synthra-pink-dark: #7c2d92;
+  --synthra-pink: #a855f7;
+  
+  /* Minimal background colors */
+  --synthra-bg-primary: #0a0a0a;
+  --synthra-bg-secondary: #111111;
+  --synthra-bg-tertiary: #1a1a1a;
+  
+  /* Subtle text colors */
+  --synthra-text-primary: #f8fafc;
+  --synthra-text-secondary: #cbd5e1;
+  --synthra-text-muted: #94a3b8;
+  
+  /* Minimal accent */
+  --synthra-accent: #8b5cf6;
+  
+  /* Infima overrides - Minimal approach */
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #6d28d9;
+  --ifm-color-primary-darkest: #5b21b6;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #ddd6fe;
+  
+  --ifm-background-color: var(--synthra-bg-primary);
+  --ifm-background-surface-color: var(--synthra-bg-secondary);
+  --ifm-color-content: var(--synthra-text-primary);
+  --ifm-color-content-secondary: var(--synthra-text-secondary);
+  
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-font-size-base: 15px;
+  --ifm-line-height-base: 1.7;
+  
+  /* Minimal navbar */
+  --ifm-navbar-background-color: rgba(10, 10, 10, 0.95);
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-height: 60px;
+  
+  /* Minimal sidebar */
+  --doc-sidebar-width: 240px !important;
+  --ifm-sidebar-background-color: var(--synthra-bg-secondary);
+  
+  --ifm-footer-background-color: var(--synthra-bg-secondary);
+  
+  --ifm-code-font-size: 90%;
+  --ifm-code-background: #1a1a1a;
+  --ifm-code-color: #e2e8f0;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 246, 0.1);
+  
+  /* Minimal borders */
+  --ifm-color-emphasis-200: #262626;
+  --ifm-color-emphasis-300: #404040;
+  --ifm-code-background: rgba(139, 92, 246, 0.1);
+  --ifm-code-color: var(--synthra-accent-1);
+  
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 246, 0.1);
+  
+  /* Custom gradients */
+  --synthra-gradient-primary: linear-gradient(135deg, var(--synthra-purple) 0%, var(--synthra-pink) 100%);
+  --synthra-gradient-secondary: linear-gradient(135deg, var(--synthra-purple-dark) 0%, var(--synthra-pink-dark) 100%);
+  --synthra-gradient-subtle: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+}
+
+/* Dark theme specific overrides */
+[data-theme='dark'] {
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #6d28d9;
+  --ifm-color-primary-darkest: #5b21b6;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #ddd6fe;
+  
+  --ifm-background-color: var(--synthra-bg-primary);
+  --ifm-background-surface-color: var(--synthra-bg-secondary);
+  --ifm-color-content: var(--synthra-text-primary);
+  --ifm-color-content-secondary: var(--synthra-text-secondary);
+  
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 246, 0.1);
+}
+
+/* Body and typography - Clean and minimal */
+body {
+  font-family: var(--ifm-font-family-base);
+  background: var(--synthra-bg-primary);
+  color: var(--synthra-text-primary);
+  font-weight: 400;
+}
+
+/* Minimal navbar */
+.navbar {
+  background: var(--ifm-navbar-background-color);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: none;
+  padding: 0.5rem 0;
+}
+
+.navbar__brand {
+  margin-left: 1rem;
+}
+
+.navbar__logo {
+  margin-right: 0.75rem;
+}
+
+.navbar__title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--synthra-text-primary);
+}
+
+.navbar__link {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--synthra-text-secondary);
+  transition: color 0.2s ease;
+}
+
+.navbar__link:hover {
+  color: var(--synthra-accent);
+}
+
+/* Launch App button - Simple and clean */
+.button-launch-app {
+  background: var(--synthra-accent) !important;
+  border: none !important;
+  border-radius: 6px !important;
+  color: white !important;
+  font-weight: 500 !important;
+  padding: 8px 16px !important;
+  font-size: 0.9rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.button-launch-app:hover {
+  background: var(--synthra-purple-dark) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Minimal sidebar - Narrower width */
+.theme-doc-sidebar-container {
+  width: var(--doc-sidebar-width) !important;
+  background: var(--ifm-sidebar-background-color);
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+@media (min-width: 997px) {
+  .main-wrapper {
+    max-width: none;
+  }
+  
+  .theme-doc-sidebar-container {
+    width: var(--doc-sidebar-width) !important;
+  }
+  
+  .docMainContainer_gTbr {
+    max-width: calc(100% - var(--doc-sidebar-width));
+  }
+}
+
+.theme-doc-sidebar-menu {
+  padding: 1rem 0.5rem;
+}
+
+.menu__list-item {
+  margin: 0;
+}
+
+.menu__link {
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0.4rem 0.75rem;
+  margin: 0 0.25rem 0.1rem 0.25rem;
+  color: var(--synthra-text-secondary);
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--synthra-accent);
+}
+
+.menu__link--active {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--synthra-accent);
+  font-weight: 500;
+}
+
+.menu__list-item--collapsed .menu__caret::before {
+  background: var(--synthra-text-muted);
+}
+
+.menu__list-item-collapsible:hover .menu__caret::before {
+  background: var(--synthra-accent);
+}
+
+/* Content area - Clean and spacious */
+.main-wrapper {
+  background: var(--synthra-bg-primary);
+}
+
+.theme-doc-markdown {
+  max-width: none;
+  padding: 0 2rem;
+}
+
+.markdown h1 {
+  color: var(--synthra-text-primary);
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 1rem;
+}
+
+.markdown h2 {
+  color: var(--synthra-text-primary);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.markdown h3 {
+  color: var(--synthra-text-primary);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown p {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+/* Code blocks - Minimal styling */
+.prism-code {
+  background: var(--ifm-code-background) !important;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 0.85rem;
+}
+
+/* Tables - Clean borders */
+.table {
+  background: var(--synthra-bg-secondary);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.table th {
+  background: var(--synthra-bg-tertiary);
+  color: var(--synthra-text-primary);
+  font-weight: 500;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.table td {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Buttons - Minimal design */
+.button {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.button--primary {
+  background: var(--synthra-accent);
+  border: none;
+  color: white;
+}
+
+.button--primary:hover {
+  background: var(--synthra-purple-dark);
+  color: white;
+}
+
+.button--secondary {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: transparent;
+  color: var(--synthra-text-secondary);
+}
+
+.button--secondary:hover {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--synthra-text-primary);
+}
+
+/* Pagination - Minimal */
+.pagination-nav {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+
+.pagination-nav__link {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+  background: var(--synthra-bg-secondary);
+  transition: all 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  background: var(--synthra-bg-tertiary);
+  border-color: var(--synthra-accent);
+}
+
+/* Footer - Minimal */
+.footer {
+  background: var(--synthra-bg-secondary);
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding: 2rem 0;
+}
+
+.footer__title {
+  color: var(--synthra-text-primary);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.footer__link-item {
+  font-size: 0.85rem;
+  color: var(--synthra-text-secondary);
+}
+
+.footer__link-item:hover {
+  color: var(--synthra-accent);
+}
+
+.footer__copyright {
+  font-size: 0.8rem;
+  color: var(--synthra-text-muted);
+}
+
+/* Table of Contents - Minimal */
+.table-of-contents {
+  border-left: 2px solid var(--ifm-color-emphasis-200);
+  font-size: 0.85rem;
+}
+
+.table-of-contents__link {
+  color: var(--synthra-text-secondary);
+  transition: color 0.2s ease;
+  padding: 0.2rem 0;
+}
+
+.table-of-contents__link:hover {
+  color: var(--synthra-accent);
+}
+
+.table-of-contents__link--active {
+  color: var(--synthra-accent);
+  font-weight: 500;
+}
+
+/* Admonitions - Subtle */
+.alert {
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--synthra-bg-secondary);
+  font-size: 0.9rem;
+}
+
+.alert--info {
+  border-color: rgba(139, 92, 246, 0.3);
+  background: rgba(139, 92, 246, 0.05);
+}
+
+.alert--warning {
+  border-color: rgba(245, 158, 11, 0.3);
+  background: rgba(245, 158, 11, 0.05);
+}
+
+.alert--danger {
+  border-color: rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.05);
+}
+
+/* Search - Minimal (removed duplicate, see enhanced version below) */
+
+/* Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--synthra-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-300);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--synthra-accent);
+}
+
+/* Mobile responsive - Keep narrow sidebar on desktop only */
+@media (max-width: 996px) {
+  .theme-doc-sidebar-container {
+    width: 100% !important;
+  }
+  
+  .navbar__title {
+    font-size: 1rem;
+  }
+  
+  .button-launch-app {
+    padding: 6px 12px !important;
+    font-size: 0.85rem !important;
+  }
+  
+  .theme-doc-markdown {
+    padding: 0 1rem;
+  }
+}
+
+.navbar__search{
+  margin-right: 1rem;
+}
+/* Search Styling - Enhanced */
+.DocSearch-Button {
+  background: rgba(139, 92, 246, 0.1) !important;
+  border: 1px solid rgba(139, 92, 246, 0.2) !important;
+  border-radius: 6px !important;
+  color: #94a3b8 !important;
+  transition: all 0.2s ease !important;
+  margin-right: 2rem !important;
+  height: 36px !important;
+  width: 200px !important;
+}
+
+.DocSearch-Button:hover {
+  background: rgba(139, 92, 246, 0.15) !important;
+  border-color: rgba(139, 92, 246, 0.4) !important;
+}
+
+.DocSearch-Button-Key {
+  background: rgba(139, 92, 246, 0.2) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 3px !important;
+  font-size: 0.75rem !important;
+}
+
+.DocSearch-Search-Icon {
+  color: #8b5cf6 !important;
+}
+
+/* Search Modal */
+.DocSearch-Modal {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(139, 92, 246, 0.3) !important;
+  border-radius: 8px !important;
+}
+
+.DocSearch-SearchBar {
+  background: #111111 !important;
+  border: 1px solid rgba(139, 92, 246, 0.2) !important;
+  border-radius: 6px !important;
+}
+
+.DocSearch-Input {
+  background: transparent !important;
+  color: #f8fafc !important;
+  font-size: 0.9rem !important;
+}
+
+.DocSearch-Input::placeholder {
+  color: #94a3b8 !important;
+}
+
+.DocSearch-Hit {
+  background: rgba(139, 92, 246, 0.05) !important;
+  border-radius: 6px !important;
+  margin-bottom: 2px !important;
+  border: 1px solid transparent !important;
+}
+
+.DocSearch-Hit:hover {
+  background: rgba(139, 92, 246, 0.1) !important;
+  border-color: rgba(139, 92, 246, 0.2) !important;
+}
+
+.DocSearch-Hit[aria-selected="true"] {
+  background: rgba(139, 92, 246, 0.15) !important;
+  border-color: rgba(139, 92, 246, 0.3) !important;
+}
+
+.DocSearch-Hit-title {
+  color: #f8fafc !important;
+  font-weight: 500 !important;
+}
+
+.DocSearch-Hit-path {
+  color: #8b5cf6 !important;
+  font-size: 0.8rem !important;
+}
+
+.DocSearch-Hit-text {
+  color: #cbd5e1 !important;
+  font-size: 0.85rem !important;
+}
+
+.DocSearch-Label {
+  color: #94a3b8 !important;
+}
+
+@media (max-width: 768px) {
+  .DocSearch-Button {
+    width: 150px !important;
+  }
+}
