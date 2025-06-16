@@ -1,0 +1,18 @@
+{
+  "name": "synthra-theme",
+  "version": "1.0.0",
+  "description": "Modern GitBook theme with Synthra Swap styling - dark theme with purple-pink gradients",
+  "main": "index.js",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "homepage": "https://synthra.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Synthra-swap/docs"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Synthra-swap/docs/issues"
+  }
+}

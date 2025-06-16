@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="{{ config.language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.title }}</title>
+    
+    <!-- Meta tags -->
+    <meta name="description" content="{{ config.description }}">
+    <meta name="author" content="{{ config.author }}">
+    <meta name="generator" content="GitBook">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ config.url }}{{ page.path }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ config.title }}">
+    <meta property="og:description" content="{{ config.description }}">
+    <meta property="og:image" content="{{ config.url }}/assets/synthra-og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ config.url }}{{ page.path }}">
+    <meta property="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ config.title }}">
+    <meta property="twitter:description" content="{{ config.description }}">
+    <meta property="twitter:image" content="{{ config.url }}/assets/synthra-og-image.png">
+    <meta property="twitter:site" content="@synthra_swap">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ config.root }}/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ config.root }}/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ config.root }}/assets/favicon-16x16.png">
+    <link rel="manifest" href="{{ config.root }}/assets/site.webmanifest">
+    <link rel="mask-icon" href="{{ config.root }}/assets/safari-pinned-tab.svg" color="#8b5cf6">
+    <meta name="msapplication-TileColor" content="#0f0f23">
+    <meta name="theme-color" content="#8b5cf6">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Fallback for browsers that don't support preload -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap">
+    </noscript>
+    
+    <!-- Theme CSS -->
+    {% for style in config.styles %}
+    <link rel="stylesheet" href="{{ style }}">
+    {% endfor %}
+    
+    <!-- Custom theme variables -->
+    <style>
+        :root {
+            --page-title: "{{ page.title }}";
+            --site-title: "{{ config.title }}";
+            --site-description: "{{ config.description }}";
+        }
+        
+        /* Loading animation */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        
+        .loading-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid transparent;
+            border-top: 3px solid var(--synthra-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Initial page hidden state */
+        .book {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .book.loaded {
+            opacity: 1;
+        }
+    </style>
+    
+    <!-- Analytics and tracking -->
+    {% if config.analytics %}
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.analytics.google }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ config.analytics.google }}');
+    </script>
+    {% endif %}
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "{{ page.title }}",
+        "description": "{{ config.description }}",
+        "image": "{{ config.url }}/assets/synthra-og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "Synthra Protocol"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Synthra Protocol",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ config.url }}/assets/synthra-logo.png"
+            }
+        },
+        "datePublished": "{{ page.date }}",
+        "dateModified": "{{ page.modified }}",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ config.url }}{{ page.path }}"
+        }
+    }
+    </script>
+</head>
+
+<body class="{% if page.dir == 'rtl' %}rtl{% endif %}">
+    <!-- Loading screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Skip navigation for accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <!-- Main book container -->
+    <div class="book">
+        <!-- Book header -->
+        <div class="book-header" role="banner">
+            <div class="book-header-inner">
+                <h1 class="book-title">
+                    <a href="{{ config.root }}">
+                        <img src="{{ config.root }}/assets/synthra-logo.svg" alt="Synthra Protocol" class="logo">
+                        {{ config.title }}
+                    </a>
+                </h1>
+                
+                <!-- Navigation menu -->
+                <nav class="book-nav" role="navigation" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="https://app.synthra.org" target="_blank" rel="noopener">App</a></li>
+                        <li><a href="https://synthra.org" target="_blank" rel="noopener">Website</a></li>
+                        <li><a href="https://discord.gg/eesEKPRDtd" target="_blank" rel="noopener">Discord</a></li>
+                        <li><a href="https://github.com/Synthra-swap" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Search -->
+                <div class="book-search" role="search">
+                    <input type="search" placeholder="Search documentation..." aria-label="Search">
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Theme toggle -->
+                <button class="theme-toggle" aria-label="Toggle dark/light theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Book body -->
+        <div class="book-body">
+            <!-- Sidebar navigation -->
+            <div class="book-summary" role="navigation" aria-label="Table of contents">
+                <nav class="summary">
+                    {% include "partials/summary.html" %}
+                </nav>
+            </div>
+
+            <!-- Main content -->
+            <main class="book-body-inner" id="main-content" role="main">
+                <div class="page-wrapper">
+                    <!-- Breadcrumb navigation -->
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <ol>
+                            <li><a href="{{ config.root }}">Home</a></li>
+                            {% for item in page.breadcrumb %}
+                            <li{% if loop.last %} aria-current="page"{% endif %}>
+                                {% if not loop.last %}<a href="{{ item.url }}">{% endif %}
+                                {{ item.title }}
+                                {% if not loop.last %}</a>{% endif %}
+                            </li>
+                            {% endfor %}
+                        </ol>
+                    </nav>
+
+                    <!-- Page content -->
+                    <div class="page-inner">
+                        {% if page.title %}
+                        <header class="page-header">
+                            <h1 class="page-title">{{ page.title }}</h1>
+                            {% if page.description %}
+                            <p class="page-description">{{ page.description }}</p>
+                            {% endif %}
+                            
+                            <!-- Page metadata -->
+                            <div class="page-meta">
+                                {% if page.date %}
+                                <span class="page-date">
+                                    <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                                </span>
+                                {% endif %}
+                                {% if page.modified %}
+                                <span class="page-modified">
+                                    Last updated: <time datetime="{{ page.modified }}">{{ page.modified | date: "%B %d, %Y" }}</time>
+                                </span>
+                                {% endif %}
+                                {% if page.tags %}
+                                <div class="page-tags">
+                                    {% for tag in page.tags %}
+                                    <span class="tag">{{ tag }}</span>
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </header>
+                        {% endif %}
+
+                        <!-- Table of contents for long pages -->
+                        {% if page.toc and page.toc.length > 3 %}
+                        <aside class="page-toc">
+                            <h3>On this page</h3>
+                            <nav aria-label="Page table of contents">
+                                {{ page.toc | toc }}
+                            </nav>
+                        </aside>
+                        {% endif %}
+
+                        <!-- Main page content -->
+                        <div class="page-content">
+                            {{ content }}
+                        </div>
+
+                        <!-- Page footer with edit link and feedback -->
+                        <footer class="page-footer-content">
+                            {% if config.edit %}
+                            <div class="edit-page">
+                                <a href="{{ config.edit.base }}{{ page.path }}" target="_blank" rel="noopener">
+                                    ✏️ Edit this page
+                                </a>
+                            </div>
+                            {% endif %}
+                            
+                            <div class="page-feedback">
+                                <p>Was this page helpful?</p>
+                                <div class="feedback-buttons">
+                                    <button class="feedback-btn" data-feedback="yes">👍 Yes</button>
+                                    <button class="feedback-btn" data-feedback="no">👎 No</button>
+                                </div>
+                            </div>
+                            
+                            <div class="page-share">
+                                <p>Share this page:</p>
+                                <div class="share-buttons">
+                                    <a href="https://twitter.com/intent/tweet?url={{ config.url }}{{ page.path }}&text={{ page.title }}" target="_blank" rel="noopener" aria-label="Share on Twitter">🐦</a>
+                                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ config.url }}{{ page.path }}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">💼</a>
+                                    <button onclick="navigator.clipboard.writeText(window.location.href)" aria-label="Copy link">🔗</button>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- Page navigation -->
+                {% if page.previous or page.next %}
+                <nav class="page-nav" aria-label="Page navigation">
+                    {% if page.previous %}
+                    <a href="{{ page.previous.url }}" class="page-nav-prev" rel="prev">
+                        <span class="nav-direction">← Previous</span>
+                        <span class="nav-title">{{ page.previous.title }}</span>
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.next %}
+                    <a href="{{ page.next.url }}" class="page-nav-next" rel="next">
+                        <span class="nav-direction">Next →</span>
+                        <span class="nav-title">{{ page.next.title }}</span>
+                    </a>
+                    {% endif %}
+                </nav>
+                {% endif %}
+            </main>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    {% for script in config.scripts %}
+    <script src="{{ script }}"></script>
+    {% endfor %}
+    
+    <!-- Theme initialization script -->
+    <script>
+        // Hide loading screen when page is loaded
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            const book = document.querySelector('.book');
+            
+            if (loadingScreen) {
+                loadingScreen.classList.add('hidden');
+                setTimeout(() => {
+                    loadingScreen.remove();
+                }, 500);
+            }
+            
+            if (book) {
+                book.classList.add('loaded');
+            }
+        });
+
+        // Back to top functionality
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        if (backToTopBtn) {
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.style.display = 'block';
+                } else {
+                    backToTopBtn.style.display = 'none';
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Feedback functionality
+        document.querySelectorAll('.feedback-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const feedback = this.dataset.feedback;
+                
+                // Send feedback (you can implement analytics here)
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'page_feedback', {
+                        'custom_parameter': feedback,
+                        'page_path': window.location.pathname
+                    });
+                }
+                
+                // Show thank you message
+                const container = this.parentElement;
+                container.innerHTML = '<p>Thank you for your feedback! 🙏</p>';
+            });
+        });
+    </script>
+
+    <!-- Service worker for offline functionality -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

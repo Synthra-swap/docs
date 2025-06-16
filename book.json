@@ -1,0 +1,121 @@
+{
+  "title": "Synthra Protocol Documentation",
+  "description": "Complete documentation for Synthra Protocol - the next-generation decentralized exchange with concentrated liquidity and sustainable treasury fee mechanism",
+  "author": "Synthra Protocol Team",
+  "language": "en",
+  "gitbook": "3.2.3",
+  
+  "root": "./docs",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  
+  "theme": "./theme/synthra-theme",
+  
+  "styles": {
+    "website": "styles/website.css"
+  },
+  
+  "plugins": [
+    "theme-default",
+    "-sharing",
+    "-fontsettings",
+    "search-pro",
+    "code",
+    "prism",
+    "advanced-emoji",
+    "anchors",
+    "edit-link",
+    "github",
+    "ancre-navigation",
+    "sitemap-general",
+    "canonical-link"
+  ],
+  
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true,
+      "styles": {
+        "website": "styles/website.css"
+      }
+    },
+    
+    "search-pro": {
+      "cutWordLib": "nodejieba",
+      "defineWord": ["Synthra", "DeFi", "DEX", "LP", "TVL", "AMM"],
+      "maxSearchs": 8
+    },
+    
+    "prism": {
+      "css": [
+        "prism-themes/themes/prism-one-dark.css"
+      ],
+      "lang": {
+        "shell": "bash",
+        "ejs": "html"
+      }
+    },
+    
+    "edit-link": {
+      "base": "https://github.com/Synthra-swap/docs/edit/main",
+      "label": "Edit This Page"
+    },
+    
+    "github": {
+      "url": "https://github.com/Synthra-swap/docs"
+    },
+    
+    "sitemap-general": {
+      "prefix": "https://docs.synthra.org"
+    },
+    
+    "canonical-link": {
+      "baseURL": "https://docs.synthra.org"
+    },
+    
+    "anchors": {
+      "placement": "left",
+      "visible": "hover",
+      "icon": "#"
+    }
+  },
+  
+  "variables": {
+    "title": "Synthra Protocol Documentation",
+    "description": "Complete documentation for Synthra Protocol",
+    "url": "https://docs.synthra.org",
+    "logo": "/assets/synthra-logo.svg",
+    "favicon": "/assets/favicon.ico",
+    "appleTouchIcon": "/assets/apple-touch-icon.png",
+    "themeColor": "#8b5cf6",
+    "backgroundColor": "#0f0f23",
+    
+    "social": {
+      "twitter": "@synthra_swap",
+      "discord": "https://discord.gg/eesEKPRDtd",
+      "github": "https://github.com/Synthra-swap",
+      "website": "https://synthra.org",
+      "app": "https://app.synthra.org"
+    },
+    
+    "analytics": {
+      "google": "GA_MEASUREMENT_ID"
+    }
+  },
+  
+  "pdf": {
+    "pageNumbers": true,
+    "fontSize": 12,
+    "fontFamily": "Inter",
+    "paperSize": "a4",
+    "margin": {
+      "right": 62,
+      "left": 62,
+      "top": 56,
+      "bottom": 56
+    },
+    "headerTemplate": "<div style='font-size:9px; margin:0 auto; color:#999;'>Synthra Protocol Documentation</div>",
+    "footerTemplate": "<div style='font-size:9px; margin:0 auto; color:#999;'>Page <span class='pageNumber'></span> of <span class='totalPages'></span></div>"
+  }
+}

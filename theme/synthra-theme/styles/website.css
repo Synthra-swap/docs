@@ -1,0 +1,975 @@
+/* ==============================================================
+   SYNTHRA PROTOCOL GITBOOK THEME
+   Modern dark theme with purple-pink gradients
+   ============================================================== */
+
+/* CSS Variables for consistent theming */
+:root {
+  /* Primary Colors - Synthra Brand */
+  --synthra-primary: #8B5CF6;        /* Purple */
+  --synthra-secondary: #EC4899;       /* Pink */
+  --synthra-accent: #06B6D4;          /* Cyan accent */
+  
+  /* Gradient Colors */
+  --synthra-gradient-primary: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+  --synthra-gradient-secondary: linear-gradient(135deg, #EC4899 0%, #F97316 100%);
+  --synthra-gradient-accent: linear-gradient(135deg, #06B6D4 0%, #8B5CF6 100%);
+  
+  /* Dark Theme Colors */
+  --bg-primary: #0f0f23;              /* Main background */
+  --bg-secondary: #1a1a2e;            /* Secondary background */
+  --bg-tertiary: #16213e;             /* Cards/panels */
+  --bg-hover: #252545;                /* Hover states */
+  
+  /* Text Colors */
+  --text-primary: #ffffff;            /* Primary text */
+  --text-secondary: #cbd5e1;          /* Secondary text */
+  --text-muted: #94a3b8;              /* Muted text */
+  --text-inverse: #0f0f23;            /* Text on light backgrounds */
+  
+  /* Border & Divider Colors */
+  --border-primary: #334155;          /* Primary borders */
+  --border-secondary: #475569;        /* Secondary borders */
+  --border-accent: var(--synthra-primary); /* Accent borders */
+  
+  /* Status Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+  
+  /* Typography */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: 'Fira Code', 'Monaco', 'Cascadia Code', monospace;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+/* ==============================================================
+   GLOBAL STYLES
+   ============================================================== */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans) !important;
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==============================================================
+   LAYOUT STRUCTURE
+   ============================================================== */
+
+/* Main book container */
+.book {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Book header/navigation */
+.book-header {
+  background: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-primary) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.book-header h1 {
+  background: var(--synthra-gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800 !important;
+  font-size: 1.5rem !important;
+}
+
+/* Book summary (sidebar) */
+.book-summary {
+  background: var(--bg-secondary) !important;
+  border-right: 1px solid var(--border-primary) !important;
+  box-shadow: var(--shadow-lg);
+}
+
+.book-summary ul.summary {
+  background: transparent !important;
+}
+
+.book-summary li.chapter {
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.book-summary li.chapter:last-child {
+  border-bottom: none;
+}
+
+.book-summary li.chapter > a {
+  color: var(--text-secondary) !important;
+  padding: var(--spacing-md) var(--spacing-lg) !important;
+  border-radius: var(--radius-md);
+  margin: var(--spacing-xs);
+  transition: all var(--transition-normal);
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-summary li.chapter > a:hover,
+.book-summary li.chapter.active > a {
+  background: var(--synthra-gradient-primary) !important;
+  color: var(--text-inverse) !important;
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+
+.book-summary li.chapter.active > a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--synthra-gradient-primary);
+}
+
+/* Nested chapters */
+.book-summary li.chapter li.chapter > a {
+  padding-left: var(--spacing-2xl) !important;
+  font-size: 0.875rem;
+  color: var(--text-muted) !important;
+}
+
+.book-summary li.chapter li.chapter > a:hover {
+  color: var(--text-primary) !important;
+  background: var(--bg-hover) !important;
+}
+
+/* Book body (main content area) */
+.book-body {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+.book-body .body-inner {
+  background: transparent !important;
+}
+
+/* ==============================================================
+   MAIN CONTENT STYLING
+   ============================================================== */
+
+/* Page content */
+.page-inner {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl);
+}
+
+/* Section styling */
+.page-inner section {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  margin-bottom: var(--spacing-xl);
+  border: 1px solid var(--border-primary);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-inner section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--synthra-gradient-primary);
+}
+
+/* ==============================================================
+   TYPOGRAPHY
+   ============================================================== */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary) !important;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: 2.5rem !important;
+  background: var(--synthra-gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800 !important;
+  margin-bottom: var(--spacing-lg) !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+  color: var(--synthra-primary) !important;
+  border-bottom: 2px solid var(--border-primary);
+  padding-bottom: var(--spacing-sm);
+}
+
+h3 {
+  font-size: 1.5rem !important;
+  color: var(--synthra-secondary) !important;
+}
+
+h4 {
+  font-size: 1.25rem !important;
+  color: var(--text-primary) !important;
+}
+
+h5, h6 {
+  font-size: 1rem !important;
+  color: var(--text-secondary) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Paragraphs and text */
+p {
+  color: var(--text-secondary) !important;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.7;
+}
+
+/* Links */
+a {
+  color: var(--synthra-primary) !important;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+a:hover {
+  color: var(--synthra-secondary) !important;
+  text-decoration: underline;
+}
+
+a:not(.btn)::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--synthra-gradient-primary);
+  transition: width var(--transition-normal);
+}
+
+a:not(.btn):hover::after {
+  width: 100%;
+}
+
+/* Strong and emphasis */
+strong, b {
+  color: var(--text-primary) !important;
+  font-weight: 600;
+}
+
+em, i {
+  color: var(--synthra-secondary) !important;
+  font-style: italic;
+}
+
+/* ==============================================================
+   CODE BLOCKS AND SYNTAX HIGHLIGHTING
+   ============================================================== */
+
+/* Inline code */
+code {
+  background: var(--bg-tertiary) !important;
+  color: var(--synthra-accent) !important;
+  padding: var(--spacing-xs) var(--spacing-sm) !important;
+  border-radius: var(--radius-sm) !important;
+  font-family: var(--font-family-mono) !important;
+  font-size: 0.875em !important;
+  border: 1px solid var(--border-primary);
+}
+
+/* Code blocks */
+pre {
+  background: var(--bg-tertiary) !important;
+  border: 1px solid var(--border-primary) !important;
+  border-radius: var(--radius-lg) !important;
+  padding: var(--spacing-lg) !important;
+  overflow-x: auto;
+  position: relative;
+  box-shadow: var(--shadow-md);
+}
+
+pre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--synthra-gradient-accent);
+}
+
+pre code {
+  background: transparent !important;
+  color: var(--text-primary) !important;
+  padding: 0 !important;
+  border: none !important;
+  font-family: var(--font-family-mono) !important;
+  line-height: 1.5;
+}
+
+/* Syntax highlighting for different languages */
+.hljs {
+  background: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+  color: var(--synthra-primary) !important;
+  font-weight: 600;
+}
+
+.hljs-string,
+.hljs-attr {
+  color: var(--synthra-secondary) !important;
+}
+
+.hljs-number,
+.hljs-literal {
+  color: var(--synthra-accent) !important;
+}
+
+.hljs-comment {
+  color: var(--text-muted) !important;
+  font-style: italic;
+}
+
+.hljs-function,
+.hljs-title {
+  color: var(--success) !important;
+  font-weight: 600;
+}
+
+/* ==============================================================
+   LISTS
+   ============================================================== */
+
+/* Unordered lists */
+ul {
+  color: var(--text-secondary) !important;
+  padding-left: var(--spacing-lg);
+}
+
+ul li {
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+}
+
+ul li::marker {
+  color: var(--synthra-primary);
+}
+
+/* Custom bullet points */
+ul li::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: var(--synthra-gradient-primary);
+  border-radius: 50%;
+}
+
+/* Ordered lists */
+ol {
+  color: var(--text-secondary) !important;
+  padding-left: var(--spacing-lg);
+}
+
+ol li {
+  margin-bottom: var(--spacing-sm);
+}
+
+ol li::marker {
+  color: var(--synthra-primary);
+  font-weight: 600;
+}
+
+/* Nested lists */
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ==============================================================
+   TABLES
+   ============================================================== */
+
+/* Table styling */
+table {
+  width: 100% !important;
+  border-collapse: collapse;
+  margin: var(--spacing-lg) 0;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+/* Table headers */
+thead {
+  background: var(--synthra-gradient-primary);
+}
+
+thead th {
+  color: var(--text-inverse) !important;
+  font-weight: 600 !important;
+  padding: var(--spacing-md) var(--spacing-lg) !important;
+  text-align: left;
+  border: none !important;
+}
+
+/* Table body */
+tbody tr {
+  border-bottom: 1px solid var(--border-primary);
+  transition: background-color var(--transition-fast);
+}
+
+tbody tr:hover {
+  background: var(--bg-hover) !important;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody td {
+  color: var(--text-secondary) !important;
+  padding: var(--spacing-md) var(--spacing-lg) !important;
+  border: none !important;
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.875rem;
+  }
+  
+  thead th,
+  tbody td {
+    padding: var(--spacing-sm) var(--spacing-md) !important;
+  }
+}
+
+/* ==============================================================
+   BLOCKQUOTES AND CALLOUTS
+   ============================================================== */
+
+/* Blockquotes */
+blockquote {
+  background: var(--bg-tertiary) !important;
+  border-left: 4px solid var(--synthra-primary) !important;
+  margin: var(--spacing-lg) 0 !important;
+  padding: var(--spacing-lg) !important;
+  border-radius: var(--radius-md);
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: var(--spacing-md);
+  font-size: 3rem;
+  color: var(--synthra-primary);
+  opacity: 0.3;
+}
+
+blockquote p {
+  color: var(--text-primary) !important;
+  font-style: italic;
+  margin-bottom: 0 !important;
+}
+
+/* Custom callouts using blockquote classes */
+blockquote.info {
+  border-left-color: var(--info) !important;
+  background: rgba(59, 130, 246, 0.1) !important;
+}
+
+blockquote.success {
+  border-left-color: var(--success) !important;
+  background: rgba(16, 185, 129, 0.1) !important;
+}
+
+blockquote.warning {
+  border-left-color: var(--warning) !important;
+  background: rgba(245, 158, 11, 0.1) !important;
+}
+
+blockquote.error {
+  border-left-color: var(--error) !important;
+  background: rgba(239, 68, 68, 0.1) !important;
+}
+
+/* ==============================================================
+   IMAGES AND MEDIA
+   ============================================================== */
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Figure captions */
+figcaption {
+  color: var(--text-muted) !important;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: var(--spacing-sm);
+  font-style: italic;
+}
+
+/* ==============================================================
+   NAVIGATION
+   ============================================================== */
+
+/* Page navigation (prev/next) */
+.page-footer {
+  background: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-primary) !important;
+  padding: var(--spacing-lg) !important;
+  margin-top: var(--spacing-2xl);
+}
+
+.page-footer .page-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 0;
+}
+
+.page-footer a {
+  background: var(--synthra-gradient-primary) !important;
+  color: var(--text-inverse) !important;
+  padding: var(--spacing-md) var(--spacing-lg) !important;
+  border-radius: var(--radius-lg) !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.page-footer a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ==============================================================
+   SEARCH
+   ============================================================== */
+
+/* Search input */
+.book-search input {
+  background: var(--bg-tertiary) !important;
+  border: 1px solid var(--border-primary) !important;
+  color: var(--text-primary) !important;
+  border-radius: var(--radius-md) !important;
+  padding: var(--spacing-sm) var(--spacing-md) !important;
+  transition: all var(--transition-normal);
+}
+
+.book-search input:focus {
+  outline: none;
+  border-color: var(--synthra-primary) !important;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.book-search input::placeholder {
+  color: var(--text-muted) !important;
+}
+
+/* Search results */
+.search-results {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-primary) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-lg);
+}
+
+.search-results .search-result {
+  border-bottom: 1px solid var(--border-primary);
+  padding: var(--spacing-md);
+  transition: background-color var(--transition-fast);
+}
+
+.search-results .search-result:hover {
+  background: var(--bg-hover) !important;
+}
+
+.search-results .search-result:last-child {
+  border-bottom: none;
+}
+
+/* ==============================================================
+   BUTTONS AND FORM ELEMENTS
+   ============================================================== */
+
+/* Buttons */
+.btn {
+  background: var(--synthra-gradient-primary) !important;
+  color: var(--text-inverse) !important;
+  border: none !important;
+  padding: var(--spacing-md) var(--spacing-lg) !important;
+  border-radius: var(--radius-md) !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none !important;
+  display: inline-block;
+  font-family: inherit;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Secondary button */
+.btn-secondary {
+  background: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-primary) !important;
+}
+
+/* ==============================================================
+   ANIMATIONS AND TRANSITIONS
+   ============================================================== */
+
+/* Fade in animation for page content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-inner {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Pulse animation for accent elements */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Loading animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==============================================================
+   RESPONSIVE DESIGN
+   ============================================================== */
+
+/* Tablet and mobile styles */
+@media (max-width: 1024px) {
+  .page-inner {
+    padding: var(--spacing-lg);
+  }
+  
+  .page-inner section {
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-xs: 0.125rem;
+    --spacing-sm: 0.25rem;
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.25rem;
+    --spacing-2xl: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  .page-inner {
+    padding: var(--spacing-md);
+  }
+  
+  .page-inner section {
+    padding: var(--spacing-md);
+  }
+  
+  .book-summary {
+    font-size: 0.875rem;
+  }
+  
+  pre {
+    font-size: 0.75rem;
+    padding: var(--spacing-md);
+  }
+}
+
+/* ==============================================================
+   PRINT STYLES
+   ============================================================== */
+
+@media print {
+  .book-summary,
+  .book-header,
+  .page-footer {
+    display: none !important;
+  }
+  
+  .page-inner {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  
+  .page-inner section {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+  }
+  
+  p, li, td {
+    color: black !important;
+  }
+  
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+}
+
+/* ==============================================================
+   CUSTOM COMPONENTS
+   ============================================================== */
+
+/* Badge/Tag component */
+.badge {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--synthra-gradient-primary);
+  color: var(--text-inverse);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Info box component */
+.info-box {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-box::before {
+  content: 'ℹ️';
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  font-size: 1.5rem;
+}
+
+/* Feature grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.feature-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--synthra-gradient-primary);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ==============================================================
+   DARK MODE ENHANCEMENTS
+   ============================================================== */
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--synthra-gradient-primary);
+  border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--synthra-gradient-secondary);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--synthra-primary);
+  color: var(--text-inverse);
+}
+
+::-moz-selection {
+  background: var(--synthra-primary);
+  color: var(--text-inverse);
+}
+
+/* ==============================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ============================================================== */
+
+/* Focus indicators */
+*:focus-visible {
+  outline: 2px solid var(--synthra-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --border-primary: #ffffff;
+    --text-secondary: #ffffff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
