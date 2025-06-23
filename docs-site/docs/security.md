@@ -63,14 +63,6 @@ In case of critical vulnerabilities:
 
 ## Protocol Security Features
 
-### Price Oracle Security
-
-The time-weighted average price (TWAP) oracle:
-
-* Resistant to manipulation through time-weighting
-* Requires significant capital to manipulate
-* Multiple observation points for reliability
-
 ### Slippage Protection
 
 To protect users from unexpected price movements:
@@ -116,36 +108,6 @@ In case of security incidents:
 * Escalation procedures
 * Post-incident analysis and remediation
 
-## External Security Measures
-
-### Audits
-
-Synthra undergoes regular security audits:
-
-* Multiple independent audit firms
-* Specialized audits for critical components
-* Public disclosure of audit reports
-* Comprehensive addressing of all findings
-
-For details on specific audits, see the [Audits](audits.md) page.
-
-### Bug Bounty Program
-
-Synthra maintains an active bug bounty program:
-
-* Competitive rewards based on severity
-* Safe harbor for responsible disclosure
-* Public acknowledgment of contributors
-* Transparent resolution process
-
-### Third-Party Integrations
-
-When integrating with other protocols:
-
-* Thorough security assessment of integration partners
-* Limited scope of permissions
-* Gradual increase in exposure
-* Regular review of integrated protocols
 
 ## User Security Best Practices
 
@@ -158,12 +120,6 @@ We recommend users follow these security practices:
 5. **Use Hardware Wallets**: Secure high-value positions with hardware wallets
 6. **Monitor Positions**: Regularly check your liquidity positions
 
-## Security Resources
-
-* [Bug Bounty Program](https://bounty.synthra.org)
-* [Security Disclosure Policy](https://docs.synthra.org/security-policy)
-* [Audit Reports](audits.md)
-* [Emergency Contact](mailto:security@synthra.org)
 
 ## Future Security Enhancements
 
@@ -174,11 +130,3 @@ Synthra is continuously improving security measures:
 * Advanced anomaly detection
 * Cross-chain security measures
 
-## Security Governance
-
-Security-related governance proposals undergo additional scrutiny:
-
-* Extended discussion periods
-* Technical committee review
-* Higher quorum requirements
-* Mandatory timelock periods

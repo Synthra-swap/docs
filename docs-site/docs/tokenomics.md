@@ -10,11 +10,10 @@ Synthra's tokenomics are designed to create sustainable value for all stakeholde
 
 ### Basic Information
 
-* **Token Name**: Synthra Protocol Token
-* **Token Symbol**: SYNTH
+* **Token Name**: Synthra
+* **Token Symbol**: £SYN
 * **Total Supply**: 100,000,000 SYNTH (100M)
 * **Decimals**: 18
-* **Blockchain**: UOMI
 
 ### Supply Distribution
 
@@ -85,23 +84,12 @@ Synthra implements a **burn mechanism** through the treasury buyback program:
 * Scales directly with protocol adoption and volume
 * Provides sustainable funding without dilution
 
-### 2. Governance Rights
 
-**Protocol Control**: Token holders govern key protocol decisions
-
-* Treasury fund allocation strategies
-* Fee structure modifications
-* Protocol upgrade approvals
-* Partnership and integration decisions
-
-### 3. Staking Rewards (Future)
+### 2. Staking Rewards (Future)
 
 **Planned Implementation**: Additional utility through staking
 
 * Share of treasury revenue distributed to stakers
-* Enhanced governance voting power
-* Priority access to new features
-* Reduced trading fees for stakers
 
 ## Economic Model
 
@@ -111,9 +99,6 @@ Synthra's tokenomics create multiple reinforcing loops:
 
 **Volume Growth Loop**:\
 Trading Volume → Treasury Fees → Buybacks → Token Value → More Liquidity → Higher Volume
-
-**Utility Loop**:\
-Token Holdings → Governance Power → Better Protocol → Higher Volume → Token Value
 
 **Network Loop**:\
 Token Value → Developer Interest → More Integrations → Ecosystem Growth → Token Demand
@@ -137,22 +122,6 @@ Unlike many DeFi protocols that rely on unsustainable token emissions:
 * **Long-term Alignment**: Success benefits all stakeholders
 
 ## Token Utility
-
-### Current Utilities
-
-#### Governance Participation
-
-* **Proposal Creation**: Minimum threshold for submitting proposals
-* **Voting Rights**: Proportional voting power based on holdings
-* **Treasury Oversight**: Direct input on fund allocation decisions
-* **Protocol Upgrades**: Community approval for major changes
-
-#### Fee Discounts (Planned)
-
-* **Trading Fee Reduction**: Up to 25% discount for token holders
-* **Tier-Based System**: Larger holdings provide greater discounts
-* **Automatic Application**: Seamless integration with trading interface
-* **Dynamic Thresholds**: Adjusted based on token price and supply
 
 ### Future Utilities
 
@@ -190,33 +159,20 @@ Synthra's tokenomics create a sustainable foundation for long-term value creatio
 
 #### Ecosystem Tokens (25M SYNTH)
 
-* **Cliff Period**: 6 months from TGE
-* **Vesting**: 3-year linear vesting after cliff
-* **Monthly Release**: \~694,444 SYNTH (post-cliff)
+* **Cliff Period**: 5% at TGE
+* **Cliff Period**: 3 months from TGE
+* **Vesting**: 2-year linear vesting after cliff
 * **Governance**: Community oversight of fund allocation
 
 #### Investor Tokens (15M SYNTH)
 
-* **Cliff Period**: 6 months from TGE
+* **Cliff Period**: 3 months from TGE
 * **Vesting**: 2-year linear vesting after cliff
-* **Monthly Release**: \~625,000 SYNTH (post-cliff)
 * **Lock-up**: Ensures aligned incentives with protocol success
 
 #### Team Tokens (10M SYNTH)
 
-* **Cliff Period**: 12 months from TGE
-* **Vesting**: 3-year linear vesting after cliff
-* **Monthly Release**: \~277,778 SYNTH (post-cliff)
+* **Cliff Period**: 3 months from TGE
+* **Vesting**: 2-year linear vesting after cliff
 * **Performance**: Additional milestones may accelerate vesting
 
-### Circulating Supply Projection
-
-| Timeline     | Public Sale | Liquidity | Ecosystem | Investors | Team | **Total Circulating** |
-| ------------ | ----------- | --------- | --------- | --------- | ---- | --------------------- |
-| **TGE**      | 25M         | 25M       | 0         | 0         | 0    | **50M (50%)**         |
-| **Month 6**  | 25M         | 25M       | 0         | 0         | 0    | **50M (50%)**         |
-| **Month 12** | 25M         | 25M       | 4.2M      | 3.8M      | 0    | **58M (58%)**         |
-| **Month 24** | 25M         | 25M       | 12.5M     | 15M       | 5.6M | **83.1M (83.1%)**     |
-| **Month 36** | 25M         | 25M       | 25M       | 15M       | 10M  | **100M (100%)**       |
-
-_Note: Assumes ecosystem tokens start vesting at month 6_\*

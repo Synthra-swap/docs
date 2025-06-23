@@ -7,7 +7,6 @@ This section provides a technical overview of the Synthra protocol, including it
 * **Architecture**: The overall design of the Synthra protocol and how its components interact
 * **Smart Contracts**: The core contracts that power Synthra and their functions
 * **Security**: The security measures implemented to protect user funds and ensure protocol stability
-* **Audits**: Information about security audits conducted on the Synthra protocol
 
 ## Protocol Design Philosophy
 

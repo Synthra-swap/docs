@@ -134,7 +134,6 @@ The treasury mechanism creates multiple positive feedback loops:
 ### Smart Contract Security
 - **Immutable fee split** logic in core contracts
 - **Time-locked upgrades** for critical components
-- **Multi-layer audits** by leading security firms
 
 ### Treasury Security
 - **Hardware wallet** storage for multi-sig signers
